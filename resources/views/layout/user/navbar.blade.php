@@ -58,7 +58,7 @@
                 </li>
                 <li>
                     <button type="button"
-                        class="text-white bg-[#0004f6] hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue font-medium rounded-full text-sm px-5 \ pt-1 pb-1 text-center me-2 mb-2 dark:bg-[#0004f6] dark:hover:bg-blue dark:focus:ring-blue md:ms-0 md:mt-0 ms-3 mt-3 w-full">
+                        class="text-white bg-[#0004f6] hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue rounded-full text-sm px-5 pt-1 pb-1.5 text-center me-2 mb-2 dark:bg-[#0004f6] dark:hover:bg-blue dark:focus:ring-blue md:ms-0 md:mt-0 ms-3 mt-3 w-full font-bold">
                         Schedule Your Trial
                     </button>
                 </li>
