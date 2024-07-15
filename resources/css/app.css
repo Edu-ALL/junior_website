@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 800;
+    src: url("/public/fonts/nevermind/NeverMindRounded-ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 800;
+    font-style: italic;
+    src: url("/public/fonts/nevermind/NeverMindRounded-ExtraBoldItalic.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 700;
+    src: url("/public/fonts/nevermind/NeverMindRounded-Bold.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 700;
+    font-style: italic;
+    src: url("/public/fonts/nevermind/NeverMindRounded-BoldItalic.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 600;
+    src: url("/public/fonts/nevermind/NeverMindRounded-DemiBold.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 600;
+    font-style: italic;
+    src: url("/public/fonts/nevermind/NeverMindRounded-DemiBoldItalic.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 500;
+    src: url("/public/fonts/nevermind/NeverMindRounded-Medium.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 500;
+    font-style: italic;
+    src: url("/public/fonts/nevermind/NeverMindRounded-MediumItalic.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 400;
+    src: url("/public/fonts/nevermind/NeverMindRounded-Regular.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/public/fonts/nevermind/NeverMindRounded-RegularItalic.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 300;
+    src: url("/public/fonts/nevermind/NeverMindRounded-Light.ttf");
+  }
+  @font-face {
+    font-family: "NeverMindRounded";
+    font-weight: 300;
+    font-style: italic;
+    src: url("/public/fonts/nevermind/NeverMindRounded-LightItalic.ttf");
+  }
+  
+  .main-container {
+    @apply mx-auto max-w-screen-xl px-6 md:px-0;
+  }
