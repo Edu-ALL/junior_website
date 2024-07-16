@@ -223,50 +223,8 @@
                     What parents say <span class="text-blue">about us</span>
                 </h2>
 
-                <section class="splide mt-5 relative overflow-hidden" id="testimonial">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            @for ($i = 0; $i < 2; $i++)
-                                <li class="splide__slide">
-                                    <h5 class="font-bold text-md mb-4">
-                                        “My child has flourished since joining EduALL Junior.”
-                                    </h5>
-                                    <p class="font-light mb-4">
-                                        “The nurturing environment, combined with engaging activities, has sparked a
-                                        newfound
-                                        curiosity and love for learning. I'm grateful for the dedicated teachers who go
-                                        above
-                                        and beyond to support my child's growth and development.”
-                                    </p>
-
-                                    <div class="flex gap-5 flex-nowrap">
-                                        <div class="w-1/12">
-                                            <img src="https://placehold.co/80x80" alt="" class="rounded-full">
-                                        </div>
-                                        <div class="w-5/12">
-                                            <h5 class="font-bold text-md text-primary mb-0">
-                                                Leslie Chung
-                                            </h5>
-                                            <p>
-                                                Mom of Bryan Chung, 6 y.o
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            @endfor
-                        </ul>
-                    </div>
-                    <div class="flex gap-2 absolute bottom-[10px] right-[20px]">
-                        <button class="bg-primary/30 hover:bg-primary/50 text-primary w-[30px] h-[30px] rounded-full"
-                            onclick="arrowSplide('prev', testimonial)">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="bg-primary/30  hover:bg-primary/50  text-primary w-[30px] h-[30px] rounded-full"
-                            onclick="arrowSplide('next', testimonial)">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </section>
+                {{-- Testimonial Component  --}}
+                <x-testimonial :color="'primary'" />
             </div>
         </div>
     </section>
@@ -330,11 +288,11 @@
                 </div>
                 <div class="flex gap-2 mt-3">
                     <button class="bg-yellow/30 hover:bg-yellow/50 text-yellow w-[30px] h-[30px] rounded-full"
-                        onclick="arrowSplide('prev', events)">
+                        onclick="arrowSplide('prev')">
                         <i class="fas fa-chevron-left"></i>
                     </button>
                     <button class="bg-yellow/30  hover:bg-yellow/50  text-yellow w-[30px] h-[30px] rounded-full"
-                        onclick="arrowSplide('next', events)">
+                        onclick="arrowSplide('next')">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -343,41 +301,11 @@
     </section>
 
     {{-- Schedule Form  --}}
-    <section class="bg-blue text-white py-[50px]">
-        <div class="main-container">
-            <div class="flex flex-wrap">
-                <div class="w-full md:w-1/2">
-                    <div class="bg-red py-1 px-4 inline rounded-full text-white">
-                        CONTACT US
-                    </div>
-                    <h2 class="font-bold text-3xl mt-5">
-                        <span class="text-yellowLight underline">Schedule</span> your FREE trial now!
-                    </h2>
-                    <p class="text-lg font-light mt-5">
-                        Experience our programs in one-week trial where your kid can explore the classes they are interested
-                        in. Each kid will be observed by our mentors and psychologists, with a personalized assessment at
-                        the end of the trial period.
-                    </p>
-                </div>
-
-                <div class="w-full md:w-1/2">
-
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-contact :color="'blue'" />
 @endsection
 
-@section('script')
+@push('script')
     <script>
-        var testimonial = new Splide('#testimonial', {
-            type: 'loop',
-            perPage: 1,
-            pagination: false,
-            arrows: false,
-        });
-        testimonial.mount();
-
         var events = new Splide('#events', {
             type: 'loop',
             perPage: 3,
@@ -401,12 +329,12 @@
         });
         events.mount();
 
-        function arrowSplide(type, element) {
+        function arrowSplide(type) {
             if (type == 'prev') {
-                element.go('<')
+                events.go('<')
             } else {
-                element.go('>')
+                events.go('>')
             }
         }
     </script>
-@endsection
+@endpush
