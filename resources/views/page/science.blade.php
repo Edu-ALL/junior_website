@@ -27,26 +27,29 @@
             </nav>
         </div>
 
-        <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
-            <h1 class="text-5xl font-bold text-center text-orange">
-                Science
-            </h1>
-            <p class="text-xl text-dark text-center leading-8">
-                A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and critical
-                thinking in young minds with exciting experiments and discoveries, empowering them to become inventors and
-                innovators.
-            </p>
+        <div class="main-container">
+            <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
+                <h1 class="text-5xl font-bold text-center text-orange">
+                    Science
+                </h1>
+                <p class="text-xl text-dark text-center leading-8">
+                    A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and
+                    critical thinking in young minds with exciting experiments and discoveries, empowering them to become
+                    inventors and innovators.
+                </p>
+            </div>
         </div>
 
-        <div class="flex w-full justify-end mt-24 main-container">
-            <div class="w-3/5 flex flex-col items-start pl-12">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-orange text-white">
+
+        <div class="flex w-full justify-end mt-8 md:mt-24 main-container">
+            <div class="w-full md:w-3/5 flex flex-col items-start md:pl-12">
+                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     WHY
-                </span>
-                <h2 class="text-2xl font-bold text-dark mt-4">
+                </div>
+                <h2 class="text-3xl font-bold text-dark mt-4">
                     Why learn Science?
                 </h2>
-                <p class="text-base text-dark mt-4">
+                <p class="font-light text-dark mt-4">
                     Recent studies highlight the benefit of integrating environmental education into a science program,
                     which will enhance kid’s awareness and promote essential executive functions like problem-solving and
                     cognitive flexibility. Early exposure to science aids in developing spatial reasoning and ignites a
@@ -58,15 +61,15 @@
             </div>
         </div>
 
-        <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-[50%] md:block hidden">
-            <img src="https://placehold.co/800x700" alt="" class="w-full">
+        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-1/2 top-full md:block hidden">
+            <img src="https://placehold.co/800x900" alt="" class="w-full object-cover">
         </div>
     </section>
 
     {{-- What your kids will learn --}}
     <section class="w-100 bg-orange py-48">
-        <div class="flex justify-center">
-            <h2 class="text-3xl font-bold text-white">
+        <div class="flex justify-center main-container">
+            <h2 class="text-3xl font-bold text-white text-center ">
                 What your kids <span class="text-yellowLight underline">will learn</span>
             </h2>
         </div>
@@ -122,4 +125,189 @@
             </div>
         </div>
     </section>
+
+    {{-- Testimonial  --}}
+    <section class="w-full bg-secondary pb-24 mb-0">
+        <div class="flex flex-wrap items-center md:py-0 py-[50px]">
+            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
+                <img src="https://placehold.co/600x600" alt="" class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-3/5 md:px-32 px-6">
+                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
+                    TESTIMONIALS
+                </div>
+                <h2 class="font-bold text-3xl my-5">
+                    What parents say <span class="text-blue">about us</span>
+                </h2>
+
+                {{-- Testimonial Component  --}}
+                <x-testimonial :color="'primary'" />
+            </div>
+        </div>
+
+        <div class="main-container mt-24">
+            <h2 class="font-bold text-3xl my-5 text-black">
+                Gallery
+            </h2>
+
+            <div class="splide mt-10" id="galery">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        @for ($i = 0; $i < 6; $i++)
+                            <li class="splide__slide">
+                                <div class="rounded-2xl overflow-hidden">
+                                    <img src="https://placehold.co/400x300" alt="">
+                                </div>
+                            </li>
+                        @endfor
+                    </ul>
+                </div>
+                <div class="flex gap-2 mt-10">
+                    <button class="bg-purple/30 hover:bg-purple/50 text-purple w-[30px] h-[30px] rounded-full"
+                        onclick="arrowSplide('prev')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="bg-purple/30  hover:bg-purple/50  text-purple w-[30px] h-[30px] rounded-full"
+                        onclick="arrowSplide('next')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Blog --}}
+    <section class="bg-orangeBg py-24">
+        <div class="main-container">
+            <div class="flex flex-col md:flex-row justify-between items-center w-full py-8">
+                <h2 class="font-bold text-3xl my-2 md:my-0 text-center">
+                    Learn more about <span class="text-orange underline decoration-orangeLight">Science</span>
+                </h2>
+                <div class="flex flex-row items-center mt-2 md:mt-0">
+                    <a href=""
+                        class="flex flex-row items-center gap-2 text-lg text-blue font-bold justify-center md:gap-0">
+                        See More Blogs
+                        <span
+                            class="ml-0 bg-blue text-white rounded-full h-8 w-8 flex items-center justify-center md:ml-2"><i
+                                class="fas fa-arrow-right text-base"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-start justify-center gap-8">
+                <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
+                    <div class="rounded-2xl overflow-hidden my-4">
+                        <img src="https://placehold.co/400x300" alt="" class="w-full">
+                    </div>
+                    <div class="flex items-center justify-start gap-4 py-5">
+                        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
+                            SCIENCE
+                        </div>
+                        <div class="text-gray text-lg">24 July 2024</div>
+                    </div>
+                    <h3 class="font-bold text-3xl text-dark">
+                        Trials & Errors for Kids
+                    </h3>
+                    <p class="font-normal text-base text-dark py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat
+                        dignissim duis ultrices gravida pharetra rhoncus adipiscing.
+                    </p>
+
+                    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
+                        Read More
+                        <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
+                                class="fas fa-arrow-right text-base"></i></span>
+                    </a>
+                </div>
+                <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
+                    <div class="rounded-2xl overflow-hidden my-4">
+                        <img src="https://placehold.co/400x300" alt="" class="w-full">
+                    </div>
+                    <div class="flex items-center justify-start gap-4 py-5">
+                        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
+                            SCIENCE
+                        </div>
+                        <div class="text-gray text-lg">24 July 2024</div>
+                    </div>
+                    <h3 class="font-bold text-3xl text-dark">
+                        Trials & Errors for Kids
+                    </h3>
+                    <p class="font-normal text-base text-dark py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat
+                        dignissim duis ultrices gravida pharetra rhoncus adipiscing.
+                    </p>
+
+                    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
+                        Read More
+                        <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
+                                class="fas fa-arrow-right text-base"></i></span>
+                    </a>
+                </div>
+                <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
+                    <div class="rounded-2xl overflow-hidden my-4">
+                        <img src="https://placehold.co/400x300" alt="" class="w-full">
+                    </div>
+                    <div class="flex items-center justify-start gap-4 py-5">
+                        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
+                            SCIENCE
+                        </div>
+                        <div class="text-gray text-lg">24 July 2024</div>
+                    </div>
+                    <h3 class="font-bold text-3xl text-dark">
+                        Trials & Errors for Kids and Aduldts
+                    </h3>
+                    <p class="font-normal text-base text-dark py-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat
+                        dignissim duis ultrices gravida pharetra rhoncus adipiscing.
+                    </p>
+
+                    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
+                        Read More
+                        <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
+                                class="fas fa-arrow-right text-base"></i></span>
+                    </a>
+                </div>
+                <!-- Repeat for each blog card -->
+            </div>
+        </div>
+    </section>
+
+    {{-- Schedule Form  --}}
+    <x-contact :color="'orange'" />
 @endsection
+
+
+@push('script')
+    <script>
+        var galery = new Splide('#galery', {
+            type: 'loop',
+            perPage: 4,
+            gap: 20,
+            padding: {
+                left: 5,
+                right: 40
+            },
+            breakpoints: {
+                640: {
+                    perPage: 1,
+                    padding: {
+                        left: 5,
+                        right: 20
+                    },
+                    gap: 10,
+                },
+            },
+            pagination: false,
+            arrows: false,
+        });
+        galery.mount();
+
+        function arrowSplide(type) {
+            if (type == 'prev') {
+                galery.go('<')
+            } else {
+                galery.go('>')
+            }
+        }
+    </script>
+@endpush
