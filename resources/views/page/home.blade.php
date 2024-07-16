@@ -5,45 +5,56 @@
 @section('content')
     {{-- Banner & Description --}}
     <section class="w-100 bg-secondary pt-[100px]">
-        <div class="main-container">
-            <div class="max-w-xl mx-auto text-center">
-                <div class="flex justify-center">
-                    <img src="{{ asset('img/logo/eduall.png') }}" alt="EduALL Junior"
-                        class="md:w-[200px] w-[150px] flex justify-center">
-                </div>
-                <h1 class="font-bold md:text-[2.3em] text-[1.5em] font-primary">
-                    One-stop solution to unlock <br>
-                    your <span class="text-blue/60">kid's potential</span>
-                </h1>
-                <p class="mt-3">
-                    Playful Learning Center for Kid’s Interests & Skills Exploration
-                </p>
+        <div class="splide" id="banners">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="main-container">
+                            <div class="max-w-2xl mx-auto text-center">
+                                <div class="flex justify-center">
+                                    <img src="{{ asset('img/logo/eduall.png') }}" alt="EduALL Junior"
+                                        class="md:w-[200px] w-[150px] flex justify-center">
+                                </div>
+                                <h1 class="font-bold md:text-[45px] text-[1.5em] font-primary leading-[1.4]">
+                                    One-stop solution to unlock <br>
+                                    your <span class="text-blue/60">kid's potential</span>
+                                </h1>
+                                <p class="mt-10 md:text-[26px] text-lg leading-[1.25]">
+                                    Playful Learning Center for Kid’s Interests & Skills Exploration
+                                </p>
+                            </div>
+                            <div class="flex flex-nowrap mt-5 md:gap-7 gap-1">
+                                <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
+                                    <img src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior"
+                                        class="w-full drop-shadow-md">
+                                </div>
+                                <div class="w-full md:w-1/4 md:px-4 px-1">
+                                    <img src="{{ asset('img/home/Jumbotron_2.png') }}" alt="EduALL Junior"
+                                        class="w-full drop-shadow-md">
+                                </div>
+                                <div class="w-full md:w-1/4 md:px-4 px-1">
+                                    <img src="{{ asset('img/home/Jumbotron_3.png') }}" alt="EduALL Junior"
+                                        class="w-full drop-shadow-md">
+                                </div>
+                                <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
+                                    <img src="{{ asset('img/home/Jumbotron_4.png') }}" alt="EduALL Junior"
+                                        class="w-full drop-shadow-md">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="flex flex-nowrap mt-5 md:gap-7 gap-1">
-                <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
-                    <img src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior" class="w-full drop-shadow-md">
-                </div>
-                <div class="w-full md:w-1/4 md:px-4 px-1">
-                    <img src="{{ asset('img/home/Jumbotron_2.png') }}" alt="EduALL Junior" class="w-full drop-shadow-md">
-                </div>
-                <div class="w-full md:w-1/4 md:px-4 px-1">
-                    <img src="{{ asset('img/home/Jumbotron_3.png') }}" alt="EduALL Junior" class="w-full drop-shadow-md">
-                </div>
-                <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
-                    <img src="{{ asset('img/home/Jumbotron_4.png') }}" alt="EduALL Junior" class="w-full drop-shadow-md">
-                </div>
-            </div>
-
         </div>
         <div class="flex flex-nowrap mt-5 gap-5 md:py-[150px] py-[50px] relative overflow-hidden">
             <div class="w-full md:w-3/5 md:px-32 px-8">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     KID'S FUTURE
                 </div>
-                <h2 class="font-bold text-xl my-3">
+                <h2 class="font-bold text-2xl my-3">
                     We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset
                 </h2>
-                <p>
+                <p class="text-lg">
                     At EduALL Junior, we empower kids aged 5-12 to become future change-makers and leaders through our
                     programs focused on developing an entrepreneurial mindset. Our courses are crafted to ignite
                     curiosity, nurture creativity, and cultivate essential skills—all while ensuring a fun learning
@@ -51,34 +62,38 @@
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:block hidden">
-                <img src="https://placehold.co/800x600" alt="" class="w-full">
+                <img src="{{ asset('img/home/KidsFuture.png') }}" alt="" class="w-full">
             </div>
         </div>
     </section>
 
     {{-- Why EduALL Junior  --}}
-    <section class="w-100 bg-blue py-[50px]">
+    <section class="w-100 bg-blue py-[100px]">
         <div class="flex justify-center">
-            <h2 class="text-2xl font-bold text-white">
+            <h2 class="text-3xl font-bold text-white mb-[50px]">
                 Why <span class="text-yellowLight underline">EduALL Junior</span>?
             </h2>
         </div>
 
         <div class="flex justify-end mt-10">
-            <div class="w-full md:w-2/5 absolute left-0 mt-[50px] md:block hidden">
-                <img src="https://placehold.co/600x700" alt="" class="w-full">
+            <div class="w-full md:w-2/5 absolute left-0 mt-[1%] md:block hidden">
+                <img src="{{ asset('img/home/values.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 <div class="mb-10">
                     <div class="flex">
                         <div class="w-full md:w-6/7">
-                            <h3 class="font-bold text-lg">
-                                Programs developed by <span class="text-yellowLight"> experts, research-informed,</span> and
-                                <span class="text-yellowLight">expert-approved</span>
-                            </h3>
+                            <div class="flex flex-nowrap justify-between">
+                                <h3 class="font-bold text-2xl">
+                                    Programs developed by <span class="text-yellowLight"> experts, research-informed,</span>
+                                    and
+                                    <span class="text-yellowLight">expert-approved</span>
+                                </h3>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
+                            </div>
                         </div>
                     </div>
-                    <p class="font-light mt-3">
+                    <p class="font-light text-lg mt-3">
                         We understand that raising kids requires diverse perspectives and opinions. That's why we
                         collaborate with international and local educators, industry professionals, parents, and tested the
                         courses with kids to ensure our curriculum and lessons are relevant to today's world while being
@@ -89,13 +104,16 @@
                 <div class="mb-10">
                     <div class="flex">
                         <div class="w-full md:w-6/7">
-                            <h3 class="font-bold text-lg">
-                                <span class="text-yellowLight">Personalized student journey </span> by in-house
-                                psychologists & experts
-                            </h3>
+                            <div class="flex flex-nowrap justify-between">
+                                <h3 class="font-bold text-2xl">
+                                    <span class="text-yellowLight">Personalized student journey </span> by in-house
+                                    psychologists & experts
+                                </h3>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
+                            </div>
                         </div>
                     </div>
-                    <p class="font-light mt-3">
+                    <p class="font-light text-lg mt-3">
                         Our educators and psychologists will closely observe and monitor each child's progress in class and
                         through their projects. By evaluating and assessing the development of kid's interests and early
                         skills, they can provide personalized recommendations, pathways, and modules. This approach ensures
@@ -105,13 +123,16 @@
                 <div class="mb-10">
                     <div class="flex">
                         <div class="w-full md:w-6/7">
-                            <h3 class="font-bold text-lg">
-                                Offering <span class="text-yellowLight"> holistic</span> & <span
-                                    class="text-yellowLight">playful approach</span> for your kids education
-                            </h3>
+                            <div class="flex flex-nowrap justify-between">
+                                <h3 class="font-bold text-2xl">
+                                    Offering <span class="text-yellowLight"> holistic</span> & <span
+                                        class="text-yellowLight">playful approach</span> for your kids education
+                                </h3>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
+                            </div>
                         </div>
                     </div>
-                    <p class="font-light mt-3">
+                    <p class="font-light text-lg mt-3">
                         Kids thrive when they're having fun because it sparks their imagination, creativity, and social
                         skills. By tapping into their love for play, we can seamlessly weave in educational thoughts and
                         values suited to their age. This playful learning approach ensures that during their crucial
@@ -139,19 +160,46 @@
                         interests and skill levels. Our goals focus on fostering entrepreneurial mindset through a
                         three-stage process:
                     </p>
-                    <ol>
+                    <ol class="text-lg">
                         <li class="mb-3">
-                            <strong> Exploration stage:</strong> Kids discover their interest across diverse streams
-                            offered. For instance, a kid interested in robotics starts by building foundational skills in
-                            robotics.
+                            <div class="flex flex-nowrap">
+                                <div
+                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
+                                    <span class="fa-solid fa-1 "></span>
+                                </div>
+                                <div class="w-full ps-3">
+                                    <strong> Exploration stage:</strong> Kids discover their interest across diverse streams
+                                    offered. For instance, a kid interested in robotics starts by building foundational
+                                    skills in
+                                    robotics.
+                                </div>
+                            </div>
                         </li>
                         <li class="mb-3">
-                            <strong>Development stage:</strong> Kids will progress through specialized modules in their
-                            respective streams to enhance their abilities.
+                            <div class="flex flex-nowrap">
+                                <div
+                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
+                                    <span class="fa-solid fa-2"></span>
+                                </div>
+                                <div class="w-full ps-3">
+                                    <strong>Development stage:</strong> Kids will progress through specialized modules in
+                                    their
+                                    respective streams to enhance their abilities.
+                                </div>
+                            </div>
                         </li>
                         <li class="mb-3">
-                            <strong>Enrichment stage:</strong> Kids will apply their skills in real-world applications such
-                            as competitions and community projects.
+                            <div class="flex flex-nowrap">
+                                <div
+                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
+                                    <span class="fa-solid fa-3"></span>
+                                </div>
+                                <div class="w-full ps-3">
+                                    <strong>Enrichment stage:</strong> Kids will apply their skills in real-world
+                                    applications such
+                                    as competitions and community projects.
+                                </div>
+                            </div>
                         </li>
                     </ol>
                     <p class="text-lg mb-5">
@@ -165,7 +213,7 @@
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
-                    <img src="https://placehold.co/600x600" alt="" class="w-full object-cover">
+                    <img src="{{ asset('img/home/learningJourney.png') }}" alt="" class="w-full object-cover">
                 </div>
             </div>
         </div>
@@ -173,36 +221,41 @@
 
     {{-- Programs  --}}
     <section class="w-100 bg-red text-white">
-        <div class="main-container py-[50px]">
+        <div class="main-container py-[100px]">
             <div class="text-center mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                     PROGRAMS
                 </div>
                 <h2 class="font-bold text-3xl my-5 mb-10">
-                    <span class="text-yellowLight">Expert-approved programs</span> for your kids
+                    <span class="text-yellowLight underline">Expert-approved</span> programs for your kids
                 </h2>
             </div>
             <div class="flex flex-wrap justify-center">
-                <div class="w-1/2  md:w-1/5 relative md:p-5 p-3">
-                    <img src="https://placehold.co/400x500" alt="" class="relative rounded-xl z-[0]">
+                <div class="w-1/2  md:w-1/5 relative -mx-[10px]">
+                    <img src="{{ asset('img/home/Programs_Science.png') }}" alt=""
+                        class="relative rounded-xl mt-4 z-[0]">
                     <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Science</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:p-5 p-3">
-                    <img src="https://placehold.co/400x500" alt="" class="relative rounded-xl z-[0]">
+                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                    <img src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
+                        class="relative rounded-xl z-[0]">
                     <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Coding &
                         Robotics</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:p-5 p-3">
-                    <img src="https://placehold.co/400x500" alt="" class="relative rounded-xl z-[0]">
+                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                    <img src="{{ asset('img/home/Programs_Entrepreneurship.png') }}" alt=""
+                        class="relative rounded-xl z-[0]">
                     <button
                         class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Entrepreneurship</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:p-5 p-3">
-                    <img src="https://placehold.co/400x500" alt="" class="relative rounded-xl z-[0]">
+                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                    <img src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
+                        class="relative rounded-xl mt-4 z-[0]">
                     <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Visual Arts</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:p-5 p-3">
-                    <img src="https://placehold.co/400x500" alt="" class="relative rounded-xl z-[0]">
+                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                    <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
+                        class="relative rounded-xl z-[0]">
                     <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Communications</button>
                 </div>
             </div>
@@ -213,7 +266,7 @@
     <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img src="https://placehold.co/600x600" alt="" class="w-full object-cover">
+                <img src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
@@ -224,7 +277,7 @@
                 </h2>
 
                 {{-- Testimonial Component  --}}
-                <x-testimonial :color="'primary'" />
+                <x-testimonial :color="'blue'" />
             </div>
         </div>
     </section>
@@ -262,28 +315,86 @@
             <section class="splide mt-10" id="events">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        @for ($i = 0; $i < 6; $i++)
-                            <li class="splide__slide">
-                                <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
-                                    <img src="https://placehold.co/500x300" alt="" class="w-full">
-                                    <div class="font-light mt-2 p-3">
-                                        <h6 class="font-bold text-lg">
-                                            Coding & Robotics EduFair
-                                        </h6>
-                                        <ul class="mt-4">
-                                            <li>
-                                                <i class="fas fa-calendar me-1 text-primary"></i>
-                                                12 May 2024 | 14.00 - 16.00
-                                            </li>
-                                            <li>
-                                                <i class="fas fa-map-pin text-primary me-2"></i>
-                                                Kids Cafe, Jakarta Barat
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <li class="splide__slide">
+                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                                <img src="{{ asset('img/home/coding-robotic.png') }}" alt="" class="w-full">
+                                <div class="font-light mt-2 p-3">
+                                    <h6 class="font-bold text-lg">
+                                        Coding & Robotics EduFair
+                                    </h6>
+                                    <ul class="mt-4">
+                                        <li>
+                                            <i class="fas fa-calendar me-1 text-primary"></i>
+                                            12 May 2024 | 14.00 - 16.00
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-pin text-primary me-2"></i>
+                                            Kids Cafe, Jakarta Barat
+                                        </li>
+                                    </ul>
                                 </div>
-                            </li>
-                        @endfor
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                                <img src="{{ asset('img/home/outstanding-skill.png') }}" alt="" class="w-full">
+                                <div class="font-light mt-2 p-3">
+                                    <h6 class="font-bold text-lg">
+                                        Finding Your Kid's Outstanding Skill
+                                    </h6>
+                                    <ul class="mt-4">
+                                        <li>
+                                            <i class="fas fa-calendar me-1 text-primary"></i>
+                                            12 May 2024 | 14.00 - 16.00
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-pin text-primary me-2"></i>
+                                            Kids Cafe, Jakarta Barat
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                                <img src="{{ asset('img/home/entrepreneur.png') }}" alt="" class="w-full">
+                                <div class="font-light mt-2 p-3">
+                                    <h6 class="font-bold text-lg">
+                                        Entrepreneur Workshop
+                                    </h6>
+                                    <ul class="mt-4">
+                                        <li>
+                                            <i class="fas fa-calendar me-1 text-primary"></i>
+                                            12 May 2024 | 14.00 - 16.00
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-pin text-primary me-2"></i>
+                                            Kids Cafe, Jakarta Barat
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                                <img src="{{ asset('img/home/coding.png') }}" alt="" class="w-full">
+                                <div class="font-light mt-2 p-3">
+                                    <h6 class="font-bold text-lg">
+                                        Coding & Robotics EduFair
+                                    </h6>
+                                    <ul class="mt-4">
+                                        <li>
+                                            <i class="fas fa-calendar me-1 text-primary"></i>
+                                            12 May 2024 | 14.00 - 16.00
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-pin text-primary me-2"></i>
+                                            Kids Cafe, Jakarta Barat
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="flex gap-2 mt-3">
@@ -306,6 +417,13 @@
 
 @push('script')
     <script>
+        var banners = new Splide('#banners', {
+            type: 'loop',
+            perPage: 1,
+            pagination: false,
+        });
+        banners.mount();
+
         var events = new Splide('#events', {
             type: 'loop',
             perPage: 3,

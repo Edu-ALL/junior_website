@@ -16,11 +16,11 @@
 
                     <div class="flex gap-5 flex-nowrap">
                         <div class="w-1/12">
-                            <img src="https://placehold.co/80x80" alt="" class="rounded-full">
+                            <img src="{{asset('img/home/user.png')}}" alt="" class="rounded-full">
                         </div>
                         <div class="w-5/12">
                             <h5 class="font-bold text-md text-{{$color}} mb-0">
-                                Leslie Chung
+                                Leslie 
                             </h5>
                             <p>
                                 Mom of Bryan Chung, 6 y.o
@@ -33,11 +33,11 @@
     </div>
     <div class="flex gap-2 absolute bottom-[10px] right-[20px]">
         <button class="bg-{{$color}}/30 hover:bg-{{$color}}/50 text-{{$color}} w-[30px] h-[30px] rounded-full"
-            onclick="arrowSplide('prev')">
+            onclick="arrowSlide('prev')">
             <i class="fas fa-chevron-left"></i>
         </button>
         <button class="bg-{{$color}}/30  hover:bg-{{$color}}/50  text-{{$color}} w-[30px] h-[30px] rounded-full"
-            onclick="arrowSplide('next')">
+            onclick="arrowSlide('next')">
             <i class="fas fa-chevron-right"></i>
         </button>
     </div>
@@ -53,7 +53,7 @@
         });
         testimonial.mount();
 
-        function arrowSplide(type) {
+        function arrowSlide(type) {
             if (type == 'prev') {
                 testimonial.go('<')
             } else {

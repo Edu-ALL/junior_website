@@ -48,12 +48,12 @@
                     <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12">
                         <input type="checkbox" value="" class="sr-only peer">
                         <span
-                            class="-me-[48px] z-[9999] text-[12px] font-medium peer-checked:text-blue text-white dark:text-gray-300">ID</span>
+                            class="-me-[61px] z-[9999] text-[12px] font-extrabold peer-checked:text-blue text-dark dark:text-gray-300">ID</span>
                         <div
-                            class="relative w-[55px] h-6 bg-[#0004f6] rounded-full peer peer-focus:ring-4 peer-focus:ring-blue dark:peer-focus:ring-blue dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] peer-checked:after:start-[12px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#0004f6]">
+                            class="relative w-[70px] h-6 bg-[#D8D9F4] rounded-full peer peer-focus:ring-4 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[1px] peer-checked:after:start-[12px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-7 after:transition-all dark:border-gray-600 peer-checked:bg-[#D8D9F4]">
                         </div>
                         <span
-                            class="-ms-[51px] z-[9999] text-[12px] font-medium peer-checked:text-white text-blue dark:text-gray-300">EN</span>
+                            class="-ms-[63px] z-[9999] text-[12px] font-extrabold peer-checked:text-dark text-blue dark:text-gray-300">EN</span>
                     </label>
                 </li>
                 <li>
