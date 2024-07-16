@@ -1,4 +1,4 @@
-<footer class="bg-[#f4f3ff]  py-6">
+<footer class="bg-[#f4f3ff] pt-[150px]  pb-6">
     <div class="main-container">
         <div class="flex flex-wrap">
             <!-- Column 1 -->
@@ -26,9 +26,24 @@
             <div class="w-full md:w-1/4 px-4 md:text-end text-center md:mb-0 mb-5">
                 <h2 class="text-lg font-semibold mb-4">Follow Us</h2>
                 <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Youtube</li>
+                    <li>
+                        <a href="#">
+                            Facebook
+                            <i class="fa-brands fa-facebook ms-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Instagram
+                            <i class="fa-brands fa-instagram ms-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Youtube
+                            <i class="fa-brands fa-youtube ms-2"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
