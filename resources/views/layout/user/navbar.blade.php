@@ -1,4 +1,5 @@
-<nav class="bg-white/0 border-gray-200 dark:bg-gray-900 fixed w-[100%] transition-all duration-300 ease-in-out z-[9999]" id="navbar">
+<nav class="bg-white/0 border-gray-200 dark:bg-gray-900 fixed w-[100%] transition-all duration-300 ease-in-out z-[9999]"
+    id="navbar">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('img/logo/eduall.png') }}" alt="EduALL Junior" class="w-100 h-14">
@@ -17,32 +18,60 @@
             <ul
                 class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white/0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                    <a href="#"
-                        class="block py-2 px-3 text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue"
-                        aria-current="page">
+
+                    <a href="{{ route('home') }}"
+                        class="block py-2 px-3  {{ Route::currentRouteName() == 'home' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         Home
-                        <div class="md:flex justify-center mt-2 hidden">
-                            <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
-                        </div>
+                        @if (Route::currentRouteName() == 'home')
+                            <div class="md:flex justify-center mt-2 hidden">
+                                <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
+                            </div>
+                        @endif
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('about-us') }}"
+                        class="block py-2 px-3  {{ Route::currentRouteName() == 'about-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
+                        About Us
+                        @if (Route::currentRouteName() == 'about-us')
+                            <div class="md:flex justify-center mt-2 hidden">
+                                <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
+                            </div>
+                        @endif
                     </a>
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
-                        Us</a>
+                        class="block py-2 px-3  {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
+                        Programs
+                        @if (Route::currentRouteName() == 'programs')
+                            <div class="md:flex justify-center mt-2 hidden">
+                                <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
+                            </div>
+                        @endif
+                    </a>
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Programs</a>
+                        class="block py-2 px-3  {{ Route::currentRouteName() == 'blogs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
+                        Blogs
+                        @if (Route::currentRouteName() == 'blogs')
+                            <div class="md:flex justify-center mt-2 hidden">
+                                <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
+                            </div>
+                        @endif
+                    </a>
                 </li>
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
-                        Us</a>
+                        class="block py-2 px-3  {{ Route::currentRouteName() == 'contact-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
+                        Contact Us
+                        @if (Route::currentRouteName() == 'contact-us')
+                            <div class="md:flex justify-center mt-2 hidden">
+                                <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
+                            </div>
+                        @endif
+                    </a>
                 </li>
                 <li>
                     <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12">
