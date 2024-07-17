@@ -38,14 +38,14 @@
     </section>
 
     {{-- Our Methodology and Pedagogy  --}}
-    <section class="w-100 bg-blue py-[80px] relative z-10">
+    <section class="w-100 bg-blue md:py-[80px] py-10 relative z-10">
         <div class="flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[1%] md:block hidden">
                 <img src="{{ asset('img/about/OurMethodology.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 <div class="mb-10">
-                    <h3 class="font-bold text-4xl mb-10">
+                    <h3 class="font-bold md:text-4xl text-2xl mb-10">
                         Our <span class="text-yellowLight underline">Methodology</span>
                         and
                         <span class="text-yellowLight underline">Pedagogy</span>
@@ -58,11 +58,9 @@
 
                     <ol class="text-lg mt-6">
                         <li class="mb-3">
-                            <div class="flex flex-nowrap">
-                                <div
-                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
-                                    <span class="fa-solid fa-1 "></span>
-                                </div>
+                            <div class="flex items-start">
+                                <img src="{{ asset('img/about/element/Point.png') }}" alt=""
+                                class="w-4 h-4 me-3 mt-2">
                                 <div class="w-full ps-3">
                                     We develop our program by involving international and local educators, psychologists,
                                     industry experts, parents, and kids to ensure it is high-quality, relevant to today's
@@ -73,11 +71,9 @@
                             </div>
                         </li>
                         <li class="mb-3">
-                            <div class="flex flex-nowrap">
-                                <div
-                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
-                                    <span class="fa-solid fa-2"></span>
-                                </div>
+                            <div class="flex items-start">
+                                <img src="{{ asset('img/about/element/Point.png') }}" alt=""
+                                class="w-4 h-4 me-3 mt-2">
                                 <div class="w-full ps-3">
                                     We build confidence in our students through collaborative work, fostering positive
                                     learning environment, and encouraging mutual feedback.
@@ -99,7 +95,7 @@
         <div class="main-container">
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
                 <div class="w-full px-2 mb-3 mt-5 text-center">
-                    <h2 class="font-extrabold text-4xl mb-10">
+                    <h2 class="font-extrabold md:text-4xl text-2xl mb-10">
                         <span class="text-red underline">
                             CREST Award
                         </span>
@@ -129,18 +125,18 @@
     {{-- Programs Co-Developers  --}}
     <section class="w-100 bg-red text-white relative">
         <img src="{{ asset('img/about/element/OurPeople.png') }}" class="md:w-[300px] w-[80px] absolute top-0 right-0">
-        <div class="main-container py-[100px]">
+        <div class="main-container md:py-[100px] py-[50px]">
             <div class="text-start mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                     OUR PEOPLE
                 </div>
-                <h2 class="font-bold text-4xl my-5 mb-10">
+                <h2 class="font-bold md:text-4xl text-2xl my-5 mb-10">
                     Program
                     <span class="text-yellowLight underline">Co-developers</span>
                 </h2>
             </div>
-            <div class="flex flex-wrap justify-center">
-                <div class="md:w-1/2 w-full  relative md:pe-3 pe-0">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-10 justify-center">
+                <div class="relative">
                     <div class="h-[350px] relative overflow-hidden">
                         <img src="https://placehold.co/800x300" alt=""
                             class="relative z-[0] w-full h-[350px] object-cover rounded-xl">
@@ -152,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-1/2 w-full relative md:ps-3 ps-0">
+                <div class="relative">
                     <div class="h-[350px] relative overflow-hidden">
                         <img src="https://placehold.co/800x300" alt=""
                             class="relative z-[0] w-full h-[350px] object-cover rounded-xl">
@@ -172,15 +168,15 @@
     <section class="w-100 bg-secondary relative">
         <img src="{{ asset('img/about/element/Facilities.png') }}" class="md:w-[200px] w-[80px] absolute top-0 right-0">
 
-        <div class="main-container py-[100px]">
+        <div class="main-container md:py-[100px] py-[50px]">
             <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                 FACILITIES
             </div>
-            <h2 class="font-bold text-4xl mt-4 mb-7">
+            <h2 class="font-bold md:text-4xl text-2xl mt-4 mb-7">
                 <span class="text-blue">EduALL Junior</span> Playful Learning Center
             </h2>
-            <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-2/4 md:pe-10 pe-0 md:px-0 px-6 mb-4">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+                <div class="relative">
                     <section id="main-slider" class="splide"
                         aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
                         <div class="splide__track">
@@ -216,17 +212,37 @@
                     </section>
 
                 </div>
-                <div class="w-full md:w-2/4 md:ps-10 ps-0 md:px-0 px-6">
+                <div class="relative">
                     <p class="text-lg my-4">
                         Our brand new center provides a warm and welcoming atmosphere where kids feel comfortable and
                         motivated to learn, equipped with:
                     </p>
                     <ol class="text-lg">
-                        <li class="my-3">Makerspace</li>
-                        <li class="my-3">Classroom</li>
-                        <li class="my-3">Mini Library</li>
-                        <li class="my-3">Public Speaking Corner</li>
-                        <li class="my-3">Multi Function Area</li>
+                        <li class="my-3 flex items-center">
+                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                                class="w-4 h-4 me-3">
+                            Makerspace
+                        </li>
+                        <li class="my-3 flex items-center">
+                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                                class="w-4 h-4 me-3">
+                            Classroom
+                        </li>
+                        <li class="my-3 flex items-center">
+                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                                class="w-4 h-4 me-3">
+                            Mini Library
+                        </li>
+                        <li class="my-3 flex items-center">
+                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                                class="w-4 h-4 me-3">
+                            Public Speaking Corner
+                        </li>
+                        <li class="my-3 flex items-center">
+                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                                class="w-4 h-4 me-3">
+                            Multi Function Area
+                        </li>
                     </ol>
 
                     <p class="text-lg my-4">
@@ -255,7 +271,7 @@
 
         var thumbnails = new Splide('#thumbnail-slider', {
             rewind: true,
-            fixedWidth: '30%',
+            fixedWidth: '35%',
             fixedHeight: 100,
             isNavigation: true,
             gap: 10,
@@ -269,8 +285,8 @@
             },
             breakpoints: {
                 640: {
-                    fixedWidth: 66,
-                    fixedHeight: 38,
+                    fixedWidth: 150,
+                    fixedHeight: 75,
                 },
             },
         });
