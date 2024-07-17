@@ -5,7 +5,7 @@
 @section('content')
     {{-- Banner & Description --}}
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
-        <img src="{{asset('img/home/element/Jumbotron.png')}}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
+        <img src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
         <div class="splide" id="banners">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -70,7 +70,8 @@
 
     {{-- Why EduALL Junior  --}}
     <section class="w-100 bg-blue py-[100px] relative z-10">
-        <img src="{{asset('img/home/element/Values.png')}}" class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
+        <img src="{{ asset('img/home/element/Values.png') }}"
+            class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
             <h2 class="text-3xl font-bold text-white mb-[50px]">
                 Why <span class="text-yellowLight underline">EduALL Junior</span>?
@@ -148,7 +149,8 @@
 
     {{-- How it Works  --}}
     <section class="w-100 bg-yellow/20 relative z-5">
-        <img src="{{asset('img/home/element/LearningJourney.png')}}" class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
+        <img src="{{ asset('img/home/element/LearningJourney.png') }}"
+            class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
         <div class="main-container">
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
                 <div class="w-full md:w-2/4 px-2 mb-3 mt-5">
@@ -224,8 +226,8 @@
 
     {{-- Programs  --}}
     <section class="w-100 bg-red text-white relative">
-        <img src="{{asset('img/home/element/Programs1.png')}}" class="md:w-[150px] w-[80px] absolute top-10 left-0">
-        <img src="{{asset('img/home/element/Programs2.png')}}" class="md:w-[150px] w-[80px] absolute top-10 right-0">
+        <img src="{{ asset('img/home/element/Programs1.png') }}" class="md:w-[150px] w-[80px] absolute top-10 left-0">
+        <img src="{{ asset('img/home/element/Programs2.png') }}" class="md:w-[150px] w-[80px] absolute top-10 right-0">
         <div class="main-container py-[100px]">
             <div class="text-center mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
@@ -239,12 +241,15 @@
                 <div class="w-1/2  md:w-1/5 relative md:-mx-[10px] mx-0">
                     <img src="{{ asset('img/home/Programs_Science.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Science</button>
+                    <button
+                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Science</button>
                 </div>
                 <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
                     <img src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Coding &
+                    <button
+                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Creative
+                        Coding &
                         Robotics</button>
                 </div>
                 <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
@@ -256,12 +261,15 @@
                 <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
                     <img src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Visual Arts</button>
+                    <button
+                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Visual
+                        Arts</button>
                 </div>
                 <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
                     <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Communications</button>
+                    <button
+                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Communications</button>
                 </div>
             </div>
         </div>
