@@ -16,11 +16,11 @@
             </ul>
         </div>
         <div class="flex gap-2 mt-10">
-            <button class="bg-purple/30 hover:bg-purple/50 text-purple w-[30px] h-[30px] rounded-full"
+            <button class="bg-blue/30 hover:bg-blue/50 text-blue w-[30px] h-[30px] rounded-full"
                 onclick="arrowSplide('prev')">
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="bg-purple/30  hover:bg-purple/50  text-purple w-[30px] h-[30px] rounded-full"
+            <button class="bg-blue/30  hover:bg-blue/50  text-blue w-[30px] h-[30px] rounded-full"
                 onclick="arrowSplide('next')">
                 <i class="fas fa-chevron-right"></i>
             </button>

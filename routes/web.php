@@ -29,3 +29,7 @@ Route::get('/programs', function () {
 Route::get('/programs/science', function () {
     return view('page.science');
 });
+
+Route::get('/programs/creative-communication', function () {
+    return view('page.creative-communication');
+});

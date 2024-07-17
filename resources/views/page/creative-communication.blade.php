@@ -4,11 +4,14 @@
 
 @section('content')
     {{-- Banner & Description --}}
-    <section class="w-100 bg-orangeBg pt-[100px] relative pb-36">
+    <section class="w-100 bg-purpleBg pt-[100px] relative pb-36">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-0">
+        <img src="{{ asset('img/creative-communications/accent/Why_1.png') }}"
+            class="md:w-[150px] w-[80px] absolute top-60 left-0 z-10">
+        <img src="{{ asset('img/creative-communications/accent/Why_2.png') }}"
+            class="md:w-[200px] w-[70px] absolute top-60 right-0 z-10">
 
-        <div class="main-container  z-10">
+        <div class="main-container z-10">
             {{-- Breadcrumb --}}
             <nav class="flex py-8" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
@@ -22,7 +25,7 @@
                         <div class="flex items-center">
                             <span class="mx-2 text-lg text-gray">/</span>
                             <span class="ms-1 text-lg font-medium text-gray-500 md:ms-2 dark:text-gray-400">
-                                Science
+                                Creative Communications
                             </span>
                         </div>
                     </li>
@@ -32,25 +35,24 @@
 
         <div class="main-container relative">
             <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
-                <h1 class="text-5xl font-bold text-center text-orange">
-                    Science
+                <h1 class="text-4xl md:text-5xl font-bold text-center text-purple">
+                    Creative Communications
                 </h1>
                 <p class="text-lg text-dark text-center leading-8">
-                    A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and
-                    critical thinking in young minds with exciting experiments and discoveries, empowering them to become
-                    inventors and innovators.
+                    Equip young learners with essential skills for effective expression, active listening, and constructive
+                    interaction in various contexts, building their confidence to socialize and express ideas.
                 </p>
             </div>
         </div>
 
 
-        <div class="flex w-full justify-end mt-8 md:mt-24 main-container">
-            <div class="w-full md:w-3/5 flex flex-col items-start md:pl-12">
-                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
+        <div class="flex w-full justify-start mt-8 md:mt-24 main-container">
+            <div class="w-full md:w-3/5 flex flex-col items-start md:pr-12">
+                <div class="bg-purple py-1 px-4 inline rounded-full text-white">
                     WHY
                 </div>
-                <h2 class="text-3xl font-bold text-dark mt-4">
-                    Why learn Science?
+                <h2 class="text-2xl font-bold text-dark mt-4">
+                    Creative Communication fosters language proficiency & adaptability
                 </h2>
                 <p class="font-light text-dark mt-4">
                     Recent studies highlight the benefit of integrating environmental education into a science program,
@@ -64,30 +66,56 @@
             </div>
         </div>
 
-        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[55%] top-full md:block hidden">
-            <img src="{{ asset('img/science/image/Why.png') }}" alt="" class="w-full object-cover">
+        <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:top-[45%] top-full md:block hidden z-0">
+            <img src="{{ asset('img/creative-communications/image/Communications_Why.png') }}" alt=""
+                class="w-full object-cover">
         </div>
     </section>
 
     {{-- What your kids will learn --}}
-    <section class="w-100 bg-orange pt-20 pb-12 md:pt-48 md:pb-20 relative -z-10">
+    <section class="w-100 bg-purple pt-20 pb-12 md:pt-48 md:pb-20 relative -z-10">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/WhatYourKidsWillLearn_1.png') }}" class="md:w-[500px] w-[200px] absolute top-0 right-0">
-        <img src="{{ asset('img/science/accent/WhatYourKidsWillLearn_2.png') }}" class="md:w-[200px] w-[100px] absolute top-32 md:top-60 left-0">
-        <img src="{{ asset('img/science/accent/WhatYourKidsWillLearn_3.png') }}" class="md:w-[200px] w-[120px] absolute bottom-12 right-0">
+        <img src="{{ asset('img/creative-communications/accent/WhatYourKidsWillLearn.png') }}"
+            class="md:w-[250px] w-[80px] absolute bottom-0 right-0">
 
-        <div class="flex justify-center main-container mb-12">
+        <div class="flex flex-col justify-center items-start main-container mb-12 relative">
             <h2 class="text-3xl font-bold text-white text-center ">
                 What your kids <span class="text-yellowLight underline">will learn</span>
             </h2>
+
+            <p class="font-light text-base text-center md:text-left text-white mt-4 leading-6 md:w-8/12">
+                Beyond learning English as a subject in schools, EduALL Creative communication program is developed to
+                prepare your kids to be an active, creative and efficient communicator with the language knowledge and
+                skills they learn in schools and our center. The overarching aim to EduALL Creative Communication is to
+                develop effective and affective language use in the following areas:
+            </p>
+
+            <div class="flex justify-between items-center flex-wrap gap-6 mt-12">
+                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
+                    <img src="https://placehold.co/120" alt=""
+                        class="aspect-square object-cover w-[110px] h-[110px]">
+                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Podcasting</span>
+                </div>
+                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
+                    <img src="https://placehold.co/120" alt=""
+                        class="aspect-square object-cover w-[110px] h-[110px]">
+                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Broadcasting</span>
+                </div>
+                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
+                    <img src="https://placehold.co/120" alt=""
+                        class="aspect-square object-cover w-[110px] h-[110px]">
+                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Public
+                        Speaking</span>
+                </div>
+                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
+                    <img src="https://placehold.co/120" alt=""
+                        class="aspect-square object-cover w-[110px] h-[110px]">
+                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Content Writing</span>
+                </div>
+            </div>
         </div>
 
-        <div class="relative py-8 md:py-20">
-            <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/science/image/WhatYourKidsWillLearn_2.png') }}" alt=""
-                    class="w-full h-full object-contain">
-            </div>
-
+        {{-- <div class="relative py-8 md:py-20">
             <div class="mb-10 main-container text-white w-full flex flex-col items-start">
                 <div class="w-full md:w-1/2">
                     <div class="">
@@ -97,49 +125,17 @@
                             </h3>
                         </div>
                     </div>
-                    <p class="font-light text-base text-white mt-4 leading-6">
-                        EduALL Junior's Science Program provides an exciting after-school opportunity designed for kids aged
-                        5-12. Through hands-on experiments like observing natural phenomena to creating simple chemical
-                        reactions, students will explore various scientific concepts. Moreover, interactive discussions on
-                        topics like ecosystems and physical sciences will foster curiosity and a profound understanding of
-                        foundational science principles.
-                    </p>
+
                 </div>
             </div>
-        </div>
-
-        <div class="relative py-8 md:py-20">
-            <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/science/image/WhatYourKidsWillLearn_1.png') }}" alt=""
-                    class="w-full h-full object-contain">
-            </div>
-
-            <div class="mb-10 main-container text-white w-full flex flex-col items-end">
-                <div class="w-full md:w-1/2">
-                    <div class="">
-                        <div class="w-full">
-                            <h3 class="font-bold text-2xl">
-                                Progressive Curriculum with Real-World Application
-                            </h3>
-                        </div>
-                    </div>
-                    <p class="font-light text-base text-white mt-4 leading-6">
-                        Structured into age-appropriate levels, each session builds upon kids' knowledge progressively. With
-                        a focus on real-world observations and applications, our program integrates classroom learning with
-                        practical experiences that are authentic and relevant such as experimenting with renewable energy
-                        sources and exploring environmental sciences. Through inquiry-based learning and interactive
-                        activities, kids not only grasp scientific concepts but also develop critical thinking,
-                        problem-solving, and collaboration skills essential for success in today's world.
-                    </p>
-                </div>
-            </div>
-        </div>
+        </div> --}}
     </section>
 
     {{-- Testimonial  --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Testimonials.png') }}" class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
+        <img src="{{ asset('img/science/accent/Testimonials.png') }}"
+            class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
@@ -162,11 +158,11 @@
     </section>
 
     {{-- Blog --}}
-    <section class="bg-orangeBg py-24">
+    <section class="bg-purpleBg py-24">
         <div class="main-container">
             <div class="flex flex-col md:flex-row justify-between items-center w-full py-8">
                 <h2 class="font-bold text-3xl my-2 md:my-0 text-center">
-                    Learn more about <span class="text-orange underline decoration-orangeLight">Science</span>
+                    Learn more about <span class="text-purple underline decoration-purple/50">Creative Communications</span>
                 </h2>
                 <div class="flex flex-row items-center mt-2 md:mt-0">
                     <a href=""
@@ -191,7 +187,7 @@
     </section>
 
     {{-- Schedule Form  --}}
-    <x-contact :color="'orange'" />
+    <x-contact :color="'purple'" />
 @endsection
 
 
