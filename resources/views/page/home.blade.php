@@ -52,7 +52,7 @@
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     KID'S FUTURE
                 </div>
-                <h2 class="font-bold text-3xl mt-3 mb-7">
+                <h2 class="font-bold md:text-3xl text-2xl mt-3 mb-7">
                     We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset
                 </h2>
                 <p class="text-lg">
@@ -73,7 +73,7 @@
         <img src="{{ asset('img/home/element/Values.png') }}"
             class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
-            <h2 class="text-4xl font-bold text-white mb-[50px]">
+            <h2 class="md:text-4xl text-2xl font-bold text-white mb-[50px]">
                 Why <span class="text-yellowLight underline">EduALL Junior</span>?
             </h2>
         </div>
@@ -87,7 +87,7 @@
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold md:text-2xl text-xl">
                                     Programs developed by <span class="text-yellowLight"> experts, research-informed,</span>
                                     and
                                     <span class="text-yellowLight">expert-approved</span>
@@ -108,7 +108,7 @@
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold md:text-2xl text-xl">
                                     <span class="text-yellowLight">Personalized student journey </span> by in-house
                                     psychologists & experts
                                 </h3>
@@ -127,7 +127,7 @@
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold md:text-2xl text-xl">
                                     Offering <span class="text-yellowLight"> holistic</span> & <span
                                         class="text-yellowLight">playful approach</span> for your kids education
                                 </h3>
@@ -157,7 +157,7 @@
                     <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                         HOW IT WORKS
                     </div>
-                    <h2 class="font-bold text-4xl my-5">
+                    <h2 class="font-bold md:text-4xl text-2xl my-5">
                         The <span class="text-yellow">learning journey</span> for your kid
                     </h2>
                     <p class="text-lg mb-5">
@@ -233,43 +233,43 @@
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                     PROGRAMS
                 </div>
-                <h2 class="font-bold text-4xl my-5 mb-10">
+                <h2 class="font-bold md:text-4xl text-2xl my-5 mb-10">
                     <span class="text-yellowLight underline">Expert-approved</span> programs for your kids
                 </h2>
             </div>
-            <div class="flex flex-wrap justify-center">
-                <div class="w-1/2  md:w-1/5 relative md:-mx-[10px] mx-0">
+            <div class="grid md:grid-cols-5 grid-cols-1 md:gap-10 gap-2 justify-center">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Science.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
                     <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Science</button>
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Science</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
                     <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Creative
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Creative
                         Coding &
                         Robotics</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Entrepreneurship.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
                     <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Entrepreneurship</button>
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Entrepreneurship</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
                     <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Visual
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Visual
                         Arts</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
                     <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Communications</button>
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Communications</button>
                 </div>
             </div>
         </div>
@@ -285,7 +285,7 @@
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     TESTIMONIALS
                 </div>
-                <h2 class="font-bold text-4xl my-5">
+                <h2 class="font-bold md:text-4xl text-2xl my-5">
                     What parents say <span class="text-blue">about us</span>
                 </h2>
 
@@ -303,7 +303,7 @@
                     <div class="bg-red py-1 px-4 inline rounded-full text-white">
                         OUR EVENTS
                     </div>
-                    <h2 class="font-bold text-4xl mt-5 sm:mb-4">
+                    <h2 class="font-bold md:text-4xl text-2xl mt-5 sm:mb-4">
                         Let's <span class="text-yellow">Collaborate!</span>
                     </h2>
                 </div>
