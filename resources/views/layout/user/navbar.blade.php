@@ -41,13 +41,19 @@
                     </a>
                 </li>
                 <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                    <a href="{{ route('programs') }}" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
                         class="flex items-center justify-between w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">Programs
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 1 4 4 4-4" />
-                        </svg></button>
+                        </svg></a>
+
+                    @if (Route::currentRouteName() == 'programs')
+                        <div class="md:flex justify-center mt-2 hidden">
+                            <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
+                        </div>
+                    @endif
                     <!-- Dropdown menu -->
                     <div id="dropdownNavbar"
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
