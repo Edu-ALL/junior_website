@@ -32,7 +32,7 @@
 
         <div class="main-container relative">
             <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
-                <h1 class="text-5xl font-bold text-center text-orange">
+                <h1 class="text-4xl md:text-5xl font-bold text-center text-orange">
                     Science
                 </h1>
                 <p class="text-lg text-dark text-center leading-8">

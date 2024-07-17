@@ -33,3 +33,7 @@ Route::get('/programs/science', function () {
 Route::get('/programs/creative-communication', function () {
     return view('page.creative-communication');
 });
+
+Route::get('/programs/entrepreneurship', function () {
+    return view('page.entrepreneurship');
+});
