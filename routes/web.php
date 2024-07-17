@@ -1,5 +1,6 @@
 <?php
 
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('page.home');
-});
+})->name('home');
+
+Route::get('/about-us', function () {
+    return view('page.about-us');
+})->name('about-us');
+
+Route::get('/programs', function () {
+    return view('page.programs');
+})->name('programs');
 
 Route::get('/programs/science', function () {
     return view('page.science');

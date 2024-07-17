@@ -4,7 +4,8 @@
 
 @section('content')
     {{-- Banner & Description --}}
-    <section class="w-100 bg-secondary pt-[100px]">
+    <section class="w-100 bg-secondary pt-[100px] relative z-20">
+        <img src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
         <div class="splide" id="banners">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -46,12 +47,12 @@
                 </ul>
             </div>
         </div>
-        <div class="flex flex-nowrap mt-5 gap-5 md:py-[150px] py-[50px] relative overflow-hidden">
+        <div class="flex flex-nowrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
             <div class="w-full md:w-3/5 md:px-32 px-8">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     KID'S FUTURE
                 </div>
-                <h2 class="font-bold text-2xl my-3">
+                <h2 class="font-bold md:text-3xl text-2xl mt-3 mb-7">
                     We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset
                 </h2>
                 <p class="text-lg">
@@ -68,9 +69,11 @@
     </section>
 
     {{-- Why EduALL Junior  --}}
-    <section class="w-100 bg-blue py-[100px]">
+    <section class="w-100 bg-blue py-[100px] relative z-10">
+        <img src="{{ asset('img/home/element/Values.png') }}"
+            class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
-            <h2 class="text-3xl font-bold text-white mb-[50px]">
+            <h2 class="md:text-4xl text-2xl font-bold text-white mb-[50px]">
                 Why <span class="text-yellowLight underline">EduALL Junior</span>?
             </h2>
         </div>
@@ -84,7 +87,7 @@
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold md:text-2xl text-xl">
                                     Programs developed by <span class="text-yellowLight"> experts, research-informed,</span>
                                     and
                                     <span class="text-yellowLight">expert-approved</span>
@@ -105,7 +108,7 @@
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold md:text-2xl text-xl">
                                     <span class="text-yellowLight">Personalized student journey </span> by in-house
                                     psychologists & experts
                                 </h3>
@@ -124,7 +127,7 @@
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
+                                <h3 class="font-bold md:text-2xl text-xl">
                                     Offering <span class="text-yellowLight"> holistic</span> & <span
                                         class="text-yellowLight">playful approach</span> for your kids education
                                 </h3>
@@ -145,14 +148,16 @@
     </section>
 
     {{-- How it Works  --}}
-    <section class="w-100 bg-yellow/20">
+    <section class="w-100 bg-yellow/20 relative z-5">
+        <img src="{{ asset('img/home/element/LearningJourney.png') }}"
+            class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
         <div class="main-container">
-            <div class="flex flex-wrap items-center md:py-[150px] py-[50px]">
+            <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
                 <div class="w-full md:w-2/4 px-2 mb-3 mt-5">
                     <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                         HOW IT WORKS
                     </div>
-                    <h2 class="font-bold text-3xl my-5">
+                    <h2 class="font-bold md:text-4xl text-2xl my-5">
                         The <span class="text-yellow">learning journey</span> for your kid
                     </h2>
                     <p class="text-lg mb-5">
@@ -220,43 +225,51 @@
     </section>
 
     {{-- Programs  --}}
-    <section class="w-100 bg-red text-white">
+    <section class="w-100 bg-red text-white relative">
+        <img src="{{ asset('img/home/element/Programs1.png') }}" class="md:w-[150px] w-[80px] absolute top-10 left-0">
+        <img src="{{ asset('img/home/element/Programs2.png') }}" class="md:w-[150px] w-[80px] absolute top-10 right-0">
         <div class="main-container py-[100px]">
             <div class="text-center mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                     PROGRAMS
                 </div>
-                <h2 class="font-bold text-3xl my-5 mb-10">
+                <h2 class="font-bold md:text-4xl text-2xl my-5 mb-10">
                     <span class="text-yellowLight underline">Expert-approved</span> programs for your kids
                 </h2>
             </div>
-            <div class="flex flex-wrap justify-center">
-                <div class="w-1/2  md:w-1/5 relative -mx-[10px]">
+            <div class="grid md:grid-cols-5 grid-cols-1 md:gap-10 gap-2 justify-center">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Science.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Science</button>
+                    <button
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Science</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Coding &
+                    <button
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Creative
+                        Coding &
                         Robotics</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Entrepreneurship.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
                     <button
-                        class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Entrepreneurship</button>
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Entrepreneurship</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Visual Arts</button>
+                    <button
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Visual
+                        Arts</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative -mx-[10px]">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[2%] z-[1] w-[80%]">Communications</button>
+                    <button
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%]">Communications</button>
                 </div>
             </div>
         </div>
@@ -272,7 +285,7 @@
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     TESTIMONIALS
                 </div>
-                <h2 class="font-bold text-3xl my-5">
+                <h2 class="font-bold md:text-4xl text-2xl my-5">
                     What parents say <span class="text-blue">about us</span>
                 </h2>
 
@@ -290,7 +303,7 @@
                     <div class="bg-red py-1 px-4 inline rounded-full text-white">
                         OUR EVENTS
                     </div>
-                    <h2 class="font-bold text-3xl mt-5 sm:mb-4">
+                    <h2 class="font-bold md:text-4xl text-2xl mt-5 sm:mb-4">
                         Let's <span class="text-yellow">Collaborate!</span>
                     </h2>
                 </div>
