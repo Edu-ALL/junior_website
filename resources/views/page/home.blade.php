@@ -47,12 +47,12 @@
                 </ul>
             </div>
         </div>
-        <div class="flex flex-nowrap mt-5 gap-5 md:py-[150px] py-[50px] relative overflow-hidden">
+        <div class="flex flex-nowrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
             <div class="w-full md:w-3/5 md:px-32 px-8">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     KID'S FUTURE
                 </div>
-                <h2 class="font-bold text-2xl my-3">
+                <h2 class="font-bold text-3xl mt-3 mb-7">
                     We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset
                 </h2>
                 <p class="text-lg">
@@ -73,7 +73,7 @@
         <img src="{{ asset('img/home/element/Values.png') }}"
             class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
-            <h2 class="text-3xl font-bold text-white mb-[50px]">
+            <h2 class="text-4xl font-bold text-white mb-[50px]">
                 Why <span class="text-yellowLight underline">EduALL Junior</span>?
             </h2>
         </div>
@@ -157,7 +157,7 @@
                     <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                         HOW IT WORKS
                     </div>
-                    <h2 class="font-bold text-3xl my-5">
+                    <h2 class="font-bold text-4xl my-5">
                         The <span class="text-yellow">learning journey</span> for your kid
                     </h2>
                     <p class="text-lg mb-5">
@@ -233,7 +233,7 @@
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                     PROGRAMS
                 </div>
-                <h2 class="font-bold text-3xl my-5 mb-10">
+                <h2 class="font-bold text-4xl my-5 mb-10">
                     <span class="text-yellowLight underline">Expert-approved</span> programs for your kids
                 </h2>
             </div>
@@ -285,7 +285,7 @@
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     TESTIMONIALS
                 </div>
-                <h2 class="font-bold text-3xl my-5">
+                <h2 class="font-bold text-4xl my-5">
                     What parents say <span class="text-blue">about us</span>
                 </h2>
 
@@ -303,7 +303,7 @@
                     <div class="bg-red py-1 px-4 inline rounded-full text-white">
                         OUR EVENTS
                     </div>
-                    <h2 class="font-bold text-3xl mt-5 sm:mb-4">
+                    <h2 class="font-bold text-4xl mt-5 sm:mb-4">
                         Let's <span class="text-yellow">Collaborate!</span>
                     </h2>
                 </div>
