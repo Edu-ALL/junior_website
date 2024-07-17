@@ -51,9 +51,9 @@
                 <h2 class="text-3xl font-bold text-dark mt-4">
                     Why learn Entrepreneurship?
                 </h2>
-                <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-6">
+                <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-10">
                     <div
-                        class="absolute px-4 py-1 text-base bg-green text-white rounded-full font-bold flex items-center gap-2">
+                        class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-green text-white rounded-full font-bold flex items-center gap-2">
                         <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                         Future-Proofing Skills
                     </div>
@@ -65,9 +65,9 @@
                         Obschonka et al., 2012).
                     </p>
                 </div>
-                <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-6">
+                <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-10">
                     <div
-                        class="absolute px-4 py-1 text-base bg-green text-white rounded-full font-bold flex items-center gap-2">
+                        class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-green text-white rounded-full font-bold flex items-center gap-2">
                         <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                         Early Development of Entrepreneurial Mindset
                     </div>

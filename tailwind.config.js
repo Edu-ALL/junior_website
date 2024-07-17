@@ -23,6 +23,8 @@ module.exports = {
           yellowLight: '#FFF4C3',
           green: "#31C28E",
           greenBg: "#f5fffb",
+          pink: "#F66C6C",
+          pinkBg: "#fff9f9",
           dark: "#2C2C2C",
           blue: "#504FDC",
           orange: "#FE9601",

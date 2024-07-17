@@ -37,3 +37,7 @@ Route::get('/programs/creative-communication', function () {
 Route::get('/programs/entrepreneurship', function () {
     return view('page.entrepreneurship');
 });
+
+Route::get('/programs/coding-robotics', function () {
+    return view('page.coding-robotics');
+});
