@@ -17,11 +17,10 @@
                                         class="md:w-[200px] w-[150px] flex justify-center">
                                 </div>
                                 <h1 class="font-bold md:text-[45px] text-[1.5em] font-primary leading-[1.4]">
-                                    One-stop solution to unlock <br>
-                                    your <span class="text-blue/60">kid's potential</span>
+                                    {!! __('home.banner_title') !!}
                                 </h1>
                                 <p class="mt-10 md:text-[26px] text-lg leading-[1.25]">
-                                    Playful Learning Center for Kid’s Interests & Skills Exploration
+                                    {!! __('home.banner_content') !!}
                                 </p>
                             </div>
                             <div class="flex flex-nowrap mt-5 md:gap-7 gap-1">
@@ -50,16 +49,13 @@
         <div class="flex flex-nowrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
             <div class="w-full md:w-3/5 md:px-32 px-8">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
-                    KID'S FUTURE
+                    {!! __('home.future_badge') !!}
                 </div>
                 <h2 class="font-bold text-3xl mt-3 mb-7">
-                    We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset
+                    {!! __('home.future_title') !!}
                 </h2>
                 <p class="text-lg">
-                    At EduALL Junior, we empower kids aged 5-12 to become future change-makers and leaders through our
-                    programs focused on developing an entrepreneurial mindset. Our courses are crafted to ignite
-                    curiosity, nurture creativity, and cultivate essential skills—all while ensuring a fun learning
-                    experience.
+                    {!! __('home.future_content') !!}
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:block hidden">
@@ -73,9 +69,15 @@
         <img src="{{ asset('img/home/element/Values.png') }}"
             class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
-            <h2 class="text-4xl font-bold text-white mb-[50px]">
-                Why <span class="text-yellowLight underline">EduALL Junior</span>?
-            </h2>
+            <div class="text-center">
+                <div class="bg-red py-1 px-4 inline rounded-full text-white mb-10">
+                    {!! __('home.why_eduall_badge') !!}
+                </div> 
+    
+                <h2 class="text-4xl font-bold text-white mt-5 mb-[50px]">
+                    {!! __('home.why_eduall_title') !!}
+                </h2>
+            </div>
         </div>
 
         <div class="flex justify-end mt-10">
@@ -83,28 +85,25 @@
                 <img src="{{ asset('img/home/values.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
-                <div class="mb-10">
-                    <div class="flex">
-                        <div class="w-full md:w-6/7">
-                            <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
-                                    Programs developed by <span class="text-yellowLight"> experts, research-informed,</span>
-                                    and
-                                    <span class="text-yellowLight">expert-approved</span>
-                                </h3>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
+                @foreach (__('home.why_eduall_content') as $item)
+                    <div class="mb-10">
+                        <div class="flex">
+                            <div class="w-full md:w-6/7">
+                                <div class="flex flex-nowrap justify-between">
+                                    <h3 class="font-bold text-2xl">
+                                        {!! $item['subtitle'] !!}
+                                    </h3>
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
+                                </div>
                             </div>
                         </div>
+                        <p class="font-light text-lg mt-3">
+                            {!! $item['content'] !!}
+                        </p>
                     </div>
-                    <p class="font-light text-lg mt-3">
-                        We understand that raising kids requires diverse perspectives and opinions. That's why we
-                        collaborate with international and local educators, industry professionals, parents, and tested the
-                        courses with kids to ensure our curriculum and lessons are relevant to today's world while being
-                        relatable and fun for kids.
-                    </p>
-                </div>
+                @endforeach
 
-                <div class="mb-10">
+                {{-- <div class="mb-10">
                     <div class="flex">
                         <div class="w-full md:w-6/7">
                             <div class="flex flex-nowrap justify-between">
@@ -142,7 +141,7 @@
                         developmental stages, children grow holistically, optimizing their cognitive, emotional, and social
                         development.
                     </p>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -231,10 +230,10 @@
         <div class="main-container py-[100px]">
             <div class="text-center mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
-                    PROGRAMS
+                    {!! __('home.program_badge') !!}
                 </div>
                 <h2 class="font-bold text-4xl my-5 mb-10">
-                    <span class="text-yellowLight underline">Expert-approved</span> programs for your kids
+                    {!! __('home.program_title') !!}
                 </h2>
             </div>
             <div class="flex flex-wrap justify-center">
@@ -283,10 +282,10 @@
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
-                    TESTIMONIALS
+                    {!! __('home.testimonial_badge') !!}
                 </div>
                 <h2 class="font-bold text-4xl my-5">
-                    What parents say <span class="text-blue">about us</span>
+                    {!! __('home.testimonial_title') !!}
                 </h2>
 
                 {{-- Testimonial Component  --}}
@@ -301,16 +300,15 @@
             <div class="flex flex-wrap items-center">
                 <div class="w-full md:w-2/5">
                     <div class="bg-red py-1 px-4 inline rounded-full text-white">
-                        OUR EVENTS
+                        {!! __('home.event_badge') !!}
                     </div>
                     <h2 class="font-bold text-4xl mt-5 sm:mb-4">
-                        Let's <span class="text-yellow">Collaborate!</span>
+                        {!! __('home.event_title') !!}
                     </h2>
                 </div>
                 <div class="w-full md:w-3/5">
                     <p class="font-light text-lg">
-                        Book our exciting and engaging class for pop-up events or birthdays at your venue. For further
-                        information, please contact us.
+                        {!! __('home.event_content') !!}
                     </p>
                     <div class="flex flex-wrap mt-3 font-light text-lg">
                         <span class="p-2">
