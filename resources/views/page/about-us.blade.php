@@ -1,6 +1,6 @@
 @extends('layout.user.main')
 
-@section('title', 'EduALL Junior')
+@section('title', 'About Us | EduALL Junior')
 
 @section('content')
     {{-- WHO WE ARE --}}

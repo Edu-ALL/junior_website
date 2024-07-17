@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/about-us', function () {
     return view('page.about-us');
 })->name('about-us');
+
+Route::get('/programs', function () {
+    return view('page.programs');
+})->name('programs');
