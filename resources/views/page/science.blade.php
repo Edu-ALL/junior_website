@@ -4,7 +4,10 @@
 
 @section('content')
     {{-- Banner & Description --}}
-    <section class="w-100 bg-orangeBg pt-[100px] pb-36">
+    <section class="w-100 bg-orangeBg pt-[100px] relative pb-36">
+        {{-- Accent --}}
+        <img src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0">
+
         <div class="main-container">
             {{-- Breadcrumb --}}
             <nav class="flex py-8" aria-label="Breadcrumb">
@@ -28,11 +31,11 @@
         </div>
 
         <div class="main-container">
-            <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
+            <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
                 <h1 class="text-5xl font-bold text-center text-orange">
                     Science
                 </h1>
-                <p class="text-xl text-dark text-center leading-8">
+                <p class="text-lg text-dark text-center leading-8">
                     A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and
                     critical thinking in young minds with exciting experiments and discoveries, empowering them to become
                     inventors and innovators.
@@ -61,22 +64,28 @@
             </div>
         </div>
 
-        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-1/2 top-full md:block hidden">
-            <img src="https://placehold.co/800x900" alt="" class="w-full object-cover">
+        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[55%] top-full md:block hidden">
+            <img src="{{ asset('img/science/image/Why.png') }}" alt="" class="w-full object-cover">
         </div>
     </section>
 
     {{-- What your kids will learn --}}
-    <section class="w-100 bg-orange py-48">
-        <div class="flex justify-center main-container">
+    <section class="w-100 bg-orange pt-20 pb-12 md:pt-48 md:pb-20 relative -z-10">
+        {{-- Accent --}}
+        <img src="{{ asset('img/science/accent/WhatYourKidsWillLearn_1.png') }}" class="md:w-[500px] w-[80px] absolute top-0 right-0">
+        <img src="{{ asset('img/science/accent/WhatYourKidsWillLearn_2.png') }}" class="md:w-[200px] w-[80px] absolute top-60 left-0">
+        <img src="{{ asset('img/science/accent/WhatYourKidsWillLearn_3.png') }}" class="md:w-[200px] w-[80px] absolute bottom-12 right-0">
+
+        <div class="flex justify-center main-container mb-12">
             <h2 class="text-3xl font-bold text-white text-center ">
                 What your kids <span class="text-yellowLight underline">will learn</span>
             </h2>
         </div>
 
-        <div class="relative py-36">
+        <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img src="https://placehold.co/800x500" alt="" class="w-full h-full">
+                <img src="{{ asset('img/science/image/WhatYourKidsWillLearn_2.png') }}" alt=""
+                    class="w-full h-full object-contain">
             </div>
 
             <div class="mb-10 main-container text-white w-full flex flex-col items-start">
@@ -99,9 +108,10 @@
             </div>
         </div>
 
-        <div class="relative py-36">
+        <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img src="https://placehold.co/800x500" alt="" class="w-full h-full">
+                <img src="{{ asset('img/science/image/WhatYourKidsWillLearn_1.png') }}" alt=""
+                    class="w-full h-full object-contain">
             </div>
 
             <div class="mb-10 main-container text-white w-full flex flex-col items-end">
@@ -127,10 +137,13 @@
     </section>
 
     {{-- Testimonial  --}}
-    <section class="w-full bg-secondary pb-24 mb-0">
+    <section class="w-100 bg-secondary pb-24 relative">
+        {{-- Accent --}}
+        <img src="{{ asset('img/science/accent/Testimonials.png') }}" class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
+
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img src="https://placehold.co/600x600" alt="" class="w-full object-cover">
+                <img src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
@@ -141,39 +154,11 @@
                 </h2>
 
                 {{-- Testimonial Component  --}}
-                <x-testimonial :color="'primary'" />
+                <x-testimonial :color="'blue'" />
             </div>
         </div>
 
-        <div class="main-container mt-24">
-            <h2 class="font-bold text-3xl my-5 text-black">
-                Gallery
-            </h2>
-
-            <div class="splide mt-10" id="galery">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        @for ($i = 0; $i < 6; $i++)
-                            <li class="splide__slide">
-                                <div class="rounded-2xl overflow-hidden">
-                                    <img src="https://placehold.co/400x300" alt="">
-                                </div>
-                            </li>
-                        @endfor
-                    </ul>
-                </div>
-                <div class="flex gap-2 mt-10">
-                    <button class="bg-purple/30 hover:bg-purple/50 text-purple w-[30px] h-[30px] rounded-full"
-                        onclick="arrowSplide('prev')">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="bg-purple/30  hover:bg-purple/50  text-purple w-[30px] h-[30px] rounded-full"
-                        onclick="arrowSplide('next')">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+        <x-gallery />
     </section>
 
     {{-- Blog --}}
@@ -195,79 +180,12 @@
             </div>
 
             <div class="flex flex-wrap items-start justify-center gap-8">
-                <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
-                    <div class="rounded-2xl overflow-hidden my-4">
-                        <img src="https://placehold.co/400x300" alt="" class="w-full">
-                    </div>
-                    <div class="flex items-center justify-start gap-4 py-5">
-                        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
-                            SCIENCE
-                        </div>
-                        <div class="text-gray text-lg">24 July 2024</div>
-                    </div>
-                    <h3 class="font-bold text-3xl text-dark">
-                        Trials & Errors for Kids
-                    </h3>
-                    <p class="font-normal text-base text-dark py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat
-                        dignissim duis ultrices gravida pharetra rhoncus adipiscing.
-                    </p>
-
-                    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
-                        Read More
-                        <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
-                                class="fas fa-arrow-right text-base"></i></span>
-                    </a>
-                </div>
-                <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
-                    <div class="rounded-2xl overflow-hidden my-4">
-                        <img src="https://placehold.co/400x300" alt="" class="w-full">
-                    </div>
-                    <div class="flex items-center justify-start gap-4 py-5">
-                        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
-                            SCIENCE
-                        </div>
-                        <div class="text-gray text-lg">24 July 2024</div>
-                    </div>
-                    <h3 class="font-bold text-3xl text-dark">
-                        Trials & Errors for Kids
-                    </h3>
-                    <p class="font-normal text-base text-dark py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat
-                        dignissim duis ultrices gravida pharetra rhoncus adipiscing.
-                    </p>
-
-                    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
-                        Read More
-                        <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
-                                class="fas fa-arrow-right text-base"></i></span>
-                    </a>
-                </div>
-                <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
-                    <div class="rounded-2xl overflow-hidden my-4">
-                        <img src="https://placehold.co/400x300" alt="" class="w-full">
-                    </div>
-                    <div class="flex items-center justify-start gap-4 py-5">
-                        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
-                            SCIENCE
-                        </div>
-                        <div class="text-gray text-lg">24 July 2024</div>
-                    </div>
-                    <h3 class="font-bold text-3xl text-dark">
-                        Trials & Errors for Kids and Aduldts
-                    </h3>
-                    <p class="font-normal text-base text-dark py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat
-                        dignissim duis ultrices gravida pharetra rhoncus adipiscing.
-                    </p>
-
-                    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
-                        Read More
-                        <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
-                                class="fas fa-arrow-right text-base"></i></span>
-                    </a>
-                </div>
-                <!-- Repeat for each blog card -->
+                <x-blog-card :tag="'SCIENCE'" :title="'Trials & Errors for Kids'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
+                    :thumbnail_alt="'thumbnail alt'" />
+                <x-blog-card :tag="'SCIENCE'" :title="'Participating in Science Experiments for Educational'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
+                    :thumbnail_alt="'thumbnail alt'" />
+                <x-blog-card :tag="'SCIENCE'" :title="'Kids and Adult Science Curriculum'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
+                    :thumbnail_alt="'thumbnail alt'" />
             </div>
         </div>
     </section>
