@@ -8,7 +8,7 @@
                 <h2 class="font-bold text-3xl mt-5">
                     <span class="text-yellowLight underline">Schedule</span> your FREE trial now!
                 </h2>
-                <p class="text-lg font-light mt-5">
+                <p class="text-base font-light mt-5">
                     Experience our programs in one-week trial where your kid can explore the classes they are interested
                     in. Each kid will be observed by our mentors and psychologists, with a personalized assessment at
                     the end of the trial period.
