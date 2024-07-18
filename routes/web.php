@@ -22,7 +22,6 @@ Route::group(
     [
         'prefix' => '{locale}',
         'where' => ['locale' => '[a-zA-Z-]{2,5}'],
-
     ],
     function () {
         Route::get('/', function () {
@@ -36,5 +35,21 @@ Route::group(
         Route::get('/programs', function () {
             return view('page.programs');
         })->name('programs');
+      
+        Route::get('/programs/science', function () {
+          return view('page.science');
+        });
+
+        Route::get('/programs/creative-communication', function () {
+            return view('page.creative-communication');
+        });
+
+        Route::get('/programs/entrepreneurship', function () {
+            return view('page.entrepreneurship');
+        });
+
+        Route::get('/programs/coding-robotics', function () {
+            return view('page.coding-robotics');
+        });
     }
 );
