@@ -97,7 +97,7 @@
                             </h3>
                         </div>
                     </div>
-                    <p class="font-light text-base text-white mt-4 leading-6">
+                    <p class="font-light text-lg text-white mt-4 leading-6">
                         EduALL Junior's Science Program provides an exciting after-school opportunity designed for kids aged
                         5-12. Through hands-on experiments like observing natural phenomena to creating simple chemical
                         reactions, students will explore various scientific concepts. Moreover, interactive discussions on
@@ -123,7 +123,7 @@
                             </h3>
                         </div>
                     </div>
-                    <p class="font-light text-base text-white mt-4 leading-6">
+                    <p class="font-light text-lg text-white mt-4 leading-6">
                         Structured into age-appropriate levels, each session builds upon kids' knowledge progressively. With
                         a focus on real-world observations and applications, our program integrates classroom learning with
                         practical experiences that are authentic and relevant such as experimenting with renewable energy

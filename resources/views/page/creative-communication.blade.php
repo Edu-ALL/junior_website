@@ -83,7 +83,7 @@
                 What your kids <span class="text-yellowLight underline">will learn</span>
             </h2>
 
-            <p class="font-light text-base text-center md:text-left text-white mt-4 leading-6 md:w-8/12">
+            <p class="font-light text-lg text-center md:text-left text-white mt-4 leading-6 md:w-8/12">
                 Beyond learning English as a subject in schools, EduALL Creative communication program is developed to
                 prepare your kids to be an active, creative and efficient communicator with the language knowledge and
                 skills they learn in schools and our center. The overarching aim to EduALL Creative Communication is to

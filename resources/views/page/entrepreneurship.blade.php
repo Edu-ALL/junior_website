@@ -94,7 +94,7 @@
     <section class="w-100 bg-green pt-20 pb-12 md:pt-48 md:pb-20 relative -z-10">
 
         <div class="flex justify-center main-container mb-12">
-            <h2 class="text-3xl font-bold text-white text-center ">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center ">
                 Why Early Entrepreneurial Education <br> is Necessary?
             </h2>
         </div>
@@ -109,12 +109,12 @@
                 <div class="w-full md:w-1/2">
                     <div class="">
                         <div class="w-full">
-                            <h3 class="font-bold text-2xl">
+                            <h3 class="font-bold text-2xl md:text-3xl">
                                 Predictive of Future Behaviors
                             </h3>
                         </div>
                     </div>
-                    <p class="font-light text-base text-white mt-4 leading-6">
+                    <p class="font-light text-lg text-white mt-4 leading-6">
                         Introducing entrepreneurial education at a young age not only cultivates crucial skills but also
                         shapes students' intentions and aspirations for their future careers. Research demonstrates that
                         entrepreneurial intentions are powerful predictors of future behaviors, highlighting the importance
@@ -134,12 +134,12 @@
                 <div class="w-full md:w-1/2">
                     <div class="">
                         <div class="w-full">
-                            <h3 class="font-bold text-2xl">
+                            <h3 class="font-bold text-2xl md:text-3xl">
                                 Teachability of Entrepreneurial Mindset
                             </h3>
                         </div>
                     </div>
-                    <p class="font-light text-base text-white mt-4 leading-6">
+                    <p class="font-light text-lg text-white mt-4 leading-6">
                         Contrary to the belief that entrepreneurial mindset is innate, scholars argue that it can be learned
                         and taught. By integrating entrepreneurial education into primary and secondary school curricula,
                         kids can develop the skills and mindset necessary to navigate the complexities of the modern world
