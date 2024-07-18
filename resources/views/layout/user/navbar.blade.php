@@ -54,14 +54,14 @@
                         </button>
                     </div>
 
-                    @if (Request()->segment(2)=='programs')
+                    @if (Request()->segment(2) == 'programs')
                         <div class="md:flex justify-center mt-2 hidden">
                             <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
                         </div>
                     @endif
                     <!-- Dropdown menu -->
                     <div id="dropdownNavbar"
-                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             <li>
                                 <a href="{{ route('programs.science', ['locale' => app()->getLocale()]) }}"
@@ -77,7 +77,8 @@
                             </li>
                             <li>
                                 <a href="{{ route('programs.coding-robotics', ['locale' => app()->getLocale()]) }}"
-                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.coding-robotics' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative Coding
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.coding-robotics' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative
+                                    Coding
                                     & Robotics</a>
                             </li>
                             {{-- <li>
@@ -112,7 +113,9 @@
                 </li>
                 <li>
                     <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12">
-                        <input type="checkbox" value="" class="sr-only peer">
+                        <input type="checkbox" value="" class="sr-only peer"
+                            {{ app()->getLocale() == 'id' ? 'checked' : '' }}
+                            onchange="changeLang('{{ app()->getLocale() }}')">
                         <span
                             class="-me-[61px] z-[9999] text-[12px] font-extrabold peer-checked:text-blue text-dark dark:text-gray-300">ID</span>
                         <div
@@ -132,3 +135,17 @@
         </div>
     </div>
 </nav>
+
+@push('script')
+    <script>
+        function changeLang(lang) {
+            var locale = lang == 'en' ? 'id' : 'en'
+            var route_name = '{{ Route::currentRouteName() }}'
+            var segment2 = '{{ Request()->segment(2) ? Request()->segment(2)."/" : '' }}'
+            var segment3 = '{{ Request()->segment(3) ? Request()->segment(3)."/" : '' }}'
+
+            var url = '{{ url('') }}/' + locale + '/' + segment2 + segment3; // Constructing the URL with the updated locale
+            window.location.href = url;
+        }
+    </script>
+@endpush
