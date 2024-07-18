@@ -137,25 +137,25 @@
             </div>
             <div class="grid md:grid-cols-2 grid-cols-1 gap-10 justify-center">
                 <div class="relative">
-                    <div class="h-[350px] relative overflow-hidden">
-                        <img src="https://placehold.co/800x300" alt=""
-                            class="relative z-[0] w-full h-[350px] object-cover rounded-xl">
+                    <div class="relative overflow-hidden">
+                        <img src="{{asset('img/about/Francisco.png')}}" alt=""
+                            class="relative z-[0] w-full rounded-xl">
 
                         <i
                             class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1 absolute top-5 left-5"></i>
-                        <div class="py-2 px-20 bg-primary rounded-full absolute bottom-10 -left-10 text-lg font-bold">
+                        <div class="py-4 px-20 bg-primary text-yellow rounded-full absolute bottom-10 -left-10 text-lg font-bold">
                             Francisco Castro, PhD
                         </div>
                     </div>
                 </div>
                 <div class="relative">
-                    <div class="h-[350px] relative overflow-hidden">
-                        <img src="https://placehold.co/800x300" alt=""
-                            class="relative z-[0] w-full h-[350px] object-cover rounded-xl">
+                    <div class="relative overflow-hidden">
+                        <img src="{{asset('img/about/Noora.png')}}" alt=""
+                            class="relative z-[0] w-full rounded-xl">
 
                         <i
                             class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1 absolute top-5 left-5 rotate-180"></i>
-                        <div class="py-2 px-20 bg-primary rounded-full absolute bottom-10 -left-10 text-lg font-bold">
+                        <div class="py-4 px-20 bg-primary text-yellow rounded-full absolute bottom-10 -left-10 text-lg font-bold">
                             Noora Noushad, PhD
                         </div>
                     </div>
