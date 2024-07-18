@@ -58,4 +58,9 @@
 <script src="https://kit.fontawesome.com/d11faf3e43.js" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+{{-- GSAP  --}}
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
 @stack('script')

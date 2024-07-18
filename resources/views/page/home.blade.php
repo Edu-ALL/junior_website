@@ -5,7 +5,8 @@
 @section('content')
     {{-- Banner & Description --}}
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
-        <img src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
+        <img src="{{ asset('img/home/element/Jumbotron.png') }}"
+            class="md:w-[200px] w-[80px] absolute top-20 left-0 element-1">
         <div class="splide" id="banners">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -23,7 +24,7 @@
                                     {!! __('home.banner_content') !!}
                                 </p>
                             </div>
-                            <div class="flex flex-nowrap mt-5 md:gap-7 gap-1">
+                            <div class="flex flex-nowrap md:gap-7 gap-1">
                                 <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
                                     <img src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
@@ -81,7 +82,7 @@
         </div>
 
         <div class="flex justify-end mt-10">
-            <div class="w-full md:w-2/5 absolute left-0 mt-[1%] md:block hidden">
+            <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
                 <img src="{{ asset('img/home/values.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
@@ -123,15 +124,15 @@
                         {!! __('home.how_it_work_paragraph1') !!}
                     </p>
                     <ol class="text-lg">
-                        @foreach (__('home.how_it_work_paragraph2') as $key=>$item)
+                        @foreach (__('home.how_it_work_paragraph2') as $key => $item)
                             <li class="mb-3">
                                 <div class="flex flex-nowrap">
                                     <div
                                         class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
-                                        <span class="fa-solid fa-{{$key+1}}"></span>
+                                        <span class="fa-solid fa-{{ $key + 1 }}"></span>
                                     </div>
                                     <div class="w-full ps-3">
-                                        
+
                                         {!! $item['title'] !!}
                                     </div>
                                 </div>
@@ -194,7 +195,8 @@
                 <div class="relative">
                     <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Communications</button>
+                    <button
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Communications</button>
                 </div>
             </div>
         </div>
@@ -253,7 +255,7 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                            <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
                                 <img src="{{ asset('img/home/coding-robotic.png') }}" alt="" class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -273,7 +275,7 @@
                             </div>
                         </li>
                         <li class="splide__slide">
-                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                            <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
                                 <img src="{{ asset('img/home/outstanding-skill.png') }}" alt="" class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -293,7 +295,7 @@
                             </div>
                         </li>
                         <li class="splide__slide">
-                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                            <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
                                 <img src="{{ asset('img/home/entrepreneur.png') }}" alt="" class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -313,7 +315,7 @@
                             </div>
                         </li>
                         <li class="splide__slide">
-                            <div class="border relative overflow-hidden rounded-lg shadow-md mb-3">
+                            <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
                                 <img src="{{ asset('img/home/coding.png') }}" alt="" class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">

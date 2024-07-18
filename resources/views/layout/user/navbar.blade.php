@@ -41,15 +41,20 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('programs', ['locale' => app()->getLocale()]) }}" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                        class="flex items-center justify-between w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">Programs
-                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
-                        </svg></a>
+                    <div class="flex">
+                        <a href="{{ route('programs', ['locale' => app()->getLocale()]) }}"
+                            class="w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">Programs
+                        </a>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                    </div>
 
-                    @if (Route::currentRouteName() == 'programs')
+                    @if (Request()->segment(2)=='programs')
                         <div class="md:flex justify-center mt-2 hidden">
                             <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
                         </div>
@@ -59,20 +64,20 @@
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Science</a>
+                                <a href="{{ route('programs.science', ['locale' => app()->getLocale()]) }}"
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.science' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Science</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Communications</a>
+                                <a href="{{ route('programs.creative-communication', ['locale' => app()->getLocale()]) }}"
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.creative-communication' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Communications</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Entrepreneurship</a>
+                                <a href="{{ route('programs.entrepreneurship', ['locale' => app()->getLocale()]) }}"
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.entrepreneurship' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Entrepreneurship</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Coding
+                                <a href="{{ route('programs.coding-robotics', ['locale' => app()->getLocale()]) }}"
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.coding-robotics' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Coding
                                     & Robotics</a>
                             </li>
                         </ul>

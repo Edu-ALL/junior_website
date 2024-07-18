@@ -38,18 +38,18 @@ Route::group(
       
         Route::get('/programs/science', function () {
           return view('page.science');
-        });
+        })->name('programs.science');
 
         Route::get('/programs/creative-communication', function () {
             return view('page.creative-communication');
-        });
+        })->name('programs.creative-communication');
 
         Route::get('/programs/entrepreneurship', function () {
             return view('page.entrepreneurship');
-        });
+        })->name('programs.entrepreneurship');
 
         Route::get('/programs/coding-robotics', function () {
             return view('page.coding-robotics');
-        });
+        })->name('programs.coding-robotics');
     }
 );
