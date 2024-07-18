@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'programs' => "Program",
+    'science' => 'Sains',
 
     'science_title' => 'Sains',
     'science_description' => 'Bergabunglah dalam petualangan yang mendebarkan  untuk menjelajahi keajaiban alam, membangkitkan rasa ingin tahu dan pemikiran kritis melalui eksperimen dan penemuan yang menarik, memberdayakan anak untuk menjadi penemu dan inovator.',
@@ -10,7 +12,7 @@ return [
     'science_why_learn' => 'Mengapa perlu belajar Sains?',
     'science_why_description' => 'Studi terbaru membuktikan bahwa program sains yang terintegrasi dengan pendidikan alam dan lingkungan bermanfaat untuk meningkatkan kesadaran anak, kemampuan dalam memecahkan masalah dan fleksibilitas kognitif. Pemaparan awal terhadap sains terbukti mampu membantu mengembangkan penalaran spasial dan memicu semangat untuk pembelajaran berbasis inkuiri, sehingga berkontribusi signifikan terhadap pertumbuhan intelektual anak. Melalui praktek langsung dan eksplorasi, anak tidak hanya memperoleh pengetahuan dasar tentang dunia tetapi juga mengembangkan keterampilan berpikir kritis yang diperlukan dalam kehidupan sehari-hari.
     Bergabunglah dengan kami di EduALL Junior untuk mengembangkan rasa ingin tahu anak Anda dan membentuk landasan pengetahuan dan literasi ilmiah seumur hidup.',
-    
+
     'what_your_kids_learn_title' => 'Apa yang akan dipelajari anak Anda',
     'what_your_kids_learn_content' => [
         [
@@ -24,7 +26,7 @@ return [
     ],
 
     'learn_more_title' => 'Pelajari lebih lanjut tentang Sains',
-    'learn_more_see_more' => 'Lihat lebih banyak ->',
+    'learn_more_see_more' => 'Lihat lebih banyak',
 
     'learn_more_content' => [
         [

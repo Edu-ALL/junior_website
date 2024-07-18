@@ -33,11 +33,10 @@
         <div class="main-container relative">
             <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-green">
-                    Entrepreneurship
+                    {{ __('entrepreneurship.entrepreneurship_title') }}
                 </h1>
                 <p class="text-lg text-dark text-center leading-8">
-                    Empowering young minds to be agile and thrive in the fast-paced and ever-changing world through hands-on
-                    projects and real-world problem solving.
+                    {{ __('entrepreneurship.entrepreneurship_description') }}
                 </p>
             </div>
         </div>
@@ -249,6 +248,7 @@
                         <img src="{{ asset('img/enterpreneruship/image/WhatYourKidsWillLearn.png') }}" alt=""
                             class="w-full object-contain">
                     </div>
+                </div>
                 </div>
                 <div class="flex flex-col md:flex-row mt-16 gap-8">
                     <div class="w-full md:w-1/2 relative">
