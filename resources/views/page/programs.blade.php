@@ -9,16 +9,16 @@
         <img src="{{ asset('img/program/element/Programs_2.png') }}" class="md:w-[200px] w-[80px] absolute bottom-20 right-0">
         <div class="main-container">
             <div class="text-center md:px-[200px] px-6">
-                <h2 class="text-4xl font-bold ">
+                <h2 class="md:text-4xl text-2xl font-bold ">
                     <span class="text-blue">Research-Informed</span> and <span class="text-blue">Expert-Approved</span> STEAM,
                     Enterpreneurship and Creative Communication Programs for Your
                     Kids
                 </h2>
             </div>
 
-            <div class="grid md:grid-cols-3 grid-cols-1 mt-[100px] gap-5">
+            <div class="grid md:grid-cols-3 grid-cols-1 mt-[100px] md:gap-5 gap-0">
                 <div class="w-full">
-                    <h3 class="text-3xl mb-6">
+                    <h3 class="md:text-3xl text-xl font-bold mb-6">
                         Our Programs
                     </h3>
                     <p class="text-lg">
@@ -120,9 +120,9 @@
                     <span class="text-yellowLight underline">it works</span>
                 </h2>
             </div>
-            <div class="grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-5 mt-[70px]">
-                <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg">
-                    <img src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute -right-[60px] top-40">
+            <div class="grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-10 mt-[70px]">
+                <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
+                    <img src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90">
                     <div class="flex w-full justify-center">
                         <img src="{{ asset('img/program/element/Journey1.png') }}" class="w-20 absolute -top-10">
                     </div>
@@ -133,8 +133,8 @@
                         Fill in our contact form below and our team will get back to you to schedule a consultation
                     </p>
                 </div>
-                <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg">
-                    <img src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute -right-[60px] top-40">
+                <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
+                    <img src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90">
                     <div class="flex w-full justify-center">
                         <img src="{{ asset('img/program/element/Journey2.png') }}" class="w-20 absolute -top-10">
                     </div>
@@ -146,7 +146,7 @@
                         their passion and interests
                     </p>
                 </div>
-                <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg">
+                <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
                     <div class="flex w-full justify-center">
                         <img src="{{ asset('img/program/element/Journey3.png') }}" class="w-20 absolute -top-10">
                     </div>

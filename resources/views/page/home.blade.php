@@ -51,7 +51,7 @@
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     {!! __('home.future_badge') !!}
                 </div>
-                <h2 class="font-bold text-3xl mt-3 mb-7">
+                <h2 class="font-bold md:text-3xl text-2xl mt-3 mb-7">
                     {!! __('home.future_title') !!}
                 </h2>
                 <p class="text-lg">
@@ -72,9 +72,9 @@
             <div class="text-center">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white mb-10">
                     {!! __('home.why_eduall_badge') !!}
-                </div> 
-    
-                <h2 class="text-4xl font-bold text-white mt-5 mb-[50px]">
+                </div>
+
+                <h2 class="md:text-4xl text-2xl font-bold mt-5 text-white mb-[50px]">
                     {!! __('home.why_eduall_title') !!}
                 </h2>
             </div>
@@ -90,7 +90,7 @@
                         <div class="flex">
                             <div class="w-full md:w-6/7">
                                 <div class="flex flex-nowrap justify-between">
-                                    <h3 class="font-bold text-2xl">
+                                    <h3 class="font-bold md:text-2xl text-xl">
                                         {!! $item['subtitle'] !!}
                                     </h3>
                                     <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
@@ -102,46 +102,6 @@
                         </p>
                     </div>
                 @endforeach
-
-                {{-- <div class="mb-10">
-                    <div class="flex">
-                        <div class="w-full md:w-6/7">
-                            <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
-                                    <span class="text-yellowLight">Personalized student journey </span> by in-house
-                                    psychologists & experts
-                                </h3>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="font-light text-lg mt-3">
-                        Our educators and psychologists will closely observe and monitor each child's progress in class and
-                        through their projects. By evaluating and assessing the development of kid's interests and early
-                        skills, they can provide personalized recommendations, pathways, and modules. This approach ensures
-                        that each kid's unique needs are met, allowing them to fully develop and maximize their potential.
-                    </p>
-                </div>
-                <div class="mb-10">
-                    <div class="flex">
-                        <div class="w-full md:w-6/7">
-                            <div class="flex flex-nowrap justify-between">
-                                <h3 class="font-bold text-2xl">
-                                    Offering <span class="text-yellowLight"> holistic</span> & <span
-                                        class="text-yellowLight">playful approach</span> for your kids education
-                                </h3>
-                                <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="font-light text-lg mt-3">
-                        Kids thrive when they're having fun because it sparks their imagination, creativity, and social
-                        skills. By tapping into their love for play, we can seamlessly weave in educational thoughts and
-                        values suited to their age. This playful learning approach ensures that during their crucial
-                        developmental stages, children grow holistically, optimizing their cognitive, emotional, and social
-                        development.
-                    </p>
-                </div> --}}
             </div>
         </div>
     </section>
@@ -154,66 +114,36 @@
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
                 <div class="w-full md:w-2/4 px-2 mb-3 mt-5">
                     <div class="bg-blue py-1 px-4 inline rounded-full text-white">
-                        HOW IT WORKS
+                        {!! __('home.how_it_work_badge') !!}
                     </div>
-                    <h2 class="font-bold text-4xl my-5">
-                        The <span class="text-yellow">learning journey</span> for your kid
+                    <h2 class="font-bold md:text-4xl text-2xl my-5">
+                        {!! __('home.how_it_work_title') !!}
                     </h2>
                     <p class="text-lg mb-5">
-                        We believe that each kid should embark on a personal learning journey based on their individual
-                        interests and skill levels. Our goals focus on fostering entrepreneurial mindset through a
-                        three-stage process:
+                        {!! __('home.how_it_work_paragraph1') !!}
                     </p>
                     <ol class="text-lg">
-                        <li class="mb-3">
-                            <div class="flex flex-nowrap">
-                                <div
-                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
-                                    <span class="fa-solid fa-1 "></span>
+                        @foreach (__('home.how_it_work_paragraph2') as $key=>$item)
+                            <li class="mb-3">
+                                <div class="flex flex-nowrap">
+                                    <div
+                                        class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
+                                        <span class="fa-solid fa-{{$key+1}}"></span>
+                                    </div>
+                                    <div class="w-full ps-3">
+                                        
+                                        {!! $item['title'] !!}
+                                    </div>
                                 </div>
-                                <div class="w-full ps-3">
-                                    <strong> Exploration stage:</strong> Kids discover their interest across diverse streams
-                                    offered. For instance, a kid interested in robotics starts by building foundational
-                                    skills in
-                                    robotics.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-3">
-                            <div class="flex flex-nowrap">
-                                <div
-                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
-                                    <span class="fa-solid fa-2"></span>
-                                </div>
-                                <div class="w-full ps-3">
-                                    <strong>Development stage:</strong> Kids will progress through specialized modules in
-                                    their
-                                    respective streams to enhance their abilities.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="mb-3">
-                            <div class="flex flex-nowrap">
-                                <div
-                                    class="bg-primary text-white w-[25px] h-[25px] p-1 rounded-full flex justify-center items-center">
-                                    <span class="fa-solid fa-3"></span>
-                                </div>
-                                <div class="w-full ps-3">
-                                    <strong>Enrichment stage:</strong> Kids will apply their skills in real-world
-                                    applications such
-                                    as competitions and community projects.
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        @endforeach
                     </ol>
                     <p class="text-lg mb-5">
-                        Throughout these stages, kids tackle increasingly complex challenges, refining problem-solving and
-                        conflict-resolution skills to become well-rounded individuals capable of making a positive impact in
-                        this world.
+                        {!! __('home.how_it_work_paragraph3') !!}
                     </p>
                     <button type="button"
                         class="text-white bg-primary shadow-2xl hover:bg-primary focus:outline-none focus:ring-4 focus:ring-primary/30 font-medium rounded-full text-sm px-5 py-2 text-center me-2 mb-2 dark:bg-primary/60 dark:hover:bg-primary dark:focus:ring-primary">
-                        See Our Programs
+                        {!! __('home.how_it_work_button') !!}
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
@@ -232,43 +162,39 @@
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
                     {!! __('home.program_badge') !!}
                 </div>
-                <h2 class="font-bold text-4xl my-5 mb-10">
+                <h2 class="font-bold md:text-4xl text-2xl my-5 mb-10">
                     {!! __('home.program_title') !!}
                 </h2>
             </div>
-            <div class="flex flex-wrap justify-center">
-                <div class="w-1/2  md:w-1/5 relative md:-mx-[10px] mx-0">
+            <div class="grid md:grid-cols-5 grid-cols-1 md:gap-2 gap-2 justify-center">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Science.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Science</button>
+                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Science</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Creative
+                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Creative
                         Coding &
                         Robotics</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Entrepreneurship.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
                     <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Entrepreneurship</button>
+                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Entrepreneurship</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
                         class="relative rounded-xl mt-4 z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Visual
+                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Visual
                         Arts</button>
                 </div>
-                <div class="w-1/2 md:w-1/5 relative md:-mx-[10px] mx-0">
+                <div class="relative">
                     <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
                         class="relative rounded-xl z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute md:left-[10%] left-0 -bottom-[2%] z-[1] md:w-[80%] w-full">Communications</button>
+                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Communications</button>
                 </div>
             </div>
         </div>
@@ -284,7 +210,7 @@
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     {!! __('home.testimonial_badge') !!}
                 </div>
-                <h2 class="font-bold text-4xl my-5">
+                <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}
                 </h2>
 
@@ -302,7 +228,7 @@
                     <div class="bg-red py-1 px-4 inline rounded-full text-white">
                         {!! __('home.event_badge') !!}
                     </div>
-                    <h2 class="font-bold text-4xl mt-5 sm:mb-4">
+                    <h2 class="font-bold md:text-4xl text-2xl mt-5 sm:mb-4">
                         {!! __('home.event_title') !!}
                     </h2>
                 </div>

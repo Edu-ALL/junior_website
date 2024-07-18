@@ -95,16 +95,8 @@ return [
     'testimonial_title' => 'What parents say <span class="text-blue">about us</span>',
 
 
-    'event_badge' => 'OUR EVENTS',
+    'event_badge' => 'OUR EVENTS', 
     'event_title' => 'Let’s <span class="text-yellow">Collaborate!</span>',
     'event_content' => ' Book our exciting and engaging class for pop-up events or birthdays at your venue. For further
                         information, please contact us.',
-
-                        
-    'how_it_work_badge' => '',
-    'how_it_work_title' => '',
-    'how_it_work_paragraph1' => '',
-    'how_it_work_paragraph2' => '',
-    'how_it_work_paragraph3' => '',
-    'how_it_work_button' => '',
 ];
