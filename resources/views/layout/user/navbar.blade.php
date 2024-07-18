@@ -77,9 +77,14 @@
                             </li>
                             <li>
                                 <a href="{{ route('programs.coding-robotics', ['locale' => app()->getLocale()]) }}"
-                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.coding-robotics' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Coding
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.coding-robotics' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative Coding
                                     & Robotics</a>
                             </li>
+                            {{-- <li>
+                                <a href="{{ route('programs.visual-art', ['locale' => app()->getLocale()]) }}"
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.visual-art' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative Coding
+                                    & Robotics</a>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
