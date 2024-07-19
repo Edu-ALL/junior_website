@@ -1,6 +1,6 @@
 @extends('layout.user.main')
 
-@section('title', 'About Us | EduALL Junior')
+@section('title', 'Contact Us | EduALL Junior')
 
 @section('content')
     {{-- WHO WE ARE --}}
@@ -9,13 +9,10 @@
             <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
                 <div class="w-full">
                     <h2 class="font-extrabold text-4xl my-4 mb-6">
-                        <span class="text-red underline">
-                            Schedule
-                        </span>
-                        your FREE trial now!
+                        {!! __('contact.title') !!}
                     </h2>
                     <p class="text-lg mb-4">
-                        Experience our programs in one-week trial where your kid can explore the classes they are interested in. Each kid will be observed by our mentors and psychologists, with a personalized assessment at the end of the trial period.
+                        {!! __('contact.subtitle') !!}
                     </p>
                     <ul class="text-lg">
                         <li class="mb-3">

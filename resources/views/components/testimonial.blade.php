@@ -16,7 +16,7 @@
 
                     <div class="flex gap-5 flex-nowrap">
                         <div class="w-1/12">
-                            <img src="{{asset('img/home/user.png')}}" alt="" class="rounded-full">
+                            <img loading="lazy" src="{{asset('img/home/user.png')}}" alt="" class="rounded-full">
                         </div>
                         <div class="w-5/12">
                             <h5 class="font-bold text-md text-{{$color}} mb-0">

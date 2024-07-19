@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-greenBg pt-[100px] relative pb-24">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-0">
+        <img loading="lazy" src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-0">
 
         <div class="main-container z-10">
             {{-- Breadcrumb --}}
@@ -54,7 +54,7 @@
                 <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-10">
                     <div
                         class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-green text-white rounded-full font-bold flex items-center gap-2">
-                        <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                         Future-Proofing Skills
                     </div>
                     <p class="font-light text-sm text-dark mt-7 py-4 px-8">
@@ -68,7 +68,7 @@
                 <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-10">
                     <div
                         class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-green text-white rounded-full font-bold flex items-center gap-2">
-                        <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                         Early Development of Entrepreneurial Mindset
                     </div>
                     <p class="font-light text-sm text-dark mt-14 md:mt-7 py-4 px-8">
@@ -83,10 +83,10 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[42%] top-full md:block hidden">
-            <img src="{{ asset('img/enterpreneruship/image/Why.png') }}" alt="" class="w-full object-cover">
+            <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why.png') }}" alt="" class="w-full object-cover">
         </div>
         {{-- Accent --}}
-        <img src="{{ asset('img/enterpreneruship/accent/EarlyEducation.png') }}"
+        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/EarlyEducation.png') }}"
             class="md:w-[200px] w-[80px] absolute -bottom-52 right-0 z-20">
     </section>
 
@@ -101,7 +101,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/enterpreneruship/image/Why_2.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_2.png') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -126,7 +126,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/enterpreneruship/image/Why_3.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_3.png') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -163,7 +163,7 @@
                     <div class="w-full md:w-1/2 relative">
                         <div
                             class="absolute px-4 py-1 text-base bg-green text-white rounded-full font-bold flex items-center gap-2">
-                            <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                            <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                             Entrepreneurial Mindset
                         </div>
                         <ul class="font-light text-base text-dark mt-8 py-6 gap-4 flex flex-col">
@@ -246,7 +246,7 @@
                         </ul>
                     </div>
                     <div class="w-full md:w-1/2 mt-6 md:mt-0">
-                        <img src="{{ asset('img/enterpreneruship/image/WhatYourKidsWillLearn.png') }}" alt=""
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/image/WhatYourKidsWillLearn.png') }}" alt=""
                             class="w-full object-contain">
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                     <div class="w-full md:w-1/2 relative">
                         <div
                             class="absolute px-4 py-1 text-base bg-green text-white rounded-full font-bold flex items-center gap-2">
-                            <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                            <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                             Entrepreneurial Skills
                         </div>
                         <ul class="font-light text-base text-dark mt-8 py-6 gap-4 flex flex-col">
@@ -449,12 +449,12 @@
     {{-- Testimonial  --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Testimonials.png') }}"
+        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.png') }}"
             class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
