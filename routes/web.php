@@ -35,6 +35,10 @@ Route::group(
         Route::get('/programs', function () {
             return view('page.programs');
         })->name('programs');
+
+        Route::get('/contact-us', function () {
+            return view('page.contact-us');
+        })->name('contact-us');
       
         Route::get('/programs/science', function () {
           return view('page.science');
