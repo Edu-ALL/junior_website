@@ -2,7 +2,7 @@
 
 return [
 
-        'program_header' => 'Program STEAM, Kewirausahaan, dan  Komunikasi Kreatif Berbasis <span class="text-blue">Riset Tersetujui oleh Para Ahli</span> untuk Anak Anda',
+        'program_header' => 'Program STEAM, Kewirausahaan, dan  Komunikasi Kreatif Berbasis <span class="text-blue underline">Riset Tersetujui oleh Para Ahli</span> untuk Anak Anda',
 
         'our_programs_title' => 'Program Kami',
         'our_programs_description' => 'Menginspirasi anak Anda melalui program integratif dan kegiatan menarik untuk mendukung perkembangan secara holistik dan memupuk kecintaan akan belajar seumur hidup.',

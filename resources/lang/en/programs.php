@@ -2,7 +2,7 @@
 
 return [
 
-        'program_header' => '<span class="text-blue">Research-Informed</span> and <span class="text-blue">Expert-Approved STEAM</span>, Enterpreneurship and Creative Communication Programs for Your Kids',
+        'program_header' => '<span class="text-blue underline">Research-Informed</span> and <span class="text-blue underline">Expert-Approved STEAM</span>, Enterpreneurship and Creative Communication Programs for Your Kids',
 
         'our_programs_title' => 'Our Programs',
         'our_programs_description' => 'Inspiring your kids through engaging contextual activities and integrative programs for holistic development and ensuring a love for lifelong learning.',
