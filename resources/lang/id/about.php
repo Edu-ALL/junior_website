@@ -4,12 +4,15 @@ return [
 
     'who_we_are_badge' => 'SIAPA KAMI',
     'who_we_are_title' => 'Kami memiliki misi untuk memberdayakan anak-anak Anda untuk menjadi pembuat perubahan di masa depan',
-    'who_we_are_content' => 'Di EduALL Junior, kami membangkitkan rasa ingin tahu pada setiap anak, merayakan minat, bakat, dan gaya belajar unik mereka. 
+    'who_we_are_content' => '<div class="mb-4 text-lg">Di EduALL Junior, kami membangkitkan rasa ingin tahu pada setiap anak, merayakan minat, bakat, dan gaya belajar unik mereka.</div>
+    <div class="mb-4 text-lg">
     Misi kami adalah membina pola pikir kewirausahaan, mempersiapkan individu untuk menjadi pribadi yang adaptif dan tangguh dalam dunia yang terus berubah. Orang yang dapat dengan cepat menyesuaikan diri, beradaptasi, dan bangkit dari kegagalan memiliki posisi lebih baik untuk meraih kesuksesan. Pola pikir ini memberdayakan setiap individu untuk menghadapi ketidakpastian dan tantangan dengan penuh percaya diri dan kreativitas. Dengan merangkul keberagaman dan mendorong eksplorasi melalui metode bermain, anak-anak mengembangkan keterampilan sesuai dengan tempo belajar mereka sendiri. Anak dapat mengekspresikan minat dan kreativitas mereka melalui berbagai permainan interaktif, praktik langsung, dan eksplorasi kreatif.
-    Tim pengajar kami memprioritaskan baik pertumbuhan akademik maupun perkembangan sosial-emosional anak dalam lingkungan yang inklusif dan mendukung di Playful Learning Center kami.',
+    </div>
+    <div class="mb-4 text-lg">
+    Tim pengajar kami memprioritaskan baik pertumbuhan akademik maupun perkembangan sosial-emosional anak dalam lingkungan yang inklusif dan mendukung di Playful Learning Center kami.</div>',
     'who_we_are_video' => '',
 
-    'methodology_title' => 'Metodologi dan Pedagogi Kami',
+    'methodology_title' => '<span class="text-yellowLight underline">Metodologi</span> dan <span class="text-yellowLight underline">Pedagogi</span> Kami',
     'methodology_description' => 'Mempersiapkan anak-anak untuk masa depan melibatkan pengembangan beragam keterampilan dan pembentukan pola pikir pertumbuhan. Dorong rasa ingin tahu dan cinta terhadap pembelajaran dengan menghadirkan mereka pada pengalaman-pengalaman beragam dan mendukung minat mereka.',
     'methodology_content' => [
         [
@@ -20,16 +23,16 @@ return [
         ]
     ],
 
-    'certification_title' => 'Sertifikasi CREST Award',
+    'certification_title' => 'Sertifikasi <span class="text-red underline">CREST Award</span>',
     'certification_logo' => '',
     'certification_badge' => 'Sertifikasi Internasional',
     'certification_description' => 'CREST Awards adalah skema yang diakui secara internasional untuk proyek murid di bidang STEM (science, technology, engineering and math) yang didirikan oleh British Science Association. Program EduALL dalam Sains, Kreatif Koding & Robotika, Kreatif Komunikasi, Kewirausahaan & Seni Visual telah disertifikasi oleh CREST Award, sehingga aktivitas siswa dapat dihitung sebagai bagian dari sertifikasi CREST mereka.',
     
     'our_people_badge' => 'TIM KAMI',
-    'our_people_title' => 'Penyusun Program Kami',
+    'our_people_title' => '<span class="text-yellowLight underline">Penyusun</span> Program Kami',
     'our_people_content' => [
         [
-            'content_image' => '',
+            'content_image' => 'Francisco.png',
             'content_name' => 'Francisco Castro, PhD',
             'content_description' => [
                 [
@@ -41,7 +44,7 @@ return [
             ]
         ],
         [
-            'content_image' => '',
+            'content_image' => 'Noora.png',
             'content_name' => 'Noora Noushad, PhD',
             'content_description' => [
                 [
@@ -55,7 +58,7 @@ return [
     ],
 
     'facilities_badge' => 'FASILITAS',
-    'facilities_title' => 'EduALL Junior Playful Learning Center',
+    'facilities_title' => '<span class="text-blue underline">EduALL Junior</span> Playful Learning Center',
     'facilities_image_content' => [
         [
             'image' => '',

@@ -1,6 +1,6 @@
 <div class="flex-1 max-w-sm min-w-72 flex flex-col items-start gap">
     <div class="rounded-2xl overflow-hidden my-4">
-        <img src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full">
+        <img loading="lazy" src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full">
     </div>
     <div class="flex items-center justify-start gap-4 py-5">
         <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">

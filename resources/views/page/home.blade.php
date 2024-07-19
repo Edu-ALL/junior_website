@@ -5,7 +5,7 @@
 @section('content')
     {{-- Banner & Description --}}
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
-        <img src="{{ asset('img/home/element/Jumbotron.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}"
             class="md:w-[200px] w-[80px] absolute top-20 left-0 element-1">
         <div class="splide" id="banners">
             <div class="splide__track">
@@ -14,7 +14,7 @@
                         <div class="main-container">
                             <div class="max-w-2xl mx-auto text-center">
                                 <div class="flex justify-center">
-                                    <img src="{{ asset('img/logo/eduall.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/logo/eduall.png') }}" alt="EduALL Junior"
                                         class="md:w-[200px] w-[150px] flex justify-center">
                                 </div>
                                 <h1 class="font-bold md:text-[45px] text-[1.5em] font-primary leading-[1.4]">
@@ -26,19 +26,19 @@
                             </div>
                             <div class="flex flex-nowrap md:gap-7 gap-1">
                                 <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
-                                    <img src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                                 <div class="w-full md:w-1/4 md:px-4 px-1">
-                                    <img src="{{ asset('img/home/Jumbotron_2.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_2.png') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                                 <div class="w-full md:w-1/4 md:px-4 px-1">
-                                    <img src="{{ asset('img/home/Jumbotron_3.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_3.png') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                                 <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
-                                    <img src="{{ asset('img/home/Jumbotron_4.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_4.png') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                             </div>
@@ -60,14 +60,14 @@
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:block hidden">
-                <img src="{{ asset('img/home/KidsFuture.png') }}" alt="" class="w-full">
+                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="" class="w-full">
             </div>
         </div>
     </section>
 
     {{-- Why EduALL Junior  --}}
     <section class="w-100 bg-blue py-[100px] relative z-10">
-        <img src="{{ asset('img/home/element/Values.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Values.png') }}"
             class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
             <div class="text-center">
@@ -83,7 +83,7 @@
 
         <div class="flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img src="{{ asset('img/home/values.png') }}" alt="" class="w-[100%]">
+                <img loading="lazy" src="{{ asset('img/home/values.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 @foreach (__('home.why_eduall_content') as $item)
@@ -109,7 +109,7 @@
 
     {{-- How it Works  --}}
     <section class="w-100 bg-yellow/20 relative z-5">
-        <img src="{{ asset('img/home/element/LearningJourney.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.png') }}"
             class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
         <div class="main-container">
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
@@ -148,7 +148,8 @@
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
-                    <img src="{{ asset('img/home/learningJourney.png') }}" alt="" class="w-full object-cover">
+                    <img loading="lazy" src="{{ asset('img/home/learningJourney.png') }}" alt=""
+                        class="w-full object-cover">
                 </div>
             </div>
         </div>
@@ -156,8 +157,10 @@
 
     {{-- Programs  --}}
     <section class="w-100 bg-red text-white relative">
-        <img src="{{ asset('img/home/element/Programs1.png') }}" class="md:w-[150px] w-[80px] absolute top-10 left-0">
-        <img src="{{ asset('img/home/element/Programs2.png') }}" class="md:w-[150px] w-[80px] absolute top-10 right-0">
+        <img loading="lazy" src="{{ asset('img/home/element/Programs1.png') }}"
+            class="md:w-[150px] w-[80px] absolute top-10 left-0">
+        <img loading="lazy" src="{{ asset('img/home/element/Programs2.png') }}"
+            class="md:w-[150px] w-[80px] absolute top-10 right-0">
         <div class="main-container py-[100px]">
             <div class="text-center mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
@@ -168,36 +171,15 @@
                 </h2>
             </div>
             <div class="grid md:grid-cols-5 grid-cols-1 md:gap-2 gap-2 justify-center">
-                <div class="relative">
-                    <img src="{{ asset('img/home/Programs_Science.png') }}" alt=""
-                        class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Science</button>
-                </div>
-                <div class="relative">
-                    <img src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
-                        class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Creative
-                        Coding &
-                        Robotics</button>
-                </div>
-                <div class="relative">
-                    <img src="{{ asset('img/home/Programs_Entrepreneurship.png') }}" alt=""
-                        class="relative rounded-xl z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Entrepreneurship</button>
-                </div>
-                <div class="relative">
-                    <img src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
-                        class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Visual
-                        Arts</button>
-                </div>
-                <div class="relative">
-                    <img src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
-                        class="relative rounded-xl z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Communications</button>
-                </div>
+                @foreach (__('home.program_content') as $item)
+                    <div class="relative">
+                        <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt=""
+                            class="relative rounded-xl mt-4 z-[0]">
+                        <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">
+                            {{ $item['title'] }}
+                        </button>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -206,7 +188,8 @@
     <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt=""
+                    class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
@@ -256,7 +239,8 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img src="{{ asset('img/home/coding-robotic.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Coding & Robotics EduFair
@@ -276,7 +260,8 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img src="{{ asset('img/home/outstanding-skill.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Finding Your Kid's Outstanding Skill
@@ -296,7 +281,8 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img src="{{ asset('img/home/entrepreneur.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Entrepreneur Workshop
@@ -316,7 +302,8 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img src="{{ asset('img/home/coding.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/coding.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Coding & Robotics EduFair

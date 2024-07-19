@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-orangeBg pt-[100px] relative pb-36">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-0">
+        <img loading="lazy" src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-0">
 
         <div class="main-container z-10">
             {{-- Breadcrumb --}}
@@ -56,7 +56,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[55%] top-full md:block hidden">
-            <img src="{{ asset('img/science/image/Why.png') }}" alt="" class="w-full object-cover">
+            <img loading="lazy" src="{{ asset('img/science/image/Why.png') }}" alt="" class="w-full object-cover">
         </div>
     </section>
 
@@ -78,7 +78,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/science/image/WhatYourKidsWillLearn_2.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/science/image/WhatYourKidsWillLearn_2.png') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -100,7 +100,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/science/image/WhatYourKidsWillLearn_1.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/science/image/WhatYourKidsWillLearn_1.png') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -129,7 +129,7 @@
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
