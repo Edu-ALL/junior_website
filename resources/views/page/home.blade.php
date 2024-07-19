@@ -148,7 +148,8 @@
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
-                    <img loading="lazy" src="{{ asset('img/home/learningJourney.png') }}" alt="" class="w-full object-cover">
+                    <img loading="lazy" src="{{ asset('img/home/learningJourney.png') }}" alt=""
+                        class="w-full object-cover">
                 </div>
             </div>
         </div>
@@ -156,8 +157,10 @@
 
     {{-- Programs  --}}
     <section class="w-100 bg-red text-white relative">
-        <img loading="lazy" src="{{ asset('img/home/element/Programs1.png') }}" class="md:w-[150px] w-[80px] absolute top-10 left-0">
-        <img loading="lazy" src="{{ asset('img/home/element/Programs2.png') }}" class="md:w-[150px] w-[80px] absolute top-10 right-0">
+        <img loading="lazy" src="{{ asset('img/home/element/Programs1.png') }}"
+            class="md:w-[150px] w-[80px] absolute top-10 left-0">
+        <img loading="lazy" src="{{ asset('img/home/element/Programs2.png') }}"
+            class="md:w-[150px] w-[80px] absolute top-10 right-0">
         <div class="main-container py-[100px]">
             <div class="text-center mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
@@ -168,36 +171,15 @@
                 </h2>
             </div>
             <div class="grid md:grid-cols-5 grid-cols-1 md:gap-2 gap-2 justify-center">
-                <div class="relative">
-                    <img loading="lazy" src="{{ asset('img/home/Programs_Science.png') }}" alt=""
-                        class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Science</button>
-                </div>
-                <div class="relative">
-                    <img loading="lazy" src="{{ asset('img/home/Programs_Coding.png') }}" alt=""
-                        class="relative rounded-xl z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Creative
-                        Coding &
-                        Robotics</button>
-                </div>
-                <div class="relative">
-                    <img loading="lazy" src="{{ asset('img/home/Programs_Entrepreneurship.png') }}" alt=""
-                        class="relative rounded-xl z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Entrepreneurship</button>
-                </div>
-                <div class="relative">
-                    <img loading="lazy" src="{{ asset('img/home/Programs_VisualArts.png') }}" alt=""
-                        class="relative rounded-xl mt-4 z-[0]">
-                    <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Visual
-                        Arts</button>
-                </div>
-                <div class="relative">
-                    <img loading="lazy" src="{{ asset('img/home/Programs_Communications.png') }}" alt=""
-                        class="relative rounded-xl z-[0]">
-                    <button
-                        class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">Communications</button>
-                </div>
+                @foreach (__('home.program_content') as $item)
+                    <div class="relative">
+                        <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt=""
+                            class="relative rounded-xl mt-4 z-[0]">
+                        <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">
+                            {{ $item['title'] }}
+                        </button>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -206,7 +188,8 @@
     <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt=""
+                    class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
@@ -256,7 +239,8 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Coding & Robotics EduFair
@@ -276,7 +260,8 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Finding Your Kid's Outstanding Skill
@@ -296,7 +281,8 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Entrepreneur Workshop
@@ -316,7 +302,8 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/coding.png') }}" alt="" class="w-full">
+                                <img loading="lazy" src="{{ asset('img/home/coding.png') }}" alt=""
+                                    class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
                                         Coding & Robotics EduFair

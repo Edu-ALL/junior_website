@@ -21,7 +21,7 @@
 
                     <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'home' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
-                        Home
+                        {{ __('navbar.home') }}
                         @if (Route::currentRouteName() == 'home')
                             <div class="md:flex justify-center mt-2 hidden">
                                 <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
@@ -32,7 +32,7 @@
                 <li>
                     <a href="{{ route('about-us', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'about-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
-                        About Us
+                        {{ __('navbar.about') }}
                         @if (Route::currentRouteName() == 'about-us')
                             <div class="md:flex justify-center mt-2 hidden">
                                 <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
@@ -43,7 +43,7 @@
                 <li>
                     <div class="flex">
                         <a href="{{ route('programs', ['locale' => app()->getLocale()]) }}"
-                            class="w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">Programs
+                            class="w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">{{ __('navbar.program') }}
                         </a>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@
                 <li>
                     <a href="#"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'blogs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
-                        Blogs
+                        {{ __('navbar.blog') }}
                         @if (Route::currentRouteName() == 'blogs')
                             <div class="md:flex justify-center mt-2 hidden">
                                 <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
@@ -103,7 +103,7 @@
                 <li>
                     <a href="{{ route('contact-us', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'contact-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
-                        Contact Us
+                        {{ __('navbar.contact') }}
                         @if (Route::currentRouteName() == 'contact-us')
                             <div class="md:flex justify-center mt-2 hidden">
                                 <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
@@ -128,7 +128,7 @@
                 <li>
                     <button type="button"
                         class="text-white bg-[#0004f6] hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue rounded-full text-sm px-5 pt-1 pb-1.5 text-center me-2 mb-2 dark:bg-[#0004f6] dark:hover:bg-blue dark:focus:ring-blue md:ms-0 md:mt-0 ms-3 mt-3 w-full font-bold">
-                        Schedule Your Trial
+                        {{ __('navbar.schedule') }}
                     </button>
                 </li>
             </ul>
@@ -141,10 +141,11 @@
         function changeLang(lang) {
             var locale = lang == 'en' ? 'id' : 'en'
             var route_name = '{{ Route::currentRouteName() }}'
-            var segment2 = '{{ Request()->segment(2) ? Request()->segment(2)."/" : '' }}'
-            var segment3 = '{{ Request()->segment(3) ? Request()->segment(3)."/" : '' }}'
+            var segment2 = '{{ Request()->segment(2) ? Request()->segment(2) . '/' : '' }}'
+            var segment3 = '{{ Request()->segment(3) ? Request()->segment(3) . '/' : '' }}'
 
-            var url = '{{ url('') }}/' + locale + '/' + segment2 + segment3; // Constructing the URL with the updated locale
+            var url = '{{ url('') }}/' + locale + '/' + segment2 +
+            segment3; // Constructing the URL with the updated locale
             window.location.href = url;
         }
     </script>
