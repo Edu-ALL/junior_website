@@ -40,7 +40,7 @@ return [
     ],
 
     'how_it_work_badge' => 'HOW IT WORKS',
-    'how_it_work_title' => ' The <span class="text-yellow">learning journey</span> for your kid',
+    'how_it_work_title' => ' The <span class="text-yellow underline">learning journey</span> for your kid',
     'how_it_work_paragraph1' => 'We believe that each kid should embark on a personal learning journey based on their individual
                         interests and skill levels. Our goals focus on fostering entrepreneurial mindset through a
                         three-stage process:',
@@ -92,11 +92,11 @@ return [
 
 
     'testimonial_badge' => 'TESTIMONIALS',
-    'testimonial_title' => 'What parents say <span class="text-blue">about us</span>',
+    'testimonial_title' => 'What parents say <span class="text-blue underline">about us</span>',
 
 
     'event_badge' => 'OUR EVENTS', 
-    'event_title' => 'Let’s <span class="text-yellow">Collaborate!</span>',
+    'event_title' => 'Let’s <span class="text-yellow underline">Collaborate!</span>',
     'event_content' => ' Book our exciting and engaging class for pop-up events or birthdays at your venue. For further
                         information, please contact us.',
 ];

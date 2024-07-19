@@ -47,7 +47,7 @@ return [
     ],
 
     'facilities_badge' => 'Facilities',
-    'facilities_title' => '<span class="text-blue">EduALL Junior</span> Playful Learning Center',
+    'facilities_title' => '<span class="text-blue underline">EduALL Junior</span> Playful Learning Center',
     'facilities_image_content' => [
         [
             'image' => '',
