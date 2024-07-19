@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-pinkBg pt-[100px] relative pb-24">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-10">
+        <img loading="lazy" src="{{ asset('img/science/accent/Why.png') }}" class="md:w-[200px] w-[80px] absolute top-60 right-0 z-10">
 
         <div class="main-container  z-10">
             {{-- Breadcrumb --}}
@@ -66,7 +66,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:top-[50%] top-full md:block hidden z-0">
-            <img src="{{ asset('img/coding-robotics/image/Why.png') }}" alt="" class="w-full object-cover">
+            <img loading="lazy" src="{{ asset('img/coding-robotics/image/Why.png') }}" alt="" class="w-full object-cover">
         </div>
     </section>
 
@@ -80,7 +80,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/coding-robotics/image/TheImportance_1.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/coding-robotics/image/TheImportance_1.png') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -101,7 +101,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img src="{{ asset('img/coding-robotics/image/TheImportance_2.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/coding-robotics/image/TheImportance_2.png') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -133,7 +133,7 @@
                         <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl">
                             <div
                                 class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-pink text-white rounded-full font-bold flex items-center gap-2">
-                                <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                                <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                                 Engaging curriculum tailored for your kids
                             </div>
                             <p class="font-light text-sm text-dark mt-8 py-4 pt-6 px-8">
@@ -150,7 +150,7 @@
                         <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl">
                             <div
                                 class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-pink text-white rounded-full font-bold flex items-center gap-2">
-                                <img src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                                <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                                 Real-world application & skill development
                             </div>
                             <p class="font-light text-sm text-dark mt-8 py-4 pt-6 px-8">
@@ -169,12 +169,12 @@
     {{-- Testimonial  --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
-        <img src="{{ asset('img/science/accent/Testimonials.png') }}"
+        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.png') }}"
             class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">

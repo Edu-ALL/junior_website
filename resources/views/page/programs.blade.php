@@ -5,8 +5,8 @@
 @section('content')
     {{-- OUR PROGRAM --}}
     <section class="w-100 bg-secondary pt-[120px] pb-[100px] relative z-20">
-        <img src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
-        <img src="{{ asset('img/program/element/Programs_2.png') }}" class="md:w-[200px] w-[80px] absolute bottom-20 right-0">
+        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
+        <img loading="lazy" src="{{ asset('img/program/element/Programs_2.png') }}" class="md:w-[200px] w-[80px] absolute bottom-20 right-0">
         <div class="main-container">
             <div class="text-center md:px-[200px] px-6">
                 <h2 class="md:text-4xl text-2xl font-bold ">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="w-full">
                     <div class="relative">
-                        <img src="{{ asset('img/program/Science.png') }}" alt="" class="w-100">
+                        <img loading="lazy" src="{{ asset('img/program/Science.png') }}" alt="" class="w-100">
 
                         <div class="text-white absolute bottom-5 left-0 p-10">
                             <h5 class="text-xl font-bold mb-3">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="w-full">
                     <div class="relative">
-                        <img src="{{ asset('img/program/Coding.png') }}" alt="" class="w-100">
+                        <img loading="lazy" src="{{ asset('img/program/Coding.png') }}" alt="" class="w-100">
 
                         <div class="text-white absolute bottom-5 left-0 p-10">
                             <h5 class="text-xl font-bold mb-3">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="w-full">
                     <div class="relative">
-                        <img src="{{ asset('img/program/Enterpreneurship.png') }}" alt="" class="w-100">
+                        <img loading="lazy" src="{{ asset('img/program/Enterpreneurship.png') }}" alt="" class="w-100">
 
                         <div class="text-white absolute bottom-5 left-0 p-10">
                             <h5 class="text-xl font-bold mb-3">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="w-full">
                     <div class="relative">
-                        <img src="{{ asset('img/program/VisualArts.png') }}" alt="" class="w-100">
+                        <img loading="lazy" src="{{ asset('img/program/VisualArts.png') }}" alt="" class="w-100">
 
                         <div class="text-white absolute bottom-5 left-0 p-10">
                             <h5 class="text-xl font-bold mb-3">
@@ -89,7 +89,7 @@
                 </div>
                 <div class="w-full">
                     <div class="relative">
-                        <img src="{{ asset('img/program/CreativeCommunications.png') }}" alt="" class="w-100">
+                        <img loading="lazy" src="{{ asset('img/program/CreativeCommunications.png') }}" alt="" class="w-100">
 
                         <div class="text-white absolute bottom-5 left-0 p-10">
                             <h5 class="text-xl font-bold mb-3">
@@ -109,7 +109,7 @@
 
     {{-- HOW IT WORKS  --}}
     <section class="w-100 bg-red text-white relative">
-        <img src="{{ asset('img/program/element/HowItWorks.png') }}" class="md:w-[300px] w-[80px] absolute bottom-0 right-0">
+        <img loading="lazy" src="{{ asset('img/program/element/HowItWorks.png') }}" class="md:w-[300px] w-[80px] absolute bottom-0 right-0">
         <div class="main-container py-[100px]">
             <div class="text-start mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
@@ -122,9 +122,9 @@
             </div>
             <div class="grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-10 mt-[70px]">
                 <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
-                    <img src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90">
+                    <img loading="lazy" src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90">
                     <div class="flex w-full justify-center">
-                        <img src="{{ asset('img/program/element/Journey1.png') }}" class="w-20 absolute -top-10">
+                        <img loading="lazy" src="{{ asset('img/program/element/Journey1.png') }}" class="w-20 absolute -top-10">
                     </div>
                     <h3 class="text-2xl font-bold text-primary pt-[80px] mb-4">
                         Contact us to schedule a consultation
@@ -134,9 +134,9 @@
                     </p>
                 </div>
                 <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
-                    <img src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90">
+                    <img loading="lazy" src="{{ asset('img/program/element/arrow.png') }}" class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90">
                     <div class="flex w-full justify-center">
-                        <img src="{{ asset('img/program/element/Journey2.png') }}" class="w-20 absolute -top-10">
+                        <img loading="lazy" src="{{ asset('img/program/element/Journey2.png') }}" class="w-20 absolute -top-10">
                     </div>
                     <h3 class="text-2xl font-bold text-primary pt-[80px] mb-4">
                         Assessment by in-house educational psychologist
@@ -148,7 +148,7 @@
                 </div>
                 <div class="w-full h-[350px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
                     <div class="flex w-full justify-center">
-                        <img src="{{ asset('img/program/element/Journey3.png') }}" class="w-20 absolute -top-10">
+                        <img loading="lazy" src="{{ asset('img/program/element/Journey3.png') }}" class="w-20 absolute -top-10">
                     </div>
                     <h3 class="text-2xl font-bold text-primary pt-[80px] mb-4">
                         Personalized program based on assessment and observation result

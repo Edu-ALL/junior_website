@@ -5,7 +5,7 @@
 @section('content')
     {{-- WHO WE ARE --}}
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
-        <img src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
+        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}" class="md:w-[200px] w-[80px] absolute top-20 left-0">
         <div class="flex flex-nowrap mt-5 gap-5 pt-[25px] pb-[100px] relative overflow-hidden">
             <div class="w-full md:w-3/5 md:px-32 px-8">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
@@ -32,7 +32,7 @@
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-40 md:block hidden">
-                <img src="{{ asset('img/about/WhoWeAre.png') }}" alt="" class="w-full">
+                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.png') }}" alt="" class="w-full">
             </div>
         </div>
     </section>
@@ -41,7 +41,7 @@
     <section class="w-100 bg-blue md:py-[80px] py-10 relative z-10">
         <div class="flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[1%] md:block hidden">
-                <img src="{{ asset('img/about/OurMethodology.png') }}" alt="" class="w-[100%]">
+                <img loading="lazy" src="{{ asset('img/about/OurMethodology.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 <div class="mb-10">
@@ -59,7 +59,7 @@
                     <ol class="text-lg mt-6">
                         <li class="mb-3">
                             <div class="flex items-start">
-                                <img src="{{ asset('img/about/element/Point.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/about/element/Point.png') }}" alt=""
                                 class="w-4 h-4 me-3 mt-2">
                                 <div class="w-full ps-3">
                                     We develop our program by involving international and local educators, psychologists,
@@ -72,7 +72,7 @@
                         </li>
                         <li class="mb-3">
                             <div class="flex items-start">
-                                <img src="{{ asset('img/about/element/Point.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/about/element/Point.png') }}" alt=""
                                 class="w-4 h-4 me-3 mt-2">
                                 <div class="w-full ps-3">
                                     We build confidence in our students through collaborative work, fostering positive
@@ -88,9 +88,9 @@
 
     {{-- CREST Award Certifications  --}}
     <section class="w-100 bg-yellow/20 relative z-5">
-        <img src="{{ asset('img/about/element/CrestAward_1.png') }}"
+        <img loading="lazy" src="{{ asset('img/about/element/CrestAward_1.png') }}"
             class="md:w-[150px] w-[80px] absolute md:bottom-10 bottom-0 left-0">
-        <img src="{{ asset('img/home/element/LearningJourney.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.png') }}"
             class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
         <div class="main-container">
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
@@ -103,7 +103,7 @@
                     </h2>
 
                     <div class="flex justify-center my-10">
-                        <img src="{{ asset('img/logo/CrestAward.png') }}" alt="" class="w-[300px] object-cover">
+                        <img loading="lazy" src="{{ asset('img/logo/CrestAward.png') }}" alt="" class="w-[300px] object-cover">
                     </div>
 
                     <h5 class="text-xl my-5 font-bold">
@@ -124,7 +124,7 @@
 
     {{-- Programs Co-Developers  --}}
     <section class="w-100 bg-red text-white relative">
-        <img src="{{ asset('img/about/element/OurPeople.png') }}" class="md:w-[300px] w-[80px] absolute top-0 right-0">
+        <img loading="lazy" src="{{ asset('img/about/element/OurPeople.png') }}" class="md:w-[300px] w-[80px] absolute top-0 right-0">
         <div class="main-container md:py-[100px] py-[50px]">
             <div class="text-start mb-5">
                 <div class="bg-blue py-1 px-4 inline rounded-full text-white">
@@ -138,7 +138,7 @@
             <div class="grid md:grid-cols-2 grid-cols-1 gap-10 justify-center">
                 <div class="relative">
                     <div class="relative overflow-hidden">
-                        <img src="{{asset('img/about/Francisco.png')}}" alt=""
+                        <img loading="lazy" src="{{asset('img/about/Francisco.png')}}" alt=""
                             class="relative z-[0] w-full rounded-xl">
 
                         <i
@@ -150,7 +150,7 @@
                 </div>
                 <div class="relative">
                     <div class="relative overflow-hidden">
-                        <img src="{{asset('img/about/Noora.png')}}" alt=""
+                        <img loading="lazy" src="{{asset('img/about/Noora.png')}}" alt=""
                             class="relative z-[0] w-full rounded-xl">
 
                         <i
@@ -166,7 +166,7 @@
 
     {{-- Facilities  --}}
     <section class="w-100 bg-secondary relative">
-        <img src="{{ asset('img/about/element/Facilities.png') }}" class="md:w-[200px] w-[80px] absolute top-0 right-0">
+        <img loading="lazy" src="{{ asset('img/about/element/Facilities.png') }}" class="md:w-[200px] w-[80px] absolute top-0 right-0">
 
         <div class="main-container md:py-[100px] py-[50px]">
             <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
@@ -182,13 +182,13 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide rounded-lg">
-                                    <img src="https://placehold.co/500x300" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x300" alt="">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img src="https://placehold.co/500x400" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x400" alt="">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img src="https://placehold.co/500x500" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x500" alt="">
                                 </li>
                             </ul>
                         </div>
@@ -199,13 +199,13 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide rounded-lg">
-                                    <img src="https://placehold.co/500x300" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x300" alt="">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img src="https://placehold.co/500x400" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x400" alt="">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img src="https://placehold.co/500x500" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x500" alt="">
                                 </li>
                             </ul>
                         </div>
@@ -219,27 +219,27 @@
                     </p>
                     <ol class="text-lg">
                         <li class="my-3 flex items-center">
-                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
                                 class="w-4 h-4 me-3">
                             Makerspace
                         </li>
                         <li class="my-3 flex items-center">
-                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
                                 class="w-4 h-4 me-3">
                             Classroom
                         </li>
                         <li class="my-3 flex items-center">
-                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
                                 class="w-4 h-4 me-3">
                             Mini Library
                         </li>
                         <li class="my-3 flex items-center">
-                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
                                 class="w-4 h-4 me-3">
                             Public Speaking Corner
                         </li>
                         <li class="my-3 flex items-center">
-                            <img src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
                                 class="w-4 h-4 me-3">
                             Multi Function Area
                         </li>
