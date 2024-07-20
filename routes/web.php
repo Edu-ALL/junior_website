@@ -59,5 +59,9 @@ Route::group(
         Route::get('/programs/visual-arts', function () {
             return view('page.visual-arts');
         })->name('programs.visual-arts');
+
+        Route::get('/blog', function () {
+            return view('page.blog');
+        })->name('programs.blog');
     }
 );
