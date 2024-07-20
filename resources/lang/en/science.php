@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'programs' => "Programs",
     'science' => 'Science',
+    'programs' => 'Programs',
 
     'science_title' => 'Science',
     'science_description' => 'A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and critical thinking in young minds with exciting experiments and discoveries, empowering them to become inventors and innovators.',
@@ -25,7 +25,7 @@ return [
     ],
 
     'learn_more_title' => 'Learn more about Science',
-    'learn_more_see_more' => 'Read more',
+    'learn_more_see_more' => 'See More Blogs',
     'learn_more_content' => [
         [
             'image' => '',
@@ -46,4 +46,7 @@ return [
             'read_more_badge' => 'Read More',
         ],
     ],
+
+    'testimonials_badge' => 'TESTIMONIALS',
+    'testimonials_title' => 'What parents say <span class="text-blue">about us</span>',
 ];

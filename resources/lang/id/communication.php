@@ -62,4 +62,5 @@ return [
 
     'programs' => 'Programs',
     'creative_communications' => 'Creative Communications',
+
 ];
