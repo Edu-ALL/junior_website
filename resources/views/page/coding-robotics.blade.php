@@ -86,7 +86,7 @@
 
             <div class="mb-10 main-container text-white w-full flex flex-col items-end">
                 <div class="w-full md:w-1/2">
-                    <p class="font-light text-base text-white mt-4 leading-6">
+                    <p class="font-light text-lg text-white mt-4 leading-6">
                         Introducing robotics to kids offers profound benefits for their cognitive and socio-emotional
                         development. It sparks an early interest in STEM while nurturing critical skills such as
                         problem-solving and spatial reasoning. By cultivating computational thinking, kids gain a vital
@@ -107,7 +107,7 @@
 
             <div class="mb-10 main-container text-white w-full flex flex-col items-start">
                 <div class="w-full md:w-1/2">
-                    <p class="font-light text-base text-white mt-4 leading-6">
+                    <p class="font-light text-lg text-white mt-4 leading-6">
                         Coding teaches kids to break down complex problems, develop algorithms, and debug errors, thereby
                         enhancing their logical reasoning and problem-solving abilities. Early coding experiences improves
                         in memory, attention, and executive function, while also nurturing creativity and self-expression as

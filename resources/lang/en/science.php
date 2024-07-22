@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'science' => 'Science',
+    'programs' => 'Programs',
 
     'science_title' => 'Science',
     'science_description' => 'A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and critical thinking in young minds with exciting experiments and discoveries, empowering them to become inventors and innovators.',
@@ -9,7 +11,7 @@ return [
     'science_why_badge' => 'Why',
     'science_why_learn' => 'Why learn Science?',
     'science_why_description' => 'Recent studies highlight the benefit of integrating environmental education into a science program, which will enhance kid’s awareness and promote essential executive functions like problem-solving and cognitive flexibility. Early exposure to science aids in developing spatial reasoning and ignites a passion for inquiry-based learning, which contributes significantly to their intellectual growth. Through engaging hands-on activities and exploration, students not only acquire foundational knowledge about the world but also cultivate critical thinking skills needed for interpreting scientific information in everyday life.',
-    
+
     'what_your_kids_learn_title' => 'What your kids will learn',
     'what_your_kids_learn_content' => [
         [
@@ -23,7 +25,7 @@ return [
     ],
 
     'learn_more_title' => 'Learn more about Science',
-    'learn_more_see_more' => 'Read more ->',
+    'learn_more_see_more' => 'See More Blogs',
     'learn_more_content' => [
         [
             'image' => '',
@@ -44,4 +46,7 @@ return [
             'read_more_badge' => 'Read More',
         ],
     ],
+
+    'testimonials_badge' => 'TESTIMONIALS',
+    'testimonials_title' => 'What parents say <span class="text-blue">about us</span>',
 ];

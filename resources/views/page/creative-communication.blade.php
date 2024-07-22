@@ -1,6 +1,6 @@
 @extends('layout.user.main')
 
-@section('title', 'Science | EduALL Junior')
+@section('title', 'Creative Communication | EduALL Junior')
 
 @section('content')
     {{-- Banner & Description --}}
@@ -18,14 +18,14 @@
                     <li class="inline-flex items-center">
                         <a href="/programs"
                             class="inline-flex items-center text-lg font-bold text-blue hover:text-orange dark:text-gray-400 dark:hover:text-white">
-                            Programs
+                            {{ __('communication.programs') }}
                         </a>
                     </li>
                     <li aria-current="page">
                         <div class="flex items-center">
                             <span class="mx-2 text-lg text-gray">/</span>
                             <span class="ms-1 text-lg font-medium text-gray-500 md:ms-2 dark:text-gray-400">
-                                Creative Communications
+                                {{ __('communication.creative_communications') }}
                             </span>
                         </div>
                     </li>
@@ -36,32 +36,24 @@
         <div class="main-container relative">
             <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-purple">
-                    Creative Communications
+                    {{ __('communication.comms_title') }}
                 </h1>
                 <p class="text-lg text-dark text-center leading-8">
-                    Equip young learners with essential skills for effective expression, active listening, and constructive
-                    interaction in various contexts, building their confidence to socialize and express ideas.
+                    {{ __('communication.comms_description') }}
                 </p>
             </div>
         </div>
 
-
         <div class="flex w-full justify-start mt-8 md:mt-24 main-container">
             <div class="w-full md:w-3/5 flex flex-col items-start md:pr-12">
                 <div class="bg-purple py-1 px-4 inline rounded-full text-white">
-                    WHY
+                    {{ __('communication.comms_why_badge') }}
                 </div>
                 <h2 class="text-2xl font-bold text-dark mt-4">
-                    Creative Communication fosters language proficiency & adaptability
+                    {{ __('communication.comms_why_title') }}
                 </h2>
                 <p class="font-light text-dark mt-4">
-                    Recent studies highlight the benefit of integrating environmental education into a science program,
-                    which will enhance kid’s awareness and promote essential executive functions like problem-solving and
-                    cognitive flexibility. Early exposure to science aids in developing spatial reasoning and ignites a
-                    passion for inquiry-based learning, which contributes significantly to their intellectual growth.
-                    Through engaging hands-on activities and exploration, students not only acquire foundational knowledge
-                    about the world but also cultivate critical thinking skills needed for interpreting scientific
-                    information in everyday life.
+                    {{ __('communication.comms_why_content') }}
                 </p>
             </div>
         </div>
@@ -80,58 +72,26 @@
 
         <div class="flex flex-col justify-center items-start main-container mb-12 relative">
             <h2 class="text-3xl font-bold text-white text-center ">
-                What your kids <span class="text-yellowLight underline">will learn</span>
+                {{ __('communication.will_learn_title') }} <span class="text-yellowLight underline">{{ __('communication.will_learn_highlight') }}</span>
             </h2>
 
-            <p class="font-light text-base text-center md:text-left text-white mt-4 leading-6 md:w-8/12">
-                Beyond learning English as a subject in schools, EduALL Creative communication program is developed to
-                prepare your kids to be an active, creative and efficient communicator with the language knowledge and
-                skills they learn in schools and our center. The overarching aim to EduALL Creative Communication is to
-                develop effective and affective language use in the following areas:
+            <p class="font-light text-lg text-center md:text-left text-white mt-4 leading-6 md:w-8/12">
+                {{ __('communication.will_learn_description') }}
             </p>
 
             <div class="flex justify-between items-center flex-wrap gap-6 mt-12">
-                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="https://placehold.co/120" alt=""
-                        class="aspect-square object-cover w-[110px] h-[110px]">
-                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Podcasting</span>
-                </div>
-                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="https://placehold.co/120" alt=""
-                        class="aspect-square object-cover w-[110px] h-[110px]">
-                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Broadcasting</span>
-                </div>
-                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="https://placehold.co/120" alt=""
-                        class="aspect-square object-cover w-[110px] h-[110px]">
-                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Public
-                        Speaking</span>
-                </div>
-                <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
-                    <img loading="lazy" src="https://placehold.co/120" alt=""
-                        class="aspect-square object-cover w-[110px] h-[110px]">
-                    <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">Content Writing</span>
-                </div>
+                @foreach(__('communication.will_learn_content') as $content)
+                    <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">{{ $content['title'] }}</span>
+                    </div>
+                @endforeach
             </div>
         </div>
-
-        {{-- <div class="relative py-8 md:py-20">
-            <div class="mb-10 main-container text-white w-full flex flex-col items-start">
-                <div class="w-full md:w-1/2">
-                    <div class="">
-                        <div class="w-full">
-                            <h3 class="font-bold text-2xl">
-                                Engaging Explorations and Discoveries into the sciences of the daily lives and environment
-                            </h3>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div> --}}
     </section>
 
-    {{-- Testimonial  --}}
+    {{-- Testimonial --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
         <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.png') }}"
@@ -143,13 +103,13 @@
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
-                    TESTIMONIALS
+                    {{ __('communication.testimonials_badge') }}
                 </div>
                 <h2 class="font-bold text-3xl my-5">
-                    What parents say <span class="text-blue">about us</span>
+                    {{ __('communication.testimonials_title') }} <span class="text-blue">{{ __('communication.about_us') }}</span>
                 </h2>
 
-                {{-- Testimonial Component  --}}
+                {{-- Testimonial Component --}}
                 <x-testimonial :color="'blue'" />
             </div>
         </div>
@@ -162,12 +122,12 @@
         <div class="main-container">
             <div class="flex flex-col md:flex-row justify-between items-center w-full py-8">
                 <h2 class="font-bold text-3xl my-2 md:my-0 text-center">
-                    Learn more about <span class="text-purple underline decoration-purple/50">Creative Communications</span>
+                    {{ __('communication.learn_more_title') }} <span class="text-purple underline decoration-purple/50">{{ __('communication.learn_more_highlight') }}</span>
                 </h2>
                 <div class="flex flex-row items-center mt-2 md:mt-0">
                     <a href=""
                         class="flex flex-row items-center gap-2 text-lg text-blue font-bold justify-center md:gap-0">
-                        See More Blogs
+                        {{ __('communication.learn_more_see_more') }}
                         <span
                             class="ml-0 bg-blue text-white rounded-full h-8 w-8 flex items-center justify-center md:ml-2"><i
                                 class="fas fa-arrow-right text-base"></i></span>
@@ -176,20 +136,17 @@
             </div>
 
             <div class="flex flex-wrap items-start justify-center gap-8">
-                <x-blog-card :tag="'SCIENCE'" :title="'Trials & Errors for Kids'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Participating in Science Experiments for Educational'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Kids and Adult Science Curriculum'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
+                @foreach(__('communication.learn_more_content') as $content)
+                    <x-blog-card :tag="'COMMUNICATIONS'" :title="$content['title']" :date="'24 July 2024'" :description="$content['description']" :thumbnail="'https://placehold.co/400x300'"
+                        :thumbnail_alt="'thumbnail alt'" />
+                @endforeach
             </div>
         </div>
     </section>
 
-    {{-- Schedule Form  --}}
+    {{-- Schedule Form --}}
     <x-contact :color="'purple'" />
 @endsection
-
 
 @push('script')
     <script>
