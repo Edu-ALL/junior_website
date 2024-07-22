@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'programs' => 'Programs',
+    'entrepreneurship' => 'Entrepreneurship',
 
     'entrepreneurship_title' => 'Entrepreneurship',
     'entrepreneurship_description' => 'Empowering young minds to be agile and thrive in the fast-paced and ever-changing world through hands-on projects and real-world problem solving.',
@@ -15,7 +17,7 @@ return [
             'title' => 'Early Development of Entrepreneurial Mindset',
             'content' => 'Research suggests that elementary and middle school students are naturally more open and imaginative, making it an opportune time to instill entrepreneurial behaviors. By nurturing these mindsets from an early age, kids are better prepared to tap into their creativity, take risks, and develop the adaptability needed for future success (Gemino et al., 2020; Krueger Jr, Reilly, & Carsrud, 2000)',
         ]
-    ],  
+    ],
 
     'why_necessary_title' => 'Why Early Entrepreneurial Education is Necessary?',
     'why_necessary_content' => [
@@ -30,46 +32,50 @@ return [
             'image' => '',
         ]
     ],
-    
-    'what_your_kids_title' => 'What your kids will learn',
+
+    'what_your_kids_title' => 'What your kids <span class="text-green underline">will learn</span>',
     'what_your_kids_entrepreneurial_mindset_title' => 'Entrepreneurial Mindset',
     'what_your_kids_entrepreneurial_mindset_content' => [
         [
-            'content' => 'Problem-Solving: Our program teaches kids how to identify challenges and devise effective solutions, fostering their ability to think critically and creatively.',
+            'content' => '<span class="font-bold">Problem-Solving:</span> Our program teaches kids how to identify challenges and devise effective solutions, fostering their ability to think critically and creatively.',
         ],
         [
-            'content' => 'Creativity with Limited Resources: Through discovery-driven or effectual thinking, kids learn to innovate and adapt by making the most out of available resources to achieve their goals.',
+            'content' => '<span class="font-bold">Creativity with Limited Resources: </span> Through discovery-driven or effectual thinking, kids learn to innovate and adapt by making the most out of available resources to achieve their goals.',
         ],
         [
-            'content' => 'Teamwork: Through various collaborative projects, kids learn to develop strong interpersonal skills and the ability to work effectively with others.',
+            'content' => '<span class="font-bold">Teamwork:</span> Through various collaborative projects, kids learn to develop strong interpersonal skills and the ability to work effectively with others.',
         ]
     ],
 
     'what_your_kids_entrepreneurial_skills_title' => 'Entrepreneurial Skills',
-    'what_your_kids_entrepreneurial_skills_content' => [
+    'what_your_kids_entrepreneurial_skills_content_1' => [
         [
-            'content' => 'Public Speaking: Kids learn to communicate ideas effectively and practice to articulate thoughts clearly and persuasively.',
+            'content' => '<span class="font-bold">Public Speaking:</span> Kids learn to communicate ideas effectively and practice to articulate thoughts clearly and persuasively.',
         ],
         [
-            'content' => 'Opportunity Analysis: Acting as entrepreneurs, kids are encouraged to observe patterns and trends to assess the viability of their ideas, ensuring they embark on ventures with potential for success.',
+            'content' => '<span class="font-bold">Opportunity Analysis:</span> Acting as entrepreneurs, kids are encouraged to observe patterns and trends to assess the viability of their ideas, ensuring they embark on ventures with potential for success.',
         ],
         [
-            'content' => 'Market Research: Kids learn to gather insights about potential users to tailor their products or services to meet customer needs.',
+            'content' => '<span class="font-bold">Market Research:</span> Kids learn to gather insights about potential users to tailor their products or services to meet customer needs.',
         ],
         [
-            'content' => 'Design Thinking: Kids are encouraged to practice user-centric design and seek continuous feedback to develop solutions that address user challenges.',
+            'content' => '<span class="font-bold">Design Thinking:</span> Kids are encouraged to practice user-centric design and seek continuous feedback to develop solutions that address user challenges.',
+        ],
+
+    ],
+
+    'what_your_kids_entrepreneurial_skills_content_2' => [
+        [
+            'content' => '<span class="font-bold">Prototyping:</span> Kids will create prototypes to visualize and refine their ideas, gather feedback, and iteratively improve their products or services before full-scale production.',
         ],
         [
-            'content' => 'Prototyping: Kids will create prototypes to visualize and refine their ideas, gather feedback, and iteratively improve their products or services before full-scale production.',
+            'content' => '<span class="font-bold">Business Model:</span> Kids will learn to create a business model to understand how to create a profitable business by considering production costs, pricing strategies, and revenue streams.',
         ],
         [
-            'content' => 'Business Model: Kids will learn to create a business model to understand how to create a profitable business by considering production costs, pricing strategies, and revenue streams.',
-        ],
-        [
-            'content' => 'Pitching: Mastering the art of pitching is essential for entrepreneurs to convincingly communicate their ideas to potential users and investors. Kids will  learn to deliver concise, compelling presentations that inspire support and investment.'
+            'content' => '<span class="font-bold">Pitching:</span> Mastering the art of pitching is essential for entrepreneurs to convincingly communicate their ideas to potential users and investors. Kids will  learn to deliver concise, compelling presentations that inspire support and investment.'
         ]
     ],
-    
+
     'phases_content' => [
         [
             'title' => 'Phase 1',
@@ -85,6 +91,9 @@ return [
         ],
     ],
 
+    'learn_more_title' => 'Learn more about',
+    'learn_more_see_more' => 'See More Blogs',
+    'learn_more_highlight' => 'Entrepreneurship',
     'learn_more_content' => [
         [
             'image' => '',
@@ -105,5 +114,7 @@ return [
             'read_more_badge' => 'Read More',
         ],
     ],
-    
+
+    'testimonials_badge' => 'TESTIMONIALS',
+    'testimonials_title' => 'What parents say <span class="text-green">about us</span>',
 ];

@@ -31,11 +31,11 @@
         </div>
 
         <div class="main-container relative z-20">
-            <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
+            <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-pink">
                     Creative Coding & Robotics
                 </h1>
-                <p class="text-lg text-dark text-center leading-8">
+                <p class="text-lg md:text-xl text-dark text-center leading-8">
                     Embark on an interactive journey into the world of technology, where young technologists unleash their
                     creativity and develop problem-solving skills through engaging, hands-on coding and robotics projects,
                     ultimately enhancing their system thinking abilities.
@@ -52,7 +52,7 @@
                 <h2 class="text-3xl font-bold text-dark mt-4">
                     Why learn Creative Coding & Robotics?
                 </h2>
-                <p class="font-light text-dark mt-4">
+                <p class="font-light text-dark mt-4 text-lg">
                     EduALL Junior's Creative Coding & Robotics class is an essential and exciting opportunity for young
                     learners to venture into the dynamic world of technology. Current research highlights the importance of
                     STEM (Science, Technology, Engineering, and Mathematics) competencies, especially in coding and
@@ -132,15 +132,15 @@
                     <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-6">
                         <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl">
                             <div
-                                class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-pink text-white rounded-full font-bold flex items-center gap-2">
+                                class="absolute -translate-y-1/2 px-4 py-1 md:text-lg text-sm bg-pink text-white rounded-full font-bold flex items-center gap-2">
                                 <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                                 Engaging curriculum tailored for your kids
                             </div>
-                            <p class="font-light text-sm text-dark mt-8 py-4 pt-6 px-8">
+                            <p class="font-light text-sm md:text-lg text-dark mt-8 py-4 pt-6 px-8">
                                 Our program is designed for kids aged 5-12. Each session is thoughtfully br crafted to
                                 progressively build their skills and knowledge. Your kids will engage in our hands-on
-                                projects that not only showcase their learning but also <br> develop their problem-solving
-                                abilities, design thinking skills, and entrepreneurial<br> spirit.
+                                projects that not only showcase their learning but also develop their problem-solving
+                                abilities, design thinking skills, and entrepreneurial spirit.
                             </p>
                         </div>
                     </div>
@@ -149,11 +149,11 @@
                     <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-6">
                         <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl">
                             <div
-                                class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-pink text-white rounded-full font-bold flex items-center gap-2">
+                                class="absolute -translate-y-1/2 px-4 py-1 md:text-lg text-sm bg-pink text-white rounded-full font-bold flex items-center gap-2">
                                 <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
                                 Real-world application & skill development
                             </div>
-                            <p class="font-light text-sm text-dark mt-8 py-4 pt-6 px-8">
+                            <p class="font-light text-sm md:text-lg text-dark mt-8 py-4 pt-6 px-8">
                                 Our program integrates classroom learning with practical experiences, ensuring both
                                 authenticity and relevance. With three modules per level, each spanning 3-4 months, your
                                 kids will delve into various aspects of creative coding and robotics, progressing from

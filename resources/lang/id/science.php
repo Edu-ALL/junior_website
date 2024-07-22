@@ -25,9 +25,9 @@ return [
         ]
     ],
 
-    'learn_more_title' => 'Pelajari lebih lanjut tentang Sains',
+    'learn_more_title' => 'Pelajari lebih lanjut tentang',
     'learn_more_see_more' => 'Lihat lebih banyak',
-
+    'learn_more_highlight' => 'Sains',
     'learn_more_content' => [
         [
             'image' => '',
@@ -48,4 +48,7 @@ return [
             'read_more_badge' => 'Read More',
         ],
     ],
+
+    'testimonials_badge' => 'TESTIMONIALS',
+    'testimonials_title' => 'Apa yang orang tua katakan <span class="text-blue">tentang kami</span>',
 ];

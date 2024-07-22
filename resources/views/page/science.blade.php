@@ -31,11 +31,11 @@
         </div>
 
         <div class="main-container relative">
-            <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
+            <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-orange">
                     {!! __('science.science_title') !!}
                 </h1>
-                <p class="text-lg text-dark text-center leading-8">
+                <p class="text-xl text-dark text-center leading-8">
                     {!! __('science.science_description') !!}
                 </p>
             </div>
@@ -49,7 +49,7 @@
                 <h2 class="text-3xl font-bold text-dark mt-4">
                     {{ __('science.science_why_learn') }}
                 </h2>
-                <p class="font-light text-dark mt-4">
+                <p class="font-light text-dark mt-4 text-lg">
                     {!! __('science.science_why_description') !!}
                 </p>
             </div>
@@ -136,7 +136,7 @@
                     {{ __('science.testimonials_badge') }}
                 </div>
                 <h2 class="font-bold text-3xl my-5">
-                    {{ __('science.testimonials_title') }} <span class="text-blue">{{ __('science.about_us') }}</span>
+                    {!! __('science.testimonials_title') !!}
                 </h2>
 
                 {{-- Testimonial Component --}}

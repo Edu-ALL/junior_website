@@ -34,11 +34,11 @@
         </div>
 
         <div class="main-container relative">
-            <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
+            <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-purple">
                     {{ __('communication.comms_title') }}
                 </h1>
-                <p class="text-lg text-dark text-center leading-8">
+                <p class="text-lg md:text-xl text-dark text-center leading-8">
                     {{ __('communication.comms_description') }}
                 </p>
             </div>
@@ -52,7 +52,7 @@
                 <h2 class="text-2xl font-bold text-dark mt-4">
                     {{ __('communication.comms_why_title') }}
                 </h2>
-                <p class="font-light text-dark mt-4">
+                <p class="font-light text-dark mt-4 text-lg">
                     {{ __('communication.comms_why_content') }}
                 </p>
             </div>
@@ -147,38 +147,3 @@
     {{-- Schedule Form --}}
     <x-contact :color="'purple'" />
 @endsection
-
-@push('script')
-    <script>
-        var galery = new Splide('#galery', {
-            type: 'loop',
-            perPage: 4,
-            gap: 20,
-            padding: {
-                left: 5,
-                right: 40
-            },
-            breakpoints: {
-                640: {
-                    perPage: 1,
-                    padding: {
-                        left: 5,
-                        right: 20
-                    },
-                    gap: 10,
-                },
-            },
-            pagination: false,
-            arrows: false,
-        });
-        galery.mount();
-
-        function arrowSplide(type) {
-            if (type == 'prev') {
-                galery.go('<')
-            } else {
-                galery.go('>')
-            }
-        }
-    </script>
-@endpush

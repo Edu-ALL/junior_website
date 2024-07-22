@@ -32,11 +32,11 @@
         </div>
 
         <div class="main-container relative z-20">
-            <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
+            <div class="flex flex-col items-center py-12 max-w-4xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-red">
                     Visual Arts
                 </h1>
-                <p class="text-lg text-dark text-center leading-8">
+                <p class="text-lg md:text-xl text-dark text-center leading-8">
                     Think like an artist, create like a designer, act like a human.
                 </p>
             </div>
@@ -51,7 +51,7 @@
                 <h2 class="text-3xl font-bold text-dark mt-4">
                     Why Learning Visual Arts is Necessary for Kids?
                 </h2>
-                <p class="font-light text-dark mt-4">
+                <p class="font-light text-dark mt-4 text-lg">
                     Learning visual arts is essential for kids as it provides a powerful outlet for emotional expression and
                     communication. Through arts education, students can articulate their thoughts and emotions across
                     various mediums, fostering practical communication skills and boosting self- assurance. Additionally, it
@@ -209,11 +209,11 @@
     {{-- What your kids will learn --}}
     <section class="w-100 bg-redBg pt-20 pb-12 md:pt-20 md:pb-20 relative -z-10">
         <div class="flex flex-col justify-center main-container mb-12">
-            <div class="flex items-center gap-8">
-                <h2 class="w-1/2 text-3xl font-bold text-dark text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <h2 class="md:w-1/2 text-3xl font-bold text-dark text-center md:text-left">
                     What your kids <span class="text-red underline">will learn</span>
                 </h2>
-                <p class="text-dark w-1/2">
+                <p class="text-dark md:w-1/2 text-center md:text-left">
                     The EduALL Visual Arts curriculum framework aims to nurture creativity by fostering open-ended projects
                     that prioritize the process of working with visual materials. The visual arts curriculum comprises
                     interrelated activities in making art and in looking at responding to art.
@@ -221,14 +221,37 @@
             </div>
 
             <div class="flex flex-col md:flex-row gap-8 mt-12">
-                <div class="flex justify-between items-center flex-wrap gap-6 mt-12">
-                    @foreach(__('communication.will_learn_content') as $content)
-                        <div class="flex items-center justify-between w-[30%] bg-white rounded-2xl overflow-hidden">
-                            <img src="https://placehold.co/120" alt=""
-                                class="aspect-square object-cover w-[110px] h-[110px]">
-                            <span class="text-lg px-4 font-bold text-red text-center w-full">{{ $content['title'] }}</span>
-                        </div>
-                    @endforeach
+                <div class="flex md:flex-row flex-col justify-between items-center flex-wrap gap-6 mt-12">
+                    <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-red text-center w-full">Drawing</span>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-red text-center w-full">Paint & Color</span>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-red text-center w-full">Print</span>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-red text-center w-full">Clay</span>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-red text-center w-full">Construction</span>
+                    </div>
+                    <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/120" alt=""
+                            class="aspect-square object-cover w-[110px] h-[110px]">
+                        <span class="text-lg px-4 font-bold text-red text-center w-full">Fabric & Fiber</span>
+                    </div>
                 </div>
             </div>
         </div>
