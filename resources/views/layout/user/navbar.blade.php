@@ -81,16 +81,15 @@
                                     Coding
                                     & Robotics</a>
                             </li>
-                            {{-- <li>
-                                <a href="{{ route('programs.visual-art', ['locale' => app()->getLocale()]) }}"
-                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.visual-art' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative Coding
-                                    & Robotics</a>
-                            </li> --}}
+                            <li>
+                                <a href="{{ route('programs.visual-arts', ['locale' => app()->getLocale()]) }}"
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.visual-arts' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Visual Arts</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{{ route('blogs', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'blogs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         {{ __('navbar.blog') }}
                         @if (Route::currentRouteName() == 'blogs')
