@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'programs' => 'Program',
+    'creative_communications' => 'Komunikasi Kreatif',
+
     'comms_title' => 'Komunikasi Kreatif',
     'comms_description' => 'Bekali anak Anda dengan keterampilan penting untuk berekspresi secara efektif, mendengarkan secara aktif, dan interaksi konstruktif dalam berbagai konteks, membangun kepercayaan diri mereka untuk bersosialisasi dan mengekspresikan ide.',
 
@@ -59,8 +62,4 @@ return [
             'read_more_badge' => 'Read More',
         ],
     ],
-
-    'programs' => 'Programs',
-    'creative_communications' => 'Creative Communications',
-
 ];

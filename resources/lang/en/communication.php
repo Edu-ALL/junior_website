@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'programs' => 'Programs',
+    'creative_communications' => 'Creative Communications',
+
     'comms_title' => 'Creative Communications',
     'comms_description' => 'Equip young learners with essential skills for effective expression, active listening, and constructive interaction in various contexts, building their confidence to socialize and express ideas.',
 
@@ -60,6 +63,4 @@ return [
         ],
     ],
 
-    'programs' => 'Programs',
-    'creative_communications' => 'Creative Communications',
 ];

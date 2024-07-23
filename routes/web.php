@@ -63,5 +63,9 @@ Route::group(
         Route::get('/blog', function () {
             return view('page.blog');
         })->name('blogs');
+
+        Route::get('/blog/{slug}', function () {
+            return view('page.detail-blog');
+        })->name('blogs.detail');
     }
 );

@@ -24,8 +24,9 @@ return [
         ]
     ],
 
-    'learn_more_title' => 'Learn more about Science',
+    'learn_more_title' => 'Learn more about',
     'learn_more_see_more' => 'See More Blogs',
+    'learn_more_highlight' => 'Science',
     'learn_more_content' => [
         [
             'image' => '',
