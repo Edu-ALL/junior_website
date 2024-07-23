@@ -12,14 +12,14 @@
         <div class="main-container relative z-20">
             <div class="flex flex-col items-center py-12 max-w-3xl mx-auto gap-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-center text-dark">
-                    Find the <span class="text-blue underline decoration-blue/50">latest news</span> from EduALL Junior
+                    {!! __('blog.title') !!}
                 </h1>
             </div>
         </div>
 
 
         <div class="flex w-full justify-start mt-8 md:mt-24 main-container flex-col">
-            <h2 class="font-bold text-3xl text-left underline text-blue decoration-primary/20 mb-8">
+            <h2 class="font-bold text-3xl text-center md:text-left underline text-blue decoration-primary/20 mb-8">
                 What’s On
             </h2>
             <div class="flex flex-wrap items-center md:py-0 py-[50px]">
@@ -84,7 +84,7 @@
     <section class="w-100 bg-blue pt-20 pb-12 md:pt-24 md:pb-20 relative -z-10">
         <div class="flex justify-start main-container mb-12">
             <h2 class="text-3xl font-bold text-white text-center md:text-left">
-                Featured Articles
+                {{ __('blog.featured_article') }}
             </h2>
         </div>
 
@@ -209,7 +209,7 @@
         <div class="main-container">
             <div class="flex flex-col md:flex-row justify-between items-center w-full pt-8">
                 <h2 class="font-bold text-3xl my-2 md:my-0 text-center">
-                    Latest Articles
+                    {{ __('blog.latest_article') }}
                 </h2>
             </div>
             <div class="flex whitespace-nowrap overflow-x-auto my-4 py-4 gap-2">

@@ -27,3 +27,40 @@
         </div>
     </div>
 </div>
+
+
+
+@push('script')
+    <script>
+        var galery = new Splide('#galery', {
+            type: 'loop',
+            perPage: 4,
+            gap: 20,
+            padding: {
+                left: 5,
+                right: 40
+            },
+            breakpoints: {
+                640: {
+                    perPage: 1,
+                    padding: {
+                        left: 5,
+                        right: 20
+                    },
+                    gap: 10,
+                },
+            },
+            pagination: false,
+            arrows: false,
+        });
+        galery.mount();
+
+        function arrowSplide(type) {
+            if (type == 'prev') {
+                galery.go('<')
+            } else {
+                galery.go('>')
+            }
+        }
+    </script>
+@endpush
