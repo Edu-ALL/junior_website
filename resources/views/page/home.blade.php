@@ -83,7 +83,7 @@
 
         <div class="flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/values.png') }}" alt="" class="w-[100%]">
+                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 @foreach (__('home.why_eduall_content') as $item)
@@ -148,7 +148,7 @@
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
-                    <img loading="lazy" src="{{ asset('img/home/learningJourney.png') }}" alt=""
+                    <img loading="lazy" src="{{ asset('img/home/LearningJourney.png') }}" alt=""
                         class="w-full object-cover">
                 </div>
             </div>
