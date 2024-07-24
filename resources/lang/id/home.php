@@ -42,23 +42,28 @@ return [
     'program_content' => [
         [
             'image' => 'Programs_Science.png',
-            'title' => 'Sains'
+            'title' => 'Sains',
+            'link' => "programs.science"
         ],
         [
             'image' => 'Programs_Coding.png',
-            'title' => 'Koding & Robotika'
+            'title' => 'Koding & Robotika',
+            'link' => "programs.coding-robotics"
         ],
         [
             'image' => 'Programs_Entrepreneurship.png',
-            'title' => 'Kewirausahaan'
+            'title' => 'Kewirausahaan',
+            'link' => "programs.entrepreneurship"
         ],
         [
             'image' => 'Programs_VisualArts.png',
-            'title' => 'Seni Visual'
+            'title' => 'Seni Visual',
+            'link' => "programs.visual-arts"
         ],
         [
             'image' => 'Programs_Communications.png',
-            'title' => 'Komunikasi'
+            'title' => 'Komunikasi',
+            'link' => "programs.creative-communication"
         ],
     ],
 

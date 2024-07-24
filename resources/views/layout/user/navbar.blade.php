@@ -88,7 +88,7 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="{{ route('blogs', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'blogs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         {{ __('navbar.blog') }}
@@ -98,7 +98,7 @@
                             </div>
                         @endif
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="{{ route('contact-us', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'contact-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">

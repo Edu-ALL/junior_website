@@ -32,11 +32,11 @@
                             {{ __('navbar.program') }}
                         </a>
                     </li>
-                    <li class="mb-3">
-                        {{-- <a href="{{ route('blogs', ['locale' => app()->getLocale()]) }}"> --}}
+                    {{-- <li class="mb-3">
+                        <a href="{{ route('blogs', ['locale' => app()->getLocale()]) }}">
                             {{ __('navbar.blog') }}
-                        {{-- </a> --}}
-                    </li>
+                        </a>
+                    </li> --}}
                     <li class="mb-3">
                         <a href="{{ route('contact-us', ['locale' => app()->getLocale()]) }}">
                             {{ __('navbar.contact') }}
@@ -56,7 +56,7 @@
                         </a>
                     </li>
                     <li class="mb-3">
-                        <a href="#">
+                        <a href="https://www.instagram.com/eduall.junior/" target="_blank">
                             Instagram
                             <i class="fa-brands fa-instagram ms-2 text-primary"></i>
                         </a>

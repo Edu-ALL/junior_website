@@ -175,9 +175,10 @@
                     <div class="relative">
                         <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt=""
                             class="relative rounded-xl mt-4 z-[0]">
-                        <button class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">
+                        <a href="{{ route($item['link'], ['locale' => app()->getLocale()]) }}"
+                            class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">
                             {{ $item['title'] }}
-                        </button>
+                        </a>
                     </div>
                 @endforeach
             </div>
@@ -185,7 +186,7 @@
     </section>
 
     {{-- Testimonial  --}}
-    <section class="w-100 bg-secondary">
+    {{-- <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
                 <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt=""
@@ -199,14 +200,13 @@
                     {!! __('home.testimonial_title') !!}
                 </h2>
 
-                {{-- Testimonial Component  --}}
                 <x-testimonial :color="'blue'" />
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- Our Event  --}}
-    <section class="w-100 py-[50px] bg-secondary">
+    {{-- <section class="w-100 py-[50px] bg-secondary">
         <div class="main-container">
             <div class="flex flex-wrap items-center">
                 <div class="w-full md:w-2/5">
@@ -335,7 +335,7 @@
                 </div>
             </section>
         </div>
-    </section>
+    </section> --}}
 
     {{-- Schedule Form  --}}
     <x-contact :color="'blue'" />

@@ -67,26 +67,31 @@ return [
     'program_content' => [
         [
             'image' => 'Programs_Science.png',
-            'title' => 'Science'
+            'title' => 'Science',
+            'link' => "programs.science"
         ],
         [
             'image' => 'Programs_Coding.png',
             'title' => 'Creative
                         Coding &
-                        Robotics'
+                        Robotics',
+            'link' => "programs.coding-robotics"
         ],
         [
             'image' => 'Programs_Entrepreneurship.png',
-            'title' => 'Entrepreneurship'
+            'title' => 'Entrepreneurship',
+            'link' => "programs.entrepreneurship"
         ],
         [
             'image' => 'Programs_VisualArts.png',
             'title' => 'Visual
-                        Arts'
+                        Arts',
+            'link' => "programs.visual-arts"
         ],
         [
             'image' => 'Programs_Communications.png',
-            'title' => 'Communications'
+            'title' => 'Communications',
+            'link' => "programs.creative-communication"
         ],
     ],
 

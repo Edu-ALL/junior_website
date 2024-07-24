@@ -138,7 +138,7 @@
             class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
-            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
+            {{-- <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
                 <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt=""
                     class="w-full object-cover">
             </div>
@@ -150,16 +150,15 @@
                     {!! __('visual.testimonials_title') !!}
                 </h2>
 
-                {{-- Testimonial Component  --}}
                 <x-testimonial :color="'blue'" />
-            </div>
+            </div> --}}
         </div>
 
         <x-gallery />
     </section>
 
     {{-- Blog --}}
-    <section class="bg-redBg py-24">
+    {{-- <section class="bg-redBg py-24">
         <div class="main-container">
             <div class="flex flex-col md:flex-row justify-between items-center w-full py-8">
                 <h2 class="font-bold text-3xl my-2 md:my-0 text-center">
@@ -183,7 +182,7 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- Schedule Form  --}}
     <x-contact :color="'red'" />
