@@ -16,8 +16,8 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white/0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white/0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:h-auto h-[85vh]">
+                <li class="md:my-0 my-1">
 
                     <a href="{{ route('home', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'home' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
@@ -29,7 +29,7 @@
                         @endif
                     </a>
                 </li>
-                <li>
+                <li class="md:my-0 my-1">
                     <a href="{{ route('about-us', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'about-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         {{ __('navbar.about') }}
@@ -40,7 +40,7 @@
                         @endif
                     </a>
                 </li>
-                <li>
+                <li class="md:my-0 my-1">
                     <div class="flex">
                         <a href="{{ route('programs', ['locale' => app()->getLocale()]) }}"
                             class="w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">{{ __('navbar.program') }}
@@ -89,7 +89,7 @@
                         </ul>
                     </div>
                 </li>
-                {{-- <li>
+                {{-- <li class="md:my-0 my-1">
                     <a href="{{ route('blogs', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'blogs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         {{ __('navbar.blog') }}
@@ -100,7 +100,7 @@
                         @endif
                     </a>
                 </li> --}}
-                <li>
+                <li class="md:my-0 my-1">
                     <a href="{{ route('contact-us', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'contact-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         {{ __('navbar.contact') }}
@@ -111,8 +111,8 @@
                         @endif
                     </a>
                 </li>
-                <li>
-                    <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12">
+                <li class="md:my-0 my-1">
+                    <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12 md:ms-0 ms-3">
                         <input type="checkbox" value="" class="sr-only peer"
                             {{ app()->getLocale() == 'id' ? 'checked' : '' }}
                             onchange="changeLang('{{ app()->getLocale() }}')">
@@ -127,7 +127,7 @@
                 </li>
                 <li>
                     <button type="button"
-                        class="text-white bg-[#0004f6] hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue rounded-full text-sm px-5 pt-1 pb-1.5 text-center me-2 mb-2 dark:bg-[#0004f6] dark:hover:bg-blue dark:focus:ring-blue md:ms-0 md:mt-0 ms-3 mt-3 w-full font-bold">
+                        class="text-white bg-[#0004f6] hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue rounded-full text-sm px-5 md:pt-1 pt-2 md:pb-1.5 pb-2 text-center me-2 mb-2 dark:bg-[#0004f6] dark:hover:bg-blue dark:focus:ring-blue md:ms-0 md:mt-0 ms-3 mt-3 w-full font-bold">
                         {{ __('navbar.schedule') }}
                     </button>
                 </li>

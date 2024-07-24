@@ -24,7 +24,7 @@
                                     {!! __('home.banner_content') !!}
                                 </p>
                             </div>
-                            <div class="flex flex-nowrap md:gap-7 gap-1">
+                            <div class="flex flex-nowrap md:gap-7 gap-1 md:mt-0 mt-[40px]">
                                 <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
                                     <img loading="lazy" src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
