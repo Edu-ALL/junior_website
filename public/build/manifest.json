@@ -1,0 +1,60 @@
+{
+  "public/fonts/nevermind/NeverMindRounded-Bold.ttf": {
+    "file": "assets/NeverMindRounded-Bold-84fc150c.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-Bold.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-BoldItalic.ttf": {
+    "file": "assets/NeverMindRounded-BoldItalic-09c9111f.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-BoldItalic.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-DemiBold.ttf": {
+    "file": "assets/NeverMindRounded-DemiBold-639c5388.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-DemiBold.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-DemiBoldItalic.ttf": {
+    "file": "assets/NeverMindRounded-DemiBoldItalic-5375496f.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-DemiBoldItalic.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-ExtraBold.ttf": {
+    "file": "assets/NeverMindRounded-ExtraBold-11afe7b1.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-ExtraBold.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-ExtraBoldItalic.ttf": {
+    "file": "assets/NeverMindRounded-ExtraBoldItalic-6a8fef96.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-ExtraBoldItalic.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-Light.ttf": {
+    "file": "assets/NeverMindRounded-Light-6c2e1837.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-Light.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-LightItalic.ttf": {
+    "file": "assets/NeverMindRounded-LightItalic-81d0f298.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-LightItalic.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-Medium.ttf": {
+    "file": "assets/NeverMindRounded-Medium-22de898e.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-Medium.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-MediumItalic.ttf": {
+    "file": "assets/NeverMindRounded-MediumItalic-35cbeca8.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-MediumItalic.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-Regular.ttf": {
+    "file": "assets/NeverMindRounded-Regular-4a3e2e6b.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-Regular.ttf"
+  },
+  "public/fonts/nevermind/NeverMindRounded-RegularItalic.ttf": {
+    "file": "assets/NeverMindRounded-RegularItalic-68cea158.ttf",
+    "src": "public/fonts/nevermind/NeverMindRounded-RegularItalic.ttf"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-0c48ca2b.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-61cc702b.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
