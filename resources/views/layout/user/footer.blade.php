@@ -4,7 +4,7 @@
             <!-- Column 1 -->
             <div class="w-full md:w-2/4 px-4 md:text-start text-center md:mb-0 mb-5">
                 <div class="flex md:justify-start justify-center">
-                    <img loading="lazy" src="{{ asset('img/logo/Eduall.png') }}" alt="EduALL Junior"
+                    <img loading="lazy" src="{{ asset('img/logo/EduALL.png') }}" alt="EduALL Junior"
                         class="md:w-[150px] w-[100px]">
                 </div>
                 <p class="mt-2">
