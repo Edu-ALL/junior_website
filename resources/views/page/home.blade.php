@@ -60,7 +60,7 @@
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="" class="w-full">
+                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior" class="w-full">
             </div>
         </div>
     </section>
@@ -83,7 +83,7 @@
 
         <div class="flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="" class="w-[100%]">
+                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior" class="w-[100%]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 @foreach (__('home.why_eduall_content') as $item)
@@ -143,12 +143,12 @@
                         {!! __('home.how_it_work_paragraph3') !!}
                     </p>
                     <button type="button"
-                        class="text-white bg-primary shadow-2xl hover:bg-primary focus:outline-none focus:ring-4 focus:ring-primary/30 font-medium rounded-full text-sm px-5 py-2 text-center me-2 mb-2 dark:bg-primary/60 dark:hover:bg-primary dark:focus:ring-primary">
+                        class="text-white bg-primary shadow-2xl hover:bg-orange transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/30 font-medium rounded-full text-sm px-5 py-2 text-center me-2 mb-2 dark:bg-primary/60 dark:hover:bg-primary dark:focus:ring-primary">
                         {!! __('home.how_it_work_button') !!}
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
-                    <img loading="lazy" src="{{ asset('img/home/LearningJourney.png') }}" alt=""
+                    <img loading="lazy" src="{{ asset('img/home/LearningJourney.png') }}" alt="EduALL Junior"
                         class="w-full object-cover">
                 </div>
             </div>
@@ -170,16 +170,18 @@
                     {!! __('home.program_title') !!}
                 </h2>
             </div>
-            <div class="grid md:grid-cols-5 grid-cols-1 md:gap-2 gap-2 justify-center">
+            <div class="grid md:grid-cols-5 grid-cols-1 md:gap-4 gap-2 justify-center">
                 @foreach (__('home.program_content') as $item)
-                    <div class="relative">
-                        <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt=""
-                            class="relative rounded-xl mt-4 z-[0]">
-                        <a href="{{ route($item['link'], ['locale' => app()->getLocale()]) }}"
-                            class="btn-primary py-2 absolute left-[10%] -bottom-[5%] z-[1] w-[80%] text-sm">
-                            {{ $item['title'] }}
-                        </a>
-                    </div>
+                    <a href="{{ route($item['link'], ['locale' => app()->getLocale()]) }}">
+                        <div class="relative pb-[20px] overflow-hidden rounded-[30px]">
+                            <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt="EduALL Junior"
+                                class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500">
+                            <div
+                                class="btn-primary hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 py-2 absolute left-[5%] bottom-0 z-[1] w-[90%] text-sm shadow-lg">
+                                {{ $item['title'] }}
+                            </div>
+                        </div>
+                    </a>
                 @endforeach
             </div>
         </div>
@@ -189,7 +191,7 @@
     {{-- <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
                     class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
@@ -239,7 +241,7 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.png') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -260,7 +262,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.png') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -281,7 +283,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.png') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -302,7 +304,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/coding.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/home/coding.png') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
