@@ -118,7 +118,7 @@
                         <span
                             class="-me-[61px] z-[9999] text-[12px] font-extrabold peer-checked:text-blue text-dark dark:text-gray-300">ID</span>
                         <div
-                            class="relative w-[70px] h-6 bg-[#D8D9F4] rounded-full peer peer-focus:ring-4 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[1px] peer-checked:after:start-[12px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-7 after:transition-all dark:border-gray-600 peer-checked:bg-[#D8D9F4]">
+                            class="relative w-[70px] h-6 bg-[#D8D9F4] rounded-full peer peer-focus:ring-4 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-blue after:content-[''] after:absolute after:top-0.5 after:start-[1px] peer-checked:after:start-[12px] after:bg-white after:border-blue after:border after:rounded-full after:h-5 after:w-7 after:transition-all dark:border-gray-600 peer-checked:bg-[#D8D9F4]">
                         </div>
                         <span
                             class="-ms-[63px] z-[9999] text-[12px] font-extrabold peer-checked:text-dark text-blue dark:text-gray-300">EN</span>
