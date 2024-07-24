@@ -111,7 +111,7 @@
                             <i
                                 class="fa-solid fa-arrow-up-right-from-square text-yellow text-xl mt-1 absolute top-5 left-5"></i>
                             <div
-                                class="py-4 px-20 bg-primary text-yellow rounded-full absolute bottom-10 -left-10 text-lg font-bold">
+                                class="md:py-4 py-1 px-20 bg-primary text-yellow rounded-full absolute md:bottom-10 bottom-3 -left-10 md:text-lg text-md font-bold">
                                 {{ $item['content_name'] }}
                             </div>
                         </div>
