@@ -14,7 +14,7 @@
                         <div class="main-container">
                             <div class="max-w-2xl mx-auto text-center">
                                 <div class="flex justify-center">
-                                    <img loading="lazy" src="{{ asset('img/logo/eduall.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/logo/Eduall.png') }}" alt="EduALL Junior"
                                         class="md:w-[200px] w-[150px] flex justify-center">
                                 </div>
                                 <h1 class="font-bold md:text-[45px] text-[1.5em] font-primary leading-[1.4]">
