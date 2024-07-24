@@ -5,6 +5,7 @@
     <title>
         @yield('title')
     </title>
+    <link rel="shortcut icon" href="{{asset('img/logo/favicon.png')}}" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     
