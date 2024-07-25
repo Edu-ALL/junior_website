@@ -175,7 +175,7 @@
                     <a href="{{ route($item['link'], ['locale' => app()->getLocale()]) }}">
                         <div class="relative pb-[20px] overflow-hidden rounded-[30px]">
                             <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt="EduALL Junior"
-                                class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500">
+                                class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500 w-full">
                             <div
                                 class="btn-primary hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 py-2 absolute left-[5%] bottom-0 z-[1] w-[90%] text-sm shadow-lg">
                                 {{ $item['title'] }}

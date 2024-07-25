@@ -81,7 +81,7 @@
 
             <div class="flex justify-between items-center flex-wrap gap-6 mt-12">
                 @foreach(__('communication.will_learn_content') as $content)
-                    <div class="flex items-center justify-between min-w-64 bg-white rounded-2xl overflow-hidden">
+                    <div class="flex items-center justify-between md:min-w-64 min-w-full bg-white rounded-2xl overflow-hidden">
                         <img src="https://placehold.co/120" alt=""
                             class="aspect-square object-cover w-[110px] h-[110px]">
                         <span class="text-lg px-4 font-bold text-[#A024A2] text-center w-full">{{ $content['title'] }}</span>
