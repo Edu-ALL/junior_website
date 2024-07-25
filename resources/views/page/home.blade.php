@@ -47,8 +47,8 @@
                 </ul>
             </div>
         </div>
-        <div class="flex flex-nowrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
-            <div class="w-full md:w-3/5 md:px-32 px-8">
+        <div class="flex flex-wrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
+            <div class="md:w-3/5 w-full md:px-32 px-8">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     {!! __('home.future_badge') !!}
                 </div>
@@ -59,8 +59,8 @@
                     {!! __('home.future_content') !!}
                 </p>
             </div>
-            <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior" class="w-full">
+            <div class="md:w-2/5 w-full md:absolute relative right-0 md:bottom-0 -bottom-20 flex justify-end">
+                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior" class="md:w-[600px] w-[80%]">
             </div>
         </div>
     </section>
@@ -81,9 +81,9 @@
             </div>
         </div>
 
-        <div class="flex justify-end mt-10">
-            <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior" class="w-[100%]">
+        <div class="flex justify-end mt-10 relative">
+            <div class="w-full md:w-2/5 absolute left-0 -bottom-[15rem] mt-[1%] md:block hidden">
+                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior" class="w-full">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 @foreach (__('home.why_eduall_content') as $item)
