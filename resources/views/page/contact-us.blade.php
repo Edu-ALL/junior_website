@@ -15,14 +15,14 @@
                         {!! __('contact.subtitle') !!}
                     </p>
                     <ul class="text-lg">
-                        <li class="mb-3">
-                            <i class="fas fa-map-location-dot me-1 text-primary"></i> Jalan Kembangan 23, Jakarta Barat
+                        <li class="mb-3 flex items-start">
+                            <i class="fas fa-map-location-dot me-2 mt-1 text-primary"></i> <p>Sentra Niaga Puri Indah, Jl. Puri Indah Raya Lingkar Blok T 2 No.19-20, RT.LuarRT.1/RW.2, Kembangan Sel., Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11610</p>
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-phone me-1 text-primary"></i> +628 111 2323 2342
+                            <i class="fas fa-phone me-1 text-primary"></i> +62 819 1164 5771
                         </li>
                         <li class="mb-3">
-                            <i class="fas fa-envelope me-1 text-primary"></i> hello@edualljunior.com
+                            <i class="fas fa-envelope me-1 text-primary"></i> info@junior.edu-all.com
                         </li>
                     </ul>
                 </div>
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-        
+
         {{-- Embed Maps  --}}
 
         <div class="w-full -mb-[100px]">

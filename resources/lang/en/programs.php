@@ -2,7 +2,7 @@
 
 return [
 
-        'program_header' => '<span class="text-blue underline">Research-Informed</span> and <span class="text-blue underline">Expert-Approved STEAM</span>, Enterpreneurship and Creative Communication Programs for Your Kids',
+        'program_header' => '<span class="text-blue">Research-Informed</span> and <span class="text-blue">Expert-Approved</span>, STEAM Enterpreneurship and Creative Communication Programs for Your Kids',
 
         'our_programs_title' => 'Our Programs',
         'our_programs_description' => 'Inspiring your kids through engaging contextual activities and integrative programs for holistic development and ensuring a love for lifelong learning.',
@@ -35,7 +35,7 @@ return [
         ],
 
         'the_journey_badge' => 'JOURNEY',
-        'the_journey_title' => 'How  <span class="text-yellowLight underline">it works</span>',
+        'the_journey_title' => 'How  <span class="text-yellowLight">it works</span>',
         'the_journey_description' => 'To design the best experience for your kids, our educators together with educational psychologist will perform assessment and observation during the trial period to craft a personalized learning journey recommendation based on the kid\'s individual interests and abilities.',
         'the_journey_content' => [
             [

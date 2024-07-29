@@ -110,7 +110,7 @@
         <div class="flex flex-col justify-center main-container mb-12">
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <h2 class="md:w-1/2 text-3xl font-bold text-dark text-center md:text-left">
-                    {!! __('visual.what_your_kids_learn_title') !!} <span class="text-red underline">{{ __('visual.learn_more_highlight') }}</span>
+                    {!! __('visual.what_your_kids_learn_title') !!} <span class="text-red">{{ __('visual.learn_more_highlight') }}</span>
                 </h2>
                 <p class="text-dark md:w-1/2 text-center md:text-left">
                     {!! __('visual.what_your_kids_learn_description') !!}

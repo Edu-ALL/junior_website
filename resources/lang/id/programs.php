@@ -2,7 +2,7 @@
 
 return [
 
-        'program_header' => 'Program STEAM, Kewirausahaan, dan  Komunikasi Kreatif Berbasis <span class="text-blue underline">Riset Tersetujui oleh Para Ahli</span> untuk Anak Anda',
+        'program_header' => 'Program STEAM, Kewirausahaan, dan  Komunikasi Kreatif Berbasis <span class="text-blue">Riset Tersetujui oleh Para Ahli</span> untuk Anak Anda',
 
         'our_programs_title' => 'Program Kami',
         'our_programs_description' => 'Menginspirasi anak Anda melalui program integratif dan kegiatan menarik untuk mendukung perkembangan secara holistik dan memupuk kecintaan akan belajar seumur hidup.',
@@ -35,7 +35,7 @@ return [
         ],
 
         'the_journey_badge' => 'PERJALANAN',
-        'the_journey_title' => 'Cara  <span class="text-yellowLight underline">Bergabung Bersama Kami</span>',
+        'the_journey_title' => 'Cara  <span class="text-yellowLight">Bergabung Bersama Kami</span>',
         'the_journey_description' => 'Untuk merancang pengalaman terbaik bagi anak-anak Anda, pendidik kami bersama psikolog pendidikan akan melakukan penilaian dan observasi selama periode uji coba untuk merancang rekomendasi perjalanan belajar yang dipersonalisasi berdasarkan minat dan kemampuan individu anak.',
         'the_journey_content' => [
             [

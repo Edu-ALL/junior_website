@@ -69,7 +69,7 @@
                             </li>
                             <li>
                                 <a href="{{ route('programs.creative-communication', ['locale' => app()->getLocale()]) }}"
-                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.creative-communication' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Communications</a>
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.creative-communication' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative Communications</a>
                             </li>
                             <li>
                                 <a href="{{ route('programs.entrepreneurship', ['locale' => app()->getLocale()]) }}"

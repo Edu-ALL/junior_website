@@ -94,7 +94,7 @@
                                     <h3 class="font-bold md:text-2xl text-xl">
                                         {!! $item['subtitle'] !!}
                                     </h3>
-                                    <i class="fa-solid fa-arrow-up-right-from-square text-yellowLight text-xl mt-1"></i>
+                                    <i class="fa-solid fa-chevron-down text-yellowLight text-2xl mt-1 font-bold"></i>
                                 </div>
                             </div>
                         </div>
