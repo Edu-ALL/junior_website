@@ -33,7 +33,7 @@ return [
         ]
     ],
 
-    'what_your_kids_title' => 'What your kids <span class="text-green underline">will learn</span>',
+    'what_your_kids_title' => 'What your kids <span class="text-green">will learn</span>',
     'what_your_kids_entrepreneurial_mindset_title' => 'Entrepreneurial Mindset',
     'what_your_kids_entrepreneurial_mindset_content' => [
         [

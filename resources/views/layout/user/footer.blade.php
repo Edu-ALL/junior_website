@@ -8,8 +8,8 @@
                         class="md:w-[150px] w-[100px]">
                 </div>
                 <p class="mt-2">
-                    Jl Kembangan 23, Jakarta Barat <br>
-                    DKI Jakarta
+                    Jl Jeruk Kembar Blok Q9 No. 15 Srengseng, Kec. Kembangan, <br>
+                    Kota Jakarta Barat, DKI Jakarta
                 </p>
             </div>
 

@@ -5,11 +5,12 @@ return [
     'banner_content' => 'Playful Learning Center for Kid’s Interests & Skills Exploration',
     'future_badge' => 'KID’S FUTURE',
     'future_title' => 'We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset',
-    'future_content' => 'At EduALL Junior, we empower kids aged 5-12 to become future change-makers and leaders through our programs focused on developing an entrepreneurial mindset. Our courses are crafted to ignite curiosity, nurture creativity, and cultivate essential skills—all while ensuring a fun learning experience.',
+    'future_content' => 'At EduALL Junior, we focus on empowering kids aged 5-12 through courses that are designed to ignite
+    curiosity, nurture creativity, and cultivate essential skills - all while ensuring a fun learning experience.',
 
 
     'why_eduall_badge' => 'Our Values',
-    'why_eduall_title' => 'Why <span class="text-yellowLight underline">EduALL Junior</span>?',
+    'why_eduall_title' => 'Why <span class="text-yellowLight">EduALL Junior</span>?',
     'why_eduall_content' => [
         [
             'subtitle' => 'Programs developed by <span class="text-yellowLight"> experts, research-informed,</span>
@@ -33,14 +34,14 @@ return [
                                         class="text-yellowLight">playful approach</span> for your kids education',
             'content' => 'Kids thrive when they’re having fun because it sparks their imagination, creativity, and social
                         skills. By tapping into their love for play, we can seamlessly weave in educational thoughts and
-                        values suited to their age. This playful learning approach ensures that during their crucial
-                        developmental stages, children grow holistically, optimizing their cognitive, emotional, and social
-                        development.',
+                        values suited to their age.This play-based learning approach ensures that children feel safe to
+                        make mistake, normalize failures, and overcome hurdles. This way, children will grow
+                        holistically, optimizing their cognitive, emotional, and social development.',
         ]
     ],
 
     'how_it_work_badge' => 'HOW IT WORKS',
-    'how_it_work_title' => ' The <span class="text-yellow underline">learning journey</span> for your kid',
+    'how_it_work_title' => ' The <span class="text-yellow">learning journey</span> for your kid',
     'how_it_work_paragraph1' => 'We believe that each kid should embark on a personal learning journey based on their individual
                         interests and skill levels. Our goals focus on fostering entrepreneurial mindset through a
                         three-stage process:',
@@ -63,7 +64,7 @@ return [
 
 
     'program_badge' => 'PROGRAMS',
-    'program_title' => '<span class="text-yellowLight underline">Expert-approved</span> programs for your kids',
+    'program_title' => '<span class="text-yellowLight">Expert-approved</span> programs for your kids',
     'program_content' => [
         [
             'image' => 'Programs_Science.png',
@@ -90,18 +91,18 @@ return [
         ],
         [
             'image' => 'Programs_Communications.png',
-            'title' => 'Communications',
+            'title' => 'Creative Communications',
             'link' => "programs.creative-communication"
         ],
     ],
 
 
     'testimonial_badge' => 'TESTIMONIALS',
-    'testimonial_title' => 'What parents say <span class="text-blue underline">about us</span>',
+    'testimonial_title' => 'What parents say <span class="text-blue">about us</span>',
 
 
-    'event_badge' => 'OUR EVENTS', 
-    'event_title' => 'Let’s <span class="text-yellow underline">Collaborate!</span>',
+    'event_badge' => 'OUR EVENTS',
+    'event_title' => 'Let’s <span class="text-yellow">Collaborate!</span>',
     'event_content' => ' Book our exciting and engaging class for pop-up events or birthdays at your venue. For further
                         information, please contact us.',
 ];

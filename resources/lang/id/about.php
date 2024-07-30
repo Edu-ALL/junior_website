@@ -12,7 +12,7 @@ return [
     Tim pengajar kami memprioritaskan baik pertumbuhan akademik maupun perkembangan sosial-emosional anak dalam lingkungan yang inklusif dan mendukung di Playful Learning Center kami.</div>',
     'who_we_are_video' => '',
 
-    'methodology_title' => '<span class="text-yellowLight underline">Metodologi</span> dan <span class="text-yellowLight underline">Pedagogi</span> Kami',
+    'methodology_title' => '<span class="text-yellowLight">Metodologi</span> dan <span class="text-yellowLight">Pedagogi</span> Kami',
     'methodology_description' => 'Mempersiapkan anak-anak untuk masa depan melibatkan pengembangan beragam keterampilan dan pembentukan pola pikir pertumbuhan. Dorong rasa ingin tahu dan cinta terhadap pembelajaran dengan menghadirkan mereka pada pengalaman-pengalaman beragam dan mendukung minat mereka.',
     'methodology_content' => [
         [
@@ -23,13 +23,13 @@ return [
         ]
     ],
 
-    'certification_title' => 'Sertifikasi <span class="text-red underline">CREST Award</span>',
+    'certification_title' => 'Sertifikasi <span class="text-red">CREST Award</span>',
     'certification_logo' => '',
     'certification_badge' => 'Sertifikasi Internasional',
     'certification_description' => 'CREST Awards adalah skema yang diakui secara internasional untuk proyek murid di bidang STEM (science, technology, engineering and math) yang didirikan oleh British Science Association. Program EduALL dalam Sains, Kreatif Koding & Robotika, Kreatif Komunikasi, Kewirausahaan & Seni Visual telah disertifikasi oleh CREST Award, sehingga aktivitas siswa dapat dihitung sebagai bagian dari sertifikasi CREST mereka.',
-    
+
     'our_people_badge' => 'TIM KAMI',
-    'our_people_title' => '<span class="text-yellowLight underline">Penyusun</span> Program Kami',
+    'our_people_title' => '<span class="text-yellowLight">Penyusun</span> Program Kami',
     'our_people_content' => [
         [
             'content_image' => 'Francisco.png',
@@ -58,7 +58,7 @@ return [
     ],
 
     'facilities_badge' => 'FASILITAS',
-    'facilities_title' => '<span class="text-blue underline">EduALL Junior</span> Playful Learning Center',
+    'facilities_title' => '<span class="text-blue">EduALL Junior</span> Playful Learning Center',
     'facilities_image_content' => [
         [
             'image' => '',

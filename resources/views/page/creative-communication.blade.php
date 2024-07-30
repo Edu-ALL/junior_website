@@ -72,7 +72,7 @@
 
         <div class="flex flex-col justify-center items-start main-container mb-12 relative">
             <h2 class="text-3xl font-bold text-white text-center ">
-                {{ __('communication.will_learn_title') }} <span class="text-yellowLight underline">{{ __('communication.will_learn_highlight') }}</span>
+                {{ __('communication.will_learn_title') }} <span class="text-yellowLight">{{ __('communication.will_learn_highlight') }}</span>
             </h2>
 
             <p class="font-light text-lg text-center md:text-left text-white mt-4 leading-6 md:w-8/12">

@@ -33,7 +33,7 @@ return [
         ]
     ],
 
-    'what_your_kids_title' => '<span class="text-green underline">Apa yang akan dipelajari</span> anak Anda',
+    'what_your_kids_title' => '<span class="text-green">Apa yang akan dipelajari</span> anak Anda',
     'what_your_kids_entrepreneurial_mindset_title' => 'Mentalitas Wirausaha',
     'what_your_kids_entrepreneurial_mindset_content' => [
         [
