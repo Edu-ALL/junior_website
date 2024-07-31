@@ -26,7 +26,7 @@
                     </p>
                 </div>
                 @foreach (__('programs.our_programs_content') as $item)
-                    <div class="w-full">
+                    <a class="w-full group" href="{{ route($item['content_link'], ['locale' => app()->getLocale()]) }}">
                         <div class="relative">
                             <img loading="lazy" src="{{ asset('img/program/' . $item['content_image']) }}" alt=""
                                 class="w-100">
@@ -35,12 +35,13 @@
                                 <h5 class="text-xl font-bold mb-3">
                                     {{ $item['content_title'] }}
                                 </h5>
-                                <p class="font-light text-sm">
+                                <p
+                                    class="font-light text-sm h-0 opacity-0 group-hover:h-28 group-hover:opacity-100 transition-all duration-500">
                                     {{ $item['content_description'] }}
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
         </div>
