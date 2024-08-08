@@ -3,19 +3,19 @@
 return [
     "testimonies" => [
         [
-            "content" => "This program has had a profound impact on my child. In addition to making new friends and having fun, they've also become more independent and confident. I highly recommend this program!",
-            "name" => "Mrs. Yuli",
-            "mom" => "Cherly's Mom",
+            "content" => "Summer Break Program ini memiliki dampak yang mendalam pada anak saya. Selain mendapatkan teman baru dan bersenang-senang, mereka juga menjadi lebih mandiri dan percaya diri. Saya sangat merekomendasikan program ini!",
+            "name" => "Bu Yuli",
+            "mom" => "Orang tua dari Cherly",
         ],
         [
-            "content" => "My child absolutely loved the summer break program! They made new friends, tried exciting activities, and came home each day with a big smile. It was a fantastic way to spend the summer.",
-            "name" => "Mrs. Vanessa ",
-            "mom" => "Heinrich’s Mom",
+            "content" => "Anak saya sangat menyukai summer break program! Mereka mendapatkan teman-teman baru, mencoba kegiatan-kegiatan yang menarik, dan pulang setiap hari dengan senyuman. Ini adalah cara yang bagus untuk menghabiskan waktu liburan sekolah.",
+            "name" => "Bu Vanessa",
+            "mom" => "Orang tua dari Heinrich",
         ],
         [
-            "content" => "We didn’t have such opportunities to explore different interests when we were young. EduALL Junior’s program has opened up a world of possibilities for my child, from discovering a love for drawing to understanding the hard work behind baking. He’s even picked up good table manners. Truly a wonderful experience!",
-            "name" => "Mrs. Graese",
-            "mom" => "Snow Rich’s Mom"
+            "content" => "Kami tidak memiliki kesempatan untuk menjelajahi minat yang berbeda ketika kami masih kecil. Program EduALL Junior telah membuka dunia untuk anak saya, mulai dari menemukan hobi pada menggambar hingga memahami proses pembuatan di balik membuat kue. Dia bahkan mempelajari tata krama yang baik saat makan. Benar-benar pengalaman yang luar biasa",
+            "name" => "Bu Graese,",
+            "mom" => "Orang tua dari Snow Rich"
         ],
     ],
 ];

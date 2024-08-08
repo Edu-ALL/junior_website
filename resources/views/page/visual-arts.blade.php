@@ -121,7 +121,7 @@
                 <div class="flex md:flex-row flex-col justify-between items-center flex-wrap gap-6 mt-12">
                     @foreach(__('visual.what_your_kids_learn_content') as $content)
                         <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
-                            <img src="{{ $content['image'] }}" alt=""
+                            <img src="{{ asset("img/visual-arts/image/will-learn/".$content['image']) }}" alt=""
                                 class="aspect-square object-cover w-[110px] h-[110px]">
                             <span class="text-lg px-4 font-bold text-red text-center w-full">{{ $content['title'] }}</span>
                         </div>
