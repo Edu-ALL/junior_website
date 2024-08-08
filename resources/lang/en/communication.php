@@ -18,19 +18,19 @@ return [
     'will_learn_description' => 'Beyond learning English as a subject in schools, EduALL Creative communication program is developed to prepare your kids to be an active, creative, and efficient communicator with the language knowledge and skills they learn in schools and our center. The overarching aim of EduALL Creative Communication is to develop effective and affective language use in the following areas:',
     'will_learn_content' => [
         [
-            'image' => '',
+            'image' => 'Podcast.png',
             'title' => 'Podcasting',
         ],
         [
-            'image' => '',
+            'image' => 'Broadcasting.png',
             'title' => 'Broadcasting',
         ],
         [
-            'image' => '',
+            'image' => 'Public-Speaking.png',
             'title' => 'Public Speaking',
         ],
         [
-            'image' => '',
+            'image' => 'Content-Writing.png',
             'title' => 'Content Writing',
         ]
     ],

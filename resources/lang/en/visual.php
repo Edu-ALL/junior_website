@@ -35,27 +35,27 @@ return [
     'what_your_kids_learn_description' => "The EduALL Visual Arts curriculum framework aims to nurture creativity by fostering open-ended projects that prioritize the process of working with visual materials. The visual arts curriculum comprises interrelated activities in making art and in looking at responding to art.",
     'what_your_kids_learn_content' => [
         [
-            'image' => "https://www.placehold.co/150x150",
+            'image' => "Drawing.png",
             'title' => 'Drawing',
         ],
         [
-            'image' => "https://www.placehold.co/150x150",
+            'image' => "Paint & Color.png",
             'title' => 'Paint & Color',
         ],
         [
-            'image' => "https://www.placehold.co/150x150",
+            'image' => "Print.png",
             'title' => 'Print',
         ],
         [
-            'image' => "https://www.placehold.co/150x150",
+            'image' => "Clay.png",
             'title' => 'Clay',
         ],
         [
-            'image' => "https://www.placehold.co/150x150",
+            'image' => "Construction.png",
             'title' => 'Construction',
         ],
         [
-            'image' => "https://www.placehold.co/150x150",
+            'image' => "Fabric.png",
             'title' => 'Fabric & Fiber',
         ],
     ],

@@ -18,20 +18,20 @@ return [
     'will_learn_description' => 'Selain mempelajari Bahasa Inggris sebagai mata pelajaran di sekolah, program Komunikasi Kreatif EduALL dikembangkan untuk mempersiapkan anak-anak Anda menjadi komunikator aktif, kreatif, dan efisien dengan pengetahuan dan keterampilan bahasa yang mereka pelajari di sekolah dan pusat kami. Tujuan utama dari program Komunikasi Kreatif EduALL adalah untuk mengembangkan penggunaan bahasa yang efektif dan efisien dalam area berikut:',
     'will_learn_content' => [
         [
-            'image' => '',
+            'image' => 'Podcast.png',
             'title' => 'Podcasting',
         ],
         [
-            'image' => '',
+            'image' => 'Broadcasting.png',
             'title' => 'Broadcasting',
         ],
         [
-            'image' => '',
+            'image' => 'Public-Speaking.png',
             'title' => 'Public Speaking',
         ],
         [
-            'image' => '',
-            'title' => 'Menulis Konten',
+            'image' => 'Content-Writing.png',
+            'title' => 'Content Writing',
         ]
     ],
 
