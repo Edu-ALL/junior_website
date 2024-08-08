@@ -188,7 +188,7 @@
     </section>
 
     {{-- Testimonial  --}}
-    {{-- <section class="w-100 bg-secondary">
+    <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
                 <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
@@ -205,7 +205,7 @@
                 <x-testimonial :color="'blue'" />
             </div>
         </div>
-    </section> --}}
+    </section>
 
     {{-- Our Event  --}}
     {{-- <section class="w-100 py-[50px] bg-secondary">

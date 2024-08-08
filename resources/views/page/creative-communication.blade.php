@@ -98,7 +98,7 @@
             class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
-            {{-- <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
+            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
                 <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
@@ -109,11 +109,11 @@
                     {{ __('communication.testimonials_title') }} <span class="text-blue">{{ __('communication.about_us') }}</span>
                 </h2>
 
-                <x-testimonial :color="'blue'" /> --}}
+                <x-testimonial :color="'blue'" />
             </div>
         </div>
 
-        <x-gallery />
+        {{-- <x-gallery /> --}}
     </section>
 
     {{-- Blog --}}
