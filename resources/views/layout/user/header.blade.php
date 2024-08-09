@@ -6,7 +6,7 @@
         @yield('title')
     </title>
 
-    <meta name="title" content="EduALL Junior | One-stop solution to unlock  your kid’s potential " />
+    <meta name="title" content="EduALL Junior | One-stop solution to unlock  your kid's potential" />
     <meta name="description"
         content="At EduALL Junior, we empower kids aged 5-12 to become future change-makers and leaders through our programs focused on developing an entrepreneurial mindset. Our courses are crafted to ignite curiosity, nurture creativity, and cultivate essential skills—all while ensuring a fun learning experience." />
 
