@@ -47,9 +47,10 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 65002
+          proxy_port: 65002
           script: |
             whoami
             cd public_html/junior_eduall/github/junior
             git pull origin production
-          timeout: 120s
 
