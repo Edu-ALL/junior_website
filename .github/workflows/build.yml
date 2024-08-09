@@ -50,4 +50,6 @@ jobs:
           script: |
             cd public_html/junior_eduall/github/junior
             git pull origin production
+          timeout: 120  # Increase timeout to 2 minutes
+          retry: 3
 
