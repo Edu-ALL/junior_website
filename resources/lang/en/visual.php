@@ -4,7 +4,7 @@ return [
     'visual' => 'Visual Arts',
     'programs' => 'Programs',
 
-    'visual_title' => 'Creative Coding & Robotics',
+    'visual_title' => 'Visual Arts',
     'visual_description' => 'Think like an artist, create like a designer, act like a human.',
 
     'visual_image' => '',
