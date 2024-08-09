@@ -41,3 +41,13 @@ jobs:
           git push origin production
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: appleboy/ssh-action@v0.3.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd public_html/junior_eduall/github/junior
+            git pull origin production
+
