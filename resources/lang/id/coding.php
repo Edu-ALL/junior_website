@@ -12,7 +12,7 @@ return [
     'coding_why_learn' => 'Mengapa belajar Koding Kreatif & Robotika?',
     'coding_why_description' => "Kelas Koding Kreatif & Robotika EduALL Junior menawarkan pengalaman menarik bagi pelajar muda untuk menjelajahi dunia teknologi yang dinamis. Penelitian terkini menyoroti pentingnya kompetensi STEM (Science, Technology, Engineering, and Mathematics), khususnya dalam koding dan robotika, dalam mempersiapkan anak-anak untuk dunia kerja yang terus berubah. Dengan memupuk pemikiran kritis, meningkatkan kemampuan pemecahan masalah, dan membangkitkan kreativitas sejak usia dini, program ini tidak hanya membekali anak-anak dengan keterampilan penting tetapi juga membangkitkan gairah untuk inovasi yang didorong oleh teknologi. Dengan fokus pada pembelajaran yang menyenangkan, EduALL Junior bertujuan untuk memberikan landasan yang kokoh dalam robotika dan koding, memberdayakan anak-anak untuk berkembang di era digital dan mengejar karir terkait STEM dengan percaya diri dan antusiasme tinggi.",
 
-    'the_importance_title' => 'Pentingnya mempelajari Koding Kreatif & Robotika sejak usia dini',
+    'the_importance_title' => 'Pentingnya mempelajari <br> Koding Kreatif & Robotika sejak usia dini',
     'the_importance_content' => [
         [
             'content' => "Memperkenalkan robotika kepada anak-anak memberikan manfaat yang mendalam bagi perkembangan kognitif dan sosio-emosional mereka. Hal ini memicu minat awal terhadap STEM sekaligus memupuk keterampilan penting seperti pemecahan masalah dan penalaran spasial. Dengan mengembangkan pemikiran komputasi, anak-anak memperoleh keterampilan penting untuk menavigasi era digital. Selain itu, robotika mendorong kolaborasi dan kerja tim, karena anak-anak seringkali bekerja sama untuk merancang, membangun, dan memprogram robot untuk menyelesaikan tugas-tugas tertentu. Aspek kolaboratif ini tidak hanya meningkatkan keterampilan sosial tetapi juga menanamkan rasa pencapaian kolektif dan tanggung jawab.",
@@ -22,7 +22,7 @@ return [
         ],
     ],
 
-    'what_your_kids_learn_title' => 'Apa yang akan dipelajari anak Anda',
+    'what_your_kids_learn_title' => 'Apa yang  <span class="text-secondBlue">akan dipelajari</span> anak Anda',
     'what_your_kids_learn_content' => [
         [
             'title' => 'Kurikulum menarik yang disesuaikan untuk anak Anda',
@@ -59,5 +59,5 @@ return [
     ],
 
     'testimonials_badge' => 'TESTIMONIALS',
-    'testimonials_title' => 'Apa yang orang tua katakan <span class="text-blue">tentang kami</span>',
+    'testimonials_title' => 'Apa yang orang tua katakan <span class="text-secondBlue">tentang kami</span>',
 ];
