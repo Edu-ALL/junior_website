@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'coding' => 'Science',
+    'coding' => 'Creative Coding & Robotics',
     'programs' => 'Programs',
 
     'coding_title' => 'Creative Coding & Robotics',
