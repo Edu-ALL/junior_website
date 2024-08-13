@@ -29,6 +29,8 @@ module.exports = {
           pinkBg: "#fff9f9",
           dark: "#2C2C2C",
           blue: "#504FDC",
+          'secondBlue': "#00A3FF",
+          'secondBlueBg': "#f5fcff",
           orange: "#FE9601",
           orangeLight: "#FFC9A4",
           orangeBg: "#FFF6EA",

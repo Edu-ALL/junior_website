@@ -64,7 +64,7 @@
     </section>
 
     {{-- What your kids will learn --}}
-    <section class="w-100 bg-red pt-20 pb-12 md:pt-48 md:pb-20 relative -z-10">
+    <section class="w-100 bg-red pt-20 pb-12 md:pt-16 md:pb-20 relative -z-10">
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
                 <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.png') }}" alt=""
