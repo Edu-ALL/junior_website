@@ -8,8 +8,8 @@
                         class="md:w-[150px] w-[100px]">
                 </div>
                 <p class="mt-2">
-                    Sentra Niaga Puri Indah, Jl. Puri Indah Raya Lingkar Blok T 2 No.19-20, RT.1/RW.2, <br>
-                     Kembangan Sel., Kec. Kembangan, Kota Jakarta Barat, <br> Daerah Khusus Ibukota Jakarta 11610
+                    Sentra Niaga Puri Indah, Jl. Puri Indah Raya Lingkar Blok T 2 No.19-20, RT.1/RW.2, 
+                     Kembangan Sel., Kec. Kembangan, <br> Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11610
                 </p>
             </div>
 
