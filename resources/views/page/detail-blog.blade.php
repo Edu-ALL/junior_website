@@ -47,11 +47,7 @@
                                     {{-- {{ __('science.testimonials_title') }} <span class="text-blue">{{ __('science.about_us') }}</span> --}}
                                 </h2>
                                 <p class="font-semibold mb-4">
-                                    “The nurturing environment, combined with engaging activities, has sparked a
-                                    newfound
-                                    curiosity and love for learning. I'm grateful for the dedicated teachers who go
-                                    above
-                                    and beyond to support my child's growth and development.”
+                                    “{{ $blog->blog_summary }}”
                                 </p>
                             </li>
                         </div>
@@ -82,7 +78,7 @@
         {{-- Blog Body --}}
 
         <div class="text-dark main-container">
-            {{ $blog->blog_description }}
+            {!! $blog->blog_description !!}
         </div>
     </section>
 
@@ -95,18 +91,9 @@
                 </h2>
             </div>
             <div class="flex flex-wrap items-start justify-center gap-8">
-                <x-blog-card :tag="'SCIENCE'" :title="'Trials & Errors for Kids'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Participating in Science Experiments for Educational'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Kids and Adult Science Curriculum'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Trials & Errors for Kids'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Participating in Science Experiments for Educational'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
-                <x-blog-card :tag="'SCIENCE'" :title="'Kids and Adult Science Curriculum'" :date="'24 July 2024'" :description="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. Placerat dignissim duis ultrices gravida pharetra rhoncus adipiscing.'" :thumbnail="'https://placehold.co/400x300'"
-                    :thumbnail_alt="'thumbnail alt'" />
+                @foreach ($related_blogs as $related_blog)
+                <x-blog-card :tag="strtoupper($related_blog->category->category_name)" :title="$related_blog->blog_title" :date="date('d F Y', strtotime($related_blog->publish_date))" :description="$related_blog->blog_description" :thumbnail="asset('uploaded_files/blogs/'.date('Y', strtotime($related_blog->created_at)).'/'.date('m', strtotime($related_blog->created_at)).'/'.$related_blog->blog_thumbnail)" :thumbnail_alt="$related_blog->blog_thumbnail_alt" />
+                @endforeach
             </div>
         </div>
     </section>
