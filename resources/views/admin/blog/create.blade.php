@@ -160,7 +160,7 @@
                                                                 </label>
                                                                 <small class="alert d-block p-0 m-0 mb-2 fs-12">Note: Please Use
                                                                     <strong>'Heading 2'</strong> for a <strong>Section</strong></small>
-                                                                <textarea class="description" name="blog_description[en]" id="blog_description">
+                                                                <textarea class="description_en" name="blog_description[en]" id="blog_description_en">
                                                                     {{ old('blog_description.en') }}
                                                                 </textarea>
                                                                 @error('blog_description.en')
@@ -265,7 +265,7 @@
                                                                 </label>
                                                                 <small class="alert d-block p-0 m-0 mb-2 fs-12">Note: Please Use
                                                                     <strong>'Heading 2'</strong> for a <strong>Section</strong></small>
-                                                                <textarea class="description" name="blog_description[id]" id="blog_description">
+                                                                <textarea class="description_id" name="blog_description[id]" id="blog_description_id">
                                                                     {{ old('blog_description.id') }}
                                                                 </textarea>
                                                                 @error('blog_description.id')
@@ -397,6 +397,8 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
             selectLang('en')
+            createEditor('description_en')
+            createEditor('description_id')
         })
 
         function previewImage() {
@@ -431,29 +433,32 @@
         //     $('#duration_read').val(Math.round(wordcount / 200));
         // }
 
-        ClassicEditor
-            .create(document.querySelector('.description'))
-            .then((editor) => {
-                // Function to count words
-                function countWords() {
-                    // Get editor content
-                    const content = editor.getData();
-
-                    // Count words (split by spaces)
-                    const wordCount = content.split(/\s+/).length - 1;
-                    $('#duration_read').val(Math.round(wordCount / 200));
-                }
-
-                // Call countWords() initially
-                countWords();
-
-                // Call countWords() whenever editor content changes
-                editor.model.document.on('change:data', countWords);
-
-            })
-            .catch(error => {
-                console.error('Error during initialization of the editor', error);
-            });
+        function createEditor( elementClass )
+        {
+            ClassicEditor
+                .create(document.querySelector('.'+elementClass))
+                .then((editor) => {
+                    // Function to count words
+                    function countWords() {
+                        // Get editor content
+                        const content = editor.getData();
+    
+                        // Count words (split by spaces)
+                        const wordCount = content.split(/\s+/).length - 1;
+                        $('#duration_read').val(Math.round(wordCount / 200));
+                    }
+    
+                    // Call countWords() initially
+                    countWords();
+    
+                    // Call countWords() whenever editor content changes
+                    editor.model.document.on('change:data', countWords);
+    
+                })
+                .catch(error => {
+                    console.error('Error during initialization of the editor', error);
+                });
+        }
 
         // tinymce.init({
         //     selector: '.description',

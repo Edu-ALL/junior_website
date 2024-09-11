@@ -7,6 +7,7 @@ use App\Http\Controllers\V1\Admin\BlogCategoriesController as V1BlogCategoriesCo
 use App\Http\Controllers\V1\Admin\BlogController as V1BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\V1\Admin\WebSettingController as V1WebSettingController;
+use App\Http\Controllers\V1\Admin\TestimonialController as V1TestimonialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,17 @@ Route::middleware(['auth.expires', 'is_admin'])->group(function () {
     Route::get('blog-category/{group}/edit', [V1BlogCategoriesController::class, 'edit']);
     Route::post('blog-category/{group}', [V1BlogCategoriesController::class, 'update'])->name('update-blog-category');
     Route::post('blog-category/delete/{group}', [V1BlogCategoriesController::class, 'delete']);
+
+    // Testimonial
+    Route::get('testimonial', [V1TestimonialController::class, 'index']);
+    Route::get('testimonial/data', [V1TestimonialController::class, 'getTestimonial'])->name('data-testimonial');
+    Route::get('testimonial/create', [V1TestimonialController::class, 'create']);
+    Route::post('testimonial', [V1TestimonialController::class, 'store'])->name('create-testimonial');
+    Route::get('testimonial/{group}/edit', [V1TestimonialController::class, 'edit']);
+    Route::post('testimonial/{group}', [V1TestimonialController::class, 'update'])->name('update-testimonial');
+    Route::post('testimonial/deactivate/{group}', [V1TestimonialController::class, 'deactivate']);
+    Route::post('testimonial/activate/{group}', [V1TestimonialController::class, 'activate']);
+    Route::post('testimonial/delete/{group}', [V1TestimonialController::class, 'delete']);
 
     // Website Settings
     Route::get('/settings', [V1WebSettingController::class, 'index']);
