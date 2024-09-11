@@ -124,11 +124,18 @@ class WebController extends Controller
 
         $blog->blog_description = $doc->saveHTML();
 
+        // Related Blogs
+        $related_blogs = Blogs::whereNot('slug', $slug)->whereHas('category', function ($query) use ($blog) {
+            $query->where('category_name', $blog->category->category_name);
+        })->where('lang', $lang)->get();
+
+
         return view('page.detail-blog')->with([
             'locale' => $locale,
             'blog' => $blog,
             'recomendation_blogs' => $recomendation_blogs,
             'blog_section_list' => $blog_section,
+            'related_blogs' => $related_blogs
         ]);
     }
 }

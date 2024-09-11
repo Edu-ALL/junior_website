@@ -12,7 +12,7 @@
         {{ $title }}
     </h3>
     <p class="font-normal text-base text-dark py-3">
-        {{ $description }}
+        {!! $description !!}
     </p>
 
     <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">

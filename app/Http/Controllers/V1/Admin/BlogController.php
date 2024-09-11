@@ -9,6 +9,7 @@ use App\Models\Blogs;
 use App\Models\WebsiteSetting;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -230,6 +231,8 @@ class BlogController extends Controller
                     'duration_read' => $request->duration_read,
                     'is_highlight' => 'false',
                     'publish_date' => $publish_date,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now(),
                 ];
                 $i++;
             }
