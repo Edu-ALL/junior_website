@@ -54,9 +54,38 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="" display:none src="https://www.facebook.com/tr?id=521143860549431&ev=PageView&noscript=1" />
+        <img height="1" width="1" style="" display:none
+            src="https://www.facebook.com/tr?id=521143860549431&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Meta Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NH5HJXVH');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    Untuk di Body:
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH5HJXVH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Include Tailwind CSS -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
