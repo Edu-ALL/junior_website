@@ -78,8 +78,6 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    Untuk di Body:
-
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH5HJXVH" height="0" width="0"
