@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('group')->length(20)->unsigned();
             $table->text('slug');
             $table->foreignId('cat_id')->constrained(
                 table: 'blog_categories', indexName: 'blogs_cat_id'
             )->onUpdate('cascade')->onDelete('cascade');
             $table->string('blog_title');
-            $table->text('blog_description')->nullable();
+            $table->text('blog_summary');
+            $table->text('blog_description');
             $table->text('blog_thumbnail');
             $table->string('blog_thumbnail_alt');
             $table->enum('blog_status', ['draft', 'publish']);

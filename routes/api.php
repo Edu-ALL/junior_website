@@ -1,7 +1,9 @@
 <?php
 
+use App\Models\BlogCategories;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\V1\ApiController as V1ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/category/{lang}', function ($lang) {
+    return BlogCategories::where('lang', $lang)->get();
+})->name('select-category');
+
+Route::GET('/reference/blog/{lang}/{category}', [V1ApiController::class, 'getReferenceBlog']);

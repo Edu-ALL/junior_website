@@ -9,9 +9,12 @@ class Blogs extends Model
 {
     use HasFactory;
 
+    public $timestamps = true;
+
     protected $fillable = [
         'slug',
         'blog_title',
+        'blog_summary',
         'blog_description',
         'blog_thumbnail',
         'blog_thumbnail_alt',
@@ -30,4 +33,10 @@ class Blogs extends Model
     {
         return $this->belongsTo(BlogCategories::class, 'cat_id', 'id');
     }
+
+    public function reads()
+    {
+        return $this->hasMany(BlogReads::class, 'blog_id', 'id');
+    }
+
 }
