@@ -1,7 +1,7 @@
 <?php
 
-use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\V1\WebController as V1WebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,48 +24,16 @@ Route::group(
         'where' => ['locale' => '[a-zA-Z-]{2,5}'],
     ],
     function () {
-        Route::get('/', function () {
-            return view('page.home');
-        })->name('home');
-
-        Route::get('/about-us', function () {
-            return view('page.about-us');
-        })->name('about-us');
-
-        Route::get('/programs', function () {
-            return view('page.programs');
-        })->name('programs');
-
-        Route::get('/contact-us', function () {
-            return view('page.contact-us');
-        })->name('contact-us');
-
-        Route::get('/programs/science', function () {
-          return view('page.science');
-        })->name('programs.science');
-
-        Route::get('/programs/creative-communication', function () {
-            return view('page.creative-communication');
-        })->name('programs.creative-communication');
-
-        Route::get('/programs/entrepreneurship', function () {
-            return view('page.entrepreneurship');
-        })->name('programs.entrepreneurship');
-
-        Route::get('/programs/coding-robotics', function () {
-            return view('page.coding-robotics');
-        })->name('programs.coding-robotics');
-
-        Route::get('/programs/visual-arts', function () {
-            return view('page.visual-arts');
-        })->name('programs.visual-arts');
-
-        Route::get('/blog', function () {
-            return view('page.blog');
-        })->name('blogs');
-
-        Route::get('/blog/{slug}', function () {
-            return view('page.detail-blog');
-        })->name('blogs.detail');
+        Route::get('/', [V1WebController::class, 'home'])->name('home');
+        Route::get('/about-us', [V1WebController::class, 'about_us'])->name('about-us');
+        Route::get('/programs', [V1WebController::class, 'programs'])->name('programs');
+        Route::get('/contact-us', [V1WebController::class, 'contact_us'])->name('contact-us');
+        Route::get('/programs/science', [V1WebController::class, 'science'])->name('programs.science');
+        Route::get('/programs/creative-communication', [V1WebController::class, 'creative_communication'])->name('programs.creative-communication');
+        Route::get('/programs/entrepreneurship', [V1WebController::class, 'entrepreneurship'])->name('programs.entrepreneurship');
+        Route::get('/programs/coding-robotics', [V1WebController::class, 'coding_robotics'])->name('programs.coding-robotics');
+        Route::get('/programs/visual-arts', [V1WebController::class, 'visual_arts'])->name('programs.visual-arts');
+        Route::get('/blog', [V1WebController::class, 'blog'])->name('blogs');
+        Route::get('/blog/{slug}', [V1WebController::class, 'detail_blog'])->name('blog.detail');
     }
 );

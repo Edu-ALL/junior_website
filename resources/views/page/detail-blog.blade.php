@@ -38,12 +38,12 @@
                             <li class=" flex flex-col items-start">
                                 <div class="flex items-center gap-4">
                                     <div class="bg-yellow py-1 px-4 inline rounded-full text-white text-sm font-semibold">
-                                        CODING & ROBOTICS
+                                        {{ strtoupper($blog->category->category_name) }}
                                     </div>
                                     <span class="text-sm text-dark">24 Apr 2024</span>
                                 </div>
                                 <h2 class="font-bold text-3xl my-5">
-                                    Creative Coding & Robotics Bootcamp Summer Holiday 2024
+                                    {{ $blog->blog_title }}
                                     {{-- {{ __('science.testimonials_title') }} <span class="text-blue">{{ __('science.about_us') }}</span> --}}
                                 </h2>
                                 <p class="font-semibold mb-4">
@@ -72,7 +72,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[35%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/blog/image/Why.png') }}" alt="" class="w-full object-cover">
+            <img loading="lazy" src="{{ asset('uploaded_files/blogs/' . $blog->created_at->format('Y') . '/' . $blog->created_at->format('m') . '/' . $blog->blog_thumbnail) }}" alt="" class="w-full object-cover">
         </div>
 
     </section>
@@ -82,37 +82,7 @@
         {{-- Blog Body --}}
 
         <div class="text-dark main-container">
-            <p>
-                Lorem ipsum dolor sit amet consectetur. Ornare bibendum a nunc est blandit diam donec nibh. Leo in dictum
-                sed sed auctor elit. Sed adipiscing massa duis arcu quam nibh a ultrices euismod. Tempor pellentesque sit
-                nec condimentum lobortis adipiscing donec amet. Nulla viverra in et dignissim platea pulvinar in platea ac.
-                Ullamcorper facilisi enim tincidunt risus adipiscing tristique consectetur velit. Risus ipsum quis
-                pellentesque malesuada. Arcu lectus vel arcu aenean orci imperdiet potenti integer nulla. Nullam suscipit
-                dignissim sem proin non. Facilisi at maecenas tincidunt sagittis orci fames suspendisse sed. Enim ac proin
-                ac urna lacus at morbi volutpat. Sed amet arcu posuere ut velit ornare feugiat quis tempor. Nisl quisque
-                fermentum integer in ultrices amet. Amet tincidunt odio quis varius morbi faucibus mi. Velit augue lobortis
-                et semper. Ante est scelerisque platea amet arcu cras sit.
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur. Ornare bibendum a nunc est blandit diam donec nibh. Leo in dictum
-                sed sed auctor elit. Sed adipiscing massa duis arcu quam nibh a ultrices euismod. Tempor pellentesque sit
-                nec condimentum lobortis adipiscing donec amet. Nulla viverra in et dignissim platea pulvinar in platea ac.
-                Ullamcorper facilisi enim tincidunt risus adipiscing tristique consectetur velit. Risus ipsum quis
-                pellentesque malesuada. Arcu lectus vel arcu aenean orci imperdiet potenti integer nulla. Nullam suscipit
-                dignissim sem proin non. Facilisi at maecenas tincidunt sagittis orci fames suspendisse sed. Enim ac proin
-                ac urna lacus at morbi volutpat. Sed amet arcu posuere ut velit ornare feugiat quis tempor. Nisl quisque
-                fermentum integer in ultrices amet. Amet tincidunt odio quis varius morbi faucibus mi. Velit augue lobortis
-                et semper. Ante est scelerisque platea amet arcu cras sit.
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur. Ornare bibendum a nunc est blandit diam donec nibh. Leo in dictum
-                sed sed auctor elit. Sed adipiscing massa duis arcu quam nibh a ultrices euismod. Tempor pellentesque sit
-                nec condimentum lobortis adipiscing donec amet. Nulla viverra in et dignissim platea pulvinar in platea ac.
-                Ullamcorper facilisi enim tincidunt risus adipiscing tristique consectetur velit. Risus ipsum quis
-                pellentesque malesuada. Arcu lectus vel arcu aenean orci imperdiet potenti integer nulla. Nullam suscipit
-                dignissim sem proin non. Facilisi at maecenas tincidunt sagittis orci fames suspendisse sed. Enim ac proin
-                ac urna lacus at morbi volutpat. Sed amet arcu posuere ut velit ornare feugiat quis tempor. Nisl quisque
-                fermentum integer in ultrices amet. Amet tincidunt odio quis varius morbi faucibus mi. Velit augue lobortis
-                et semper. Ante est scelerisque platea amet arcu cras sit.
-            </p>
+            {{ $blog->blog_description }}
         </div>
     </section>
 

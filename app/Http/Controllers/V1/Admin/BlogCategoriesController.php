@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\V1\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Trait\WebsiteSettingTrait;
 use App\Models\BlogCategories;
+use App\Models\WebsiteSetting;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -16,11 +16,9 @@ use Yajra\DataTables\Facades\DataTables;
 
 class BlogCategoriesController extends Controller
 {
-    use WebsiteSettingTrait;
-
     public function index(){
         return view('admin.blog-category.index', [
-            'website_data' => $this->website_data(),
+            'website_data' => WebsiteSetting::first(),
         ]);
     }
 
@@ -60,7 +58,7 @@ class BlogCategoriesController extends Controller
 
     public function create(){
         return view('admin.blog-category.create', [
-            'website_data' => $this->website_data(),
+            'website_data' => WebsiteSetting::first(),
         ]);
     }
 
@@ -112,7 +110,7 @@ class BlogCategoriesController extends Controller
         $blog_category = BlogCategories::where('group', $group)->get();
         return view('admin.blog-category.update', [
             'blog_category' => $blog_category,
-            'website_data' => $this->website_data(),
+            'website_data' => WebsiteSetting::first(),
         ]);
     }
 

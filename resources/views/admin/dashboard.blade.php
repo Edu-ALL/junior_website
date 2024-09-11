@@ -214,7 +214,7 @@
                 </div>
             </div>
 
-            {{-- <div class="row">
+            <div class="row">
                 <div class="col px-md-2 px-0">
                     <div class="card">
                         <div class="card-body pb-0">
@@ -236,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </section>
 </main>
