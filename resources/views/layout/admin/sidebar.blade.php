@@ -55,7 +55,7 @@
                 <span>Success Stories</span>
             </a>
         </li>
-        <li class="nav-item d-none">
+        <li class="nav-item">
             <a class="nav-link collapsed {{ request()->is('admin/testimonial*') ? 'active' : '' }}" href="/admin/testimonial">
                 <i class="fa-regular fa-comments"></i>
                 <span>Testimonial</span>
