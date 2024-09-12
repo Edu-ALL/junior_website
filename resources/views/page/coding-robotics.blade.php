@@ -145,10 +145,10 @@
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
-                    {{ __('coding.testimonial_badge') }}
+                    {{ __('coding.testimonials_badge') }}
                 </div>
                 <h2 class="font-bold text-3xl my-5">
-                    {!! __('coding.testimonial_title') !!}
+                    {!! __('coding.testimonials_title') !!}
                 </h2>
 
                 {{-- Testimonial Component  --}}
@@ -190,7 +190,7 @@
     </section> --}}
 
     {{-- Schedule Form  --}}
-    <x-contact :color="'pink'" />
+    <x-contact :color="'secondBlue'" />
 @endsection
 
 

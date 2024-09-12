@@ -35,7 +35,7 @@
         {{-- Embed Maps  --}}
 
         <div class="w-full -mb-[100px]">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.5046257097642!2d106.7480001090433!3d-6.171440381104894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7a250d0273b%3A0xa00e3e0e92c3bcc5!2sJl.%20Kembangan%20No.23%2C%20RT.1%2FRW.10%2C%20Kembangan%20Utara%2C%20Kec.%20Kembangan%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011610!5e0!3m2!1sen!2sid!4v1721354288212!5m2!1sen!2sid" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.2799870870804!2d106.7351580939352!3d-6.187201425367406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c14d5833b072cf3%3A0xcaac697513b6dc07!2sEduALL%20Junior!5e0!3m2!1sen!2sid!4v1725346024999!5m2!1sen!2sid"  width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 @endsection
