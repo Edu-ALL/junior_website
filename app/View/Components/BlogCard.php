@@ -18,6 +18,7 @@ class BlogCard extends Component
         public ?string $description = "Loerm Ipsum...",
         public ?string $thumbnail = "https://placehold.co/400x300",
         public ?string $thumbnail_alt = "thumbnail alt",
+        public ?string $slug = 'Slug',
     ){
         //
     }

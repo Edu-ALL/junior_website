@@ -43,7 +43,7 @@
                 <li class="md:my-0 my-1">
                     <div class="flex">
                         <a href="{{ route('programs', ['locale' => app()->getLocale()]) }}"
-                            class="w-full py-2 px-3 {{ Route::currentRouteName() == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">{{ __('navbar.program') }}
+                            class="w-full py-2 px-3 {{ Request()->segment(2) == 'programs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">{{ __('navbar.program') }}
                         </a>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,8 @@
                             </li>
                             <li>
                                 <a href="{{ route('programs.creative-communication', ['locale' => app()->getLocale()]) }}"
-                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.creative-communication' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative Communications</a>
+                                    class="block px-4 py-2 {{ Route::currentRouteName() == 'programs.creative-communication' ? 'text-primary' : '' }} hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Creative
+                                    Communications</a>
                             </li>
                             <li>
                                 <a href="{{ route('programs.entrepreneurship', ['locale' => app()->getLocale()]) }}"
@@ -89,17 +90,17 @@
                         </ul>
                     </div>
                 </li>
-                {{-- <li class="md:my-0 my-1">
+                <li class="md:my-0 my-1">
                     <a href="{{ route('blogs', ['locale' => app()->getLocale()]) }}"
-                        class="block py-2 px-3  {{ Route::currentRouteName() == 'blogs' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
+                        class="block py-2 px-3  {{ Request()->segment(2) == 'blog' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
                         {{ __('navbar.blog') }}
-                        @if (Route::currentRouteName() == 'blogs')
+                        @if (Request()->segment(2) == 'blog')
                             <div class="md:flex justify-center mt-2 hidden">
                                 <span class="h-1 w-[50%] bg-blue flex rounded-sm"></span>
                             </div>
                         @endif
                     </a>
-                </li> --}}
+                </li>
                 <li class="md:my-0 my-1">
                     <a href="{{ route('contact-us', ['locale' => app()->getLocale()]) }}"
                         class="block py-2 px-3  {{ Route::currentRouteName() == 'contact-us' ? 'text-white bg-blue rounded md:bg-transparent md:text-blue md:p-0 dark:text-white md:dark:text-blue' : 'text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue md:p-0 dark:text-white md:dark:hover:text-blue dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' }}">
@@ -144,8 +145,12 @@
             var segment2 = '{{ Request()->segment(2) ? Request()->segment(2) . '/' : '' }}'
             var segment3 = '{{ Request()->segment(3) ? Request()->segment(3) . '/' : '' }}'
 
-            var url = '{{ url('') }}/' + locale + '/' + segment2 +
-                segment3; // Constructing the URL with the updated locale
+            // If blog category segment 
+            var segment3 = segment3 == 'category/' ? '#category' : '#category'
+            
+            var url = '{{ url('') }}/' + locale + '/' + segment2 + segment3;
+
+            // Constructing the URL with the updated locale
             window.location.href = url;
         }
     </script>

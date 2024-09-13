@@ -104,15 +104,40 @@
             <div class="grid md:grid-cols-2 grid-cols-1 gap-10 justify-center">
                 @foreach (__('about.our_people_content') as $item)
                     <div class="relative">
-                        <div class="relative overflow-hidden">
+                        <div class="relative overflow-hidden rounded-2xl group">
                             <img loading="lazy" src="{{ asset('img/about/' . $item['content_image']) }}" alt=""
                                 class="relative z-[0] w-full rounded-xl">
 
-                            <i
-                                class="fa-solid fa-arrow-up-right-from-square text-yellow text-xl mt-1 absolute top-5 left-5"></i>
                             <div
-                                class="md:py-4 py-1 px-20 bg-primary text-yellow rounded-full absolute md:bottom-10 bottom-3 -left-10 md:text-lg text-md font-bold">
+                                class="md:py-4 py-1 px-20 bg-primary text-yellow rounded-full absolute md:bottom-10 bottom-3 -left-10 md:text-lg text-md font-bold group-hover:-bottom-full transition-all duration-500">
                                 {{ $item['content_name'] }}
+                            </div>
+
+                            <div
+                                class="w-full  bg-primary/90 absolute left-0 -bottom-full group-hover:bottom-0 h-[100%] p-10 transition-all duration-500">
+                                <div class="flex h-full w-100 items-center">
+                                    <div class="">
+                                        <h2 class="w-full text-2xl text-white mb-5">
+                                            {{ $item['content_name'] }}
+                                        </h2>
+                                        <p class="w-full">
+                                        <ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                                            @foreach ($item['content_desc'] as $desc)
+                                                <li class="flex items-center gap-3">
+                                                    <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0"
+                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                        fill="currentColor" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                                                    </svg>
+
+                                                    {{ $desc }}
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

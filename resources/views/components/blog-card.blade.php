@@ -15,7 +15,8 @@
         {!! $description !!}
     </p>
 
-    <a href="" class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
+    <a href="{{ route('blog.detail', ['slug' => $slug, 'locale' => app()->getLocale()]) }}"
+        class="flex items-center gap-2 text-lg text-blue font-bold justify-center">
         Read More
         <span class="ml-1 bg-blue text-white rounded-full h-7 w-7 flex items-center justify-center"><i
                 class="fas fa-arrow-right text-base"></i></span>

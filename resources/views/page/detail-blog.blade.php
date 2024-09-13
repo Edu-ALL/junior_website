@@ -11,16 +11,16 @@
             <nav class="flex py-8" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                     <li class="inline-flex items-center">
-                        <a href="/programs"
+                        <a href="{{ route('blogs', ['locale' => $locale]) }}"
                             class="inline-flex items-center text-lg font-bold text-blue hover:text-orange dark:text-gray-400 dark:hover:text-white">
-                            Programs
+                            Blogs
                         </a>
                     </li>
                     <li aria-current="page">
                         <div class="flex items-center">
                             <span class="mx-2 text-lg text-gray">/</span>
                             <span class="ms-1 text-lg font-medium text-gray-500 md:ms-2 dark:text-gray-400">
-                                Blog Detail
+                                {{ $blog->blog_title }}
                             </span>
                         </div>
                     </li>
@@ -54,30 +54,33 @@
                     </div>
                 </div>
 
-                <div class="bg-blue rounded-2xl flex flex-row p-6 mt-12">
+                {{-- <div class="bg-blue rounded-2xl flex flex-row p-6 mt-12">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-white font-semibold text-base">
                             Creative Coding & Robotics Bootcamp Summer Holiday 2024
                         </h2>
                         <p class="text-white text-base leading-6 font-light">
-                            Schedule a consultation with us today. Our experts will help you to discover their potential skills.
+                            Schedule a consultation with us today. Our experts will help you to discover their potential
+                            skills.
                         </p>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[35%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('uploaded_files/blogs/' . $blog->created_at->format('Y') . '/' . $blog->created_at->format('m') . '/' . $blog->blog_thumbnail) }}" alt="" class="w-full object-cover">
+            <img loading="lazy"
+                src="{{ asset('uploaded_files/blogs/' . $blog->created_at->format('Y') . '/' . $blog->created_at->format('m') . '/' . $blog->blog_thumbnail) }}"
+                alt="" class="w-full object-cover md:h-[450px] rounded-e-full">
         </div>
 
     </section>
 
-    <section class="pt-32 pb-24 bg-primaryBg">
+    <section class="pt-16 pb-24 bg-primaryBg">
 
         {{-- Blog Body --}}
 
-        <div class="text-dark main-container">
+        <div class="text-dark main-container blog_style">
             {!! $blog->blog_description !!}
         </div>
     </section>
@@ -92,7 +95,15 @@
             </div>
             <div class="flex flex-wrap items-start justify-center gap-8">
                 @foreach ($related_blogs as $related_blog)
-                <x-blog-card :tag="strtoupper($related_blog->category->category_name)" :title="$related_blog->blog_title" :date="date('d F Y', strtotime($related_blog->publish_date))" :description="$related_blog->blog_description" :thumbnail="asset('uploaded_files/blogs/'.date('Y', strtotime($related_blog->created_at)).'/'.date('m', strtotime($related_blog->created_at)).'/'.$related_blog->blog_thumbnail)" :thumbnail_alt="$related_blog->blog_thumbnail_alt" />
+                    <x-blog-card :slug="$related_blog->slug" :tag="strtoupper($related_blog->category->category_name)" :title="$related_blog->blog_title" :date="date('M dS Y', strtotime($related_blog->publish_date))" :description="$related_blog->blog_summary"
+                        :thumbnail="asset(
+                            'uploaded_files/blogs/' .
+                                date('Y', strtotime($related_blog->created_at)) .
+                                '/' .
+                                date('m', strtotime($related_blog->created_at)) .
+                                '/' .
+                                $related_blog->blog_thumbnail,
+                        )" :thumbnail_alt="$related_blog->blog_thumbnail_alt" />
                 @endforeach
             </div>
         </div>

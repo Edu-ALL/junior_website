@@ -88,3 +88,46 @@
 .btn-primary {
   @apply text-white bg-primary/90 hover:bg-primary focus:outline-none focus:ring-4 focus:ring-primary/30 font-medium rounded-full text-center me-2 mb-2 dark:bg-primary/60 dark:hover:bg-primary/90 dark:focus:ring-primary;
 }
+
+.blog_style h1,
+h2,
+h3 {
+    @apply font-bold text-dark;
+}
+
+.blog_style h1 {
+    @apply text-xl  md:text-2xl;
+}
+
+.blog_style h2 {
+    @apply text-lg  md:text-xl;
+}
+
+.blog_style h3 {
+    @apply text-base md:text-lg;
+}
+
+.blog_style p {
+    @apply font-normal text-sm text-dark md:text-base mb-5;
+}
+
+.blog_style ul {
+    @apply font-medium text-sm text-dark list-disc list-inside md:text-base;
+}
+
+.blog_style ol {
+    @apply font-medium text-sm text-dark list-decimal list-inside md:text-base;
+}
+
+.blog_style a {
+    @apply hover:text-blue/80 text-dark underline decoration-2;
+}
+
+.blog_title_header_active {
+    /* @apply fixed top-0 left-0 w-full z-[999] shadow-lg bg-white main-container lg:flex lg:items-center lg:justify-between h-[75px]; */
+    @apply top-0 z-[999] shadow-lg bg-white lg:flex lg:items-center lg:justify-between min-h-[75px];
+}
+
+.blog_title_header_active h1 {
+    @apply font-primary font-extrabold text-xl text-blue md:text-2xl  lg:text-left text-center transition-all duration-500;
+}

@@ -11,79 +11,105 @@ use DOMDocument;
 
 class WebController extends Controller
 {
-    public function home()
+    public function home($locale)
     {
-        return view('page.home');
+        return view('page.home', ['locale' => $locale]);
     }
 
-    public function about_us()
+    public function about_us($locale)
     {
-        return view('page.about-us');
+        return view('page.about-us', ['locale' => $locale]);
     }
 
-    public function programs()
+    public function programs($locale)
     {
-        return view('page.programs');
+        return view('page.programs', ['locale' => $locale]);
     }
 
-    public function contact_us()
+    public function contact_us($locale)
     {
-        return view('page.contact-us');
+        return view('page.contact-us', ['locale' => $locale]);
     }
 
-    public function science()
+    public function science($locale)
     {
-        return view('page.science');
+        return view('page.science', ['locale' => $locale]);
     }
 
-    public function creative_communication()
+    public function creative_communication($locale)
     {
-        return view('page.creative-communication');
+        return view('page.creative-communication', ['locale' => $locale]);
     }
 
-    public function entrepreneurship()
+    public function entrepreneurship($locale)
     {
-        return view('page.entrepreneurship');
+        return view('page.entrepreneurship', ['locale' => $locale]);
     }
 
-    public function coding_robotics()
+    public function coding_robotics($locale)
     {
-        return view('page.coding-robotics');
+        return view('page.coding-robotics', ['locale' => $locale]);
     }
 
-    public function visual_arts()
+    public function visual_arts($locale)
     {
-        return view('page.visual-arts');
+        return view('page.visual-arts', ['locale' => $locale]);
     }
 
-    public function blog()
+    public function blog(Request $request)
     {
-        return view('page.blog');
+        $locale = $lang = $request->route('locale');
+
+        // Latest Blog
+        $latest_blog = Blogs::where('lang', $locale)->limit(3)->orderBy('created_at', 'DESC')->get();
+
+        // HighLight Blog
+        $highlight_blog = Blogs::where('lang', $locale)->where('is_highlight', 'true')->take(5)->orderBy('created_at', 'DESC')->get();
+
+        // All Blog 
+        $blogs = Blogs::where('lang', $locale)->orderBy('created_at', 'DESC')->paginate(6);
+
+        // All Category
+        $categories = BlogCategories::where('lang', $locale)->orderBy('category_name', 'ASC')->get();
+
+        // filter by category
+        if ($request->route('slug')) {
+            $category = BlogCategories::where('slug', $request->route('slug'))->first();
+            if ($category) {
+                $blogs = Blogs::where('lang', $locale)->where('cat_id', $category->id)->orderBy('created_at', 'DESC')->paginate(6);
+                
+            } else {
+                return redirect()->route('blogs', app()->getLocale());
+            }
+        }
+
+        return view('page.blog', [
+            'latest' => $latest_blog,
+            'highlight' => $highlight_blog,
+            'categories' => $categories,
+            'blogs' => $blogs,
+            'locale' => $locale
+        ]);
     }
 
     public function detail_blog(Request $request)
     {
         $locale = $lang = $request->route('locale');
         $slug = $request->route('slug');
-        // $lang = substr($locale, 3, 2);
         $blog = Blogs::where('slug', $slug)->first();
 
-        // check if blog is exsit
-        // or blog lang not equal with locale
-        if (!$blog || $lang != $blog->lang) {
-            $lang = $lang == 'id' ? 'en' : 'id';
 
-            if (!$blog || $lang != $blog->lang) { 
-                abort(404);
-            } else {
-                return redirect()->route('blog.detail', ['locale' => $lang, 'slug' => $slug]);
-            }
+        // check if blog is exsit and blog locale not equal with lang
+        if ($blog && $locale != $blog->lang) {
+            $blog = Blogs::where('group', $blog->group)->where('lang', $locale)->first();
+
+            return redirect()->route('blog.detail', ['slug' => $blog->slug, 'locale' => $lang]);
+        } else if (!$blog) {
+            abort(404);
         }
 
         // read ip address
         $ip_address = request()->ip();
-
-        $last_updated = $blog->updated_at;
 
         // if ip address already registered then skip else register new ip address
         $ip_isregistered = BlogReads::where('blog_id', $blog->id)->where('ip_address',  $ip_address)->exists();
@@ -93,48 +119,17 @@ class WebController extends Controller
                 'blog_id' => $blog->id,
                 'ip_address' => $ip_address,
             ]);
-
-            // update blog click count
-            // $blog->update([
-            //     'click_count' => $blog->click_count + 1,
-            //     'updated_at' => $last_updated,
-            // ]);
         }
-
-        // dd($blog);
-        $recomendation_blogs = Blogs::latest()
-            ->where('id', '!=', $blog->id)
-            ->where('cat_id', $blog->cat_id)
-            ->where('blog_status', 'publish')
-            ->take(3)->get();
-
-
-        // return $blog->blog_description;
-        // Blog Section
-        $doc =  new DOMDocument();
-        $doc->loadHTML($blog->blog_description, LIBXML_NOERROR);
-        $title_list = $doc->getElementsByTagName('h2');
-
-
-        $blog_section = [];
-        foreach ($title_list as $index => $title) {
-            $title->setAttribute("id", "blog_title_" . $index);
-            $blog_section[] = $title->nodeValue;
-        }
-
-        $blog->blog_description = $doc->saveHTML();
 
         // Related Blogs
         $related_blogs = Blogs::whereNot('slug', $slug)->whereHas('category', function ($query) use ($blog) {
             $query->where('category_name', $blog->category->category_name);
-        })->where('lang', $lang)->get();
+        })->where('lang', $lang)->take(3)->get();
 
 
         return view('page.detail-blog')->with([
             'locale' => $locale,
             'blog' => $blog,
-            'recomendation_blogs' => $recomendation_blogs,
-            'blog_section_list' => $blog_section,
             'related_blogs' => $related_blogs
         ]);
     }

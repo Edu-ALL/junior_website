@@ -39,10 +39,18 @@ return [
         [
             'content_image' => 'Francisco.png',
             'content_name' => 'Francisco Castro, PhD',
+            'content_desc' => [
+                'AI & Computing Research Fellow, New York University',
+                '12+ years in Computing & Education'
+            ]
         ],
         [
             'content_image' => 'Noora.png',
             'content_name' => 'Noora Noushad, PhD',
+            'content_desc' => [
+                'PhD in Learning Science & Technology, University of Pennsylvania',
+                '12+ years in International Education'
+            ]
         ]
     ],
 

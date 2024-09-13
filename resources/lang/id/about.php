@@ -34,25 +34,17 @@ return [
         [
             'content_image' => 'Francisco.png',
             'content_name' => 'Francisco Castro, PhD',
-            'content_description' => [
-                [
-                    'content' => 'Ahli Peneliti Riset AI & Komputasi, New York University',
-                ],
-                [
-                    'content' => '12+ tahun di bidang Komputasi & Pendidikan',
-                ]
+            'content_desc' => [
+                'Ahli Peneliti Riset AI & Komputasi, New York University',
+                '12+ tahun di bidang Komputasi & Pendidikan'
             ]
         ],
         [
             'content_image' => 'Noora.png',
             'content_name' => 'Noora Noushad, PhD',
-            'content_description' => [
-                [
-                    'content' => 'PhD dalam Ilmu Pembelajaran & Teknologi, University of Pennsylvania',
-                ],
-                [
-                    'content' => '12+ tahun di bidang Pendidikan Internasional',
-                ]
+            'content_desc' => [
+                'PhD dalam Ilmu Pembelajaran & Teknologi, University of Pennsylvania',
+                '12+ tahun di bidang Pendidikan Internasional'
             ]
         ]
     ],

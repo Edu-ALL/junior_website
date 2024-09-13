@@ -34,6 +34,7 @@ Route::group(
         Route::get('/programs/coding-robotics', [V1WebController::class, 'coding_robotics'])->name('programs.coding-robotics');
         Route::get('/programs/visual-arts', [V1WebController::class, 'visual_arts'])->name('programs.visual-arts');
         Route::get('/blog', [V1WebController::class, 'blog'])->name('blogs');
+        Route::get('/blog/category/{slug}', [V1WebController::class, 'blog'])->name('blog.category');
         Route::get('/blog/{slug}', [V1WebController::class, 'detail_blog'])->name('blog.detail');
     }
 );

@@ -60,7 +60,8 @@
                 </p>
             </div>
             <div class="md:w-2/5 w-full md:absolute relative right-0 md:bottom-0 -bottom-20 flex justify-end">
-                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior" class="md:w-[600px] w-[80%]">
+                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior"
+                    class="md:w-[600px] w-[80%]">
             </div>
         </div>
     </section>
@@ -82,27 +83,39 @@
         </div>
 
         <div class="flex justify-end mt-10 relative">
-            <div class="w-full md:w-2/5 absolute left-0 -bottom-[15rem] mt-[1%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior" class="w-full">
+            <div class="w-full md:w-2/5 absolute left-0 top-0 md:block hidden">
+                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior" class="w-full object-cover h-[675px] object-left-top rounded-e-[4rem]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
-                @foreach (__('home.why_eduall_content') as $item)
-                    <div class="mb-10">
-                        <div class="flex">
-                            <div class="w-full md:w-6/7">
-                                <div class="flex flex-nowrap justify-between">
-                                    <h3 class="font-bold md:text-2xl text-xl">
-                                        {!! $item['subtitle'] !!}
-                                    </h3>
-                                    <i class="fa-solid fa-chevron-down text-yellowLight text-2xl mt-1 font-bold"></i>
+                <div id="accordion-flush" data-accordion="collapse"
+                    data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                    data-inactive-classes="text-gray-500 dark:text-gray-400">
+                    @foreach (__('home.why_eduall_content') as $item)
+                        <h2 id="accordion-why-heading-{{ $loop->index }}" class="mt-10">
+                            <button type="button"
+                                class="flex flex-nowrap justify-between items-center gap-3 bg-transparent font-bold md:text-2xl text-xl"
+                                data-accordion-target="#accordion-why-{{ $loop->index }}" aria-expanded="true"
+                                aria-controls="accordion-why-{{ $loop->index }}">
+                                <div class="text-start">
+                                    {!! $item['subtitle'] !!}
                                 </div>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-why-{{ $loop->index }}" class="hidden"
+                            aria-labelledby="accordion-why-heading-{{ $loop->index }}">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700ss">
+                                <p class="font-light text-lg mt-3">
+                                    {!! $item['content'] !!}
+                                </p>
                             </div>
                         </div>
-                        <p class="font-light text-lg mt-3">
-                            {!! $item['content'] !!}
-                        </p>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
         </div>
     </section>
