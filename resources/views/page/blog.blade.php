@@ -91,82 +91,84 @@
     </section>
 
     {{-- What your kids will learn --}}
-    <section class="w-100 bg-blue pt-20 pb-12 md:pt-24 md:pb-20 relative z-0">
-        <div class="flex justify-start main-container mb-12">
-            <h2 class="text-3xl font-bold text-white text-center md:text-left">
-                {{ __('blog.featured_article') }}
-            </h2>
-        </div>
-
-        <div class="flex flex-col md:flex-row main-container gap-12">
-            <div class="flex flex-col items-start text-white md:w-2/5">
-                <div class="rounded-3xl overflow-hidden mb-8 w-full aspect-square">
-                    <img loading="lazy"
-                        src="{{ asset('uploaded_files/blogs/' . $highlight[0]->created_at->format('Y') . '/' . $highlight[0]->created_at->format('m') . '/' . $highlight[0]->blog_thumbnail) }}"
-                        alt="{{ $highlight[0]->blog_thumbnail_alt }}" title="{{ $highlight[0]->blog_title }}"
-                        class="w-full object-cover h-full rounded-3xl">
-                </div>
-                <div class="flex items-center gap-4">
-                    <h2 class="bg-purple py-1 px-4 inline rounded-full text-white text-sm font-semibold uppercase">
-                        {{ $highlight[0]->category->category_name }}
-                    </h2>
-                    <span class="text-sm text-white">
-                        {{ date('M dS Y', strtotime($highlight[0]->created_at)) }}
-                    </span>
-                </div>
-                <h2 class="font-bold text-3xl my-5">
-                    {{ $highlight[0]->blog_title }}
+    @if (count($highlight))
+        <section class="w-100 bg-blue pt-20 pb-12 md:pt-24 md:pb-20 relative z-0">
+            <div class="flex justify-start main-container mb-12">
+                <h2 class="text-3xl font-bold text-white text-center md:text-left">
+                    {{ __('blog.featured_article') }}
                 </h2>
-                <p class="font-light mb-4">
-                    {{ $highlight[0]->blog_summary }}
-                </p>
-                <a href="{{ route('blog.detail', ['slug' => $highlight[0]->slug, 'locale' => app()->getLocale()]) }}"
-                    class="flex items-center gap-2 text-base text-white font-bold justify-center">
-                    Read More
-                    <span class="ml-1 bg-white text-blue rounded-full h-5 w-5 flex items-center justify-center"><i
-                            class="fas fa-arrow-right text-xs"></i></span>
-                </a>
             </div>
-            <ul class="flex flex-col md:w-3/5 gap-4">
-                @foreach ($highlight as $item)
-                    @if ($loop->index > 0)
-                        <li class="grid md:grid-cols-2 grid-cols-1 items-stre gap-4 mb-3">
-                            <div class="rounded-3xl overflow-hidden w-full aspect-square md:h-[200px]">
-                                <img loading="lazy"
-                                    src="{{ asset('uploaded_files/blogs/' . $item->created_at->format('Y') . '/' . $item->created_at->format('m') . '/' . $item->blog_thumbnail) }}"
-                                    alt="{{ $item->blog_thumbnail_alt }}" title="{{ $item->blog_title }}"
-                                    class="w-full object-cover h-full rounded-2xl">
-                            </div>
-                            <div class="flex flex-col items-start text-white">
-                                <div class="flex items-center gap-4">
-                                    <h2
-                                        class="bg-purple py-1 px-4 inline rounded-full text-white text-sm font-semibold uppercase">
-                                        {{ $item->category->category_name }}
-                                    </h2>
-                                    <span class="text-sm text-white">
-                                        {{ date('M dS Y', strtotime($item->created_at)) }}
-                                    </span>
+
+            <div class="flex flex-col md:flex-row main-container gap-12">
+                <div class="flex flex-col items-start text-white md:w-2/5">
+                    <div class="rounded-3xl overflow-hidden mb-8 w-full aspect-square">
+                        <img loading="lazy"
+                            src="{{ asset('uploaded_files/blogs/' . $highlight[0]->created_at->format('Y') . '/' . $highlight[0]->created_at->format('m') . '/' . $highlight[0]->blog_thumbnail) }}"
+                            alt="{{ $highlight[0]->blog_thumbnail_alt }}" title="{{ $highlight[0]->blog_title }}"
+                            class="w-full object-cover h-full rounded-3xl">
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <h2 class="bg-purple py-1 px-4 inline rounded-full text-white text-sm font-semibold uppercase">
+                            {{ $highlight[0]->category->category_name }}
+                        </h2>
+                        <span class="text-sm text-white">
+                            {{ date('M dS Y', strtotime($highlight[0]->created_at)) }}
+                        </span>
+                    </div>
+                    <h2 class="font-bold text-3xl my-5">
+                        {{ $highlight[0]->blog_title }}
+                    </h2>
+                    <p class="font-light mb-4">
+                        {{ $highlight[0]->blog_summary }}
+                    </p>
+                    <a href="{{ route('blog.detail', ['slug' => $highlight[0]->slug, 'locale' => app()->getLocale()]) }}"
+                        class="flex items-center gap-2 text-base text-white font-bold justify-center">
+                        Read More
+                        <span class="ml-1 bg-white text-blue rounded-full h-5 w-5 flex items-center justify-center"><i
+                                class="fas fa-arrow-right text-xs"></i></span>
+                    </a>
+                </div>
+                <ul class="flex flex-col md:w-3/5 gap-4">
+                    @foreach ($highlight as $item)
+                        @if ($loop->index > 0)
+                            <li class="grid md:grid-cols-2 grid-cols-1 items-stre gap-4 mb-3">
+                                <div class="rounded-3xl overflow-hidden w-full aspect-square md:h-[200px]">
+                                    <img loading="lazy"
+                                        src="{{ asset('uploaded_files/blogs/' . $item->created_at->format('Y') . '/' . $item->created_at->format('m') . '/' . $item->blog_thumbnail) }}"
+                                        alt="{{ $item->blog_thumbnail_alt }}" title="{{ $item->blog_title }}"
+                                        class="w-full object-cover h-full rounded-2xl">
                                 </div>
-                                <h2 class="font-bold text-2xl my-3">
-                                    {{ $item->blog_title }}
-                                </h2>
-                                <p class="font-light mb-4">
-                                    {{ Str::limit($item->blog_summary, 100) }}
-                                </p>
-                                <a href="{{ route('blog.detail', ['slug' => $item->slug, 'locale' => app()->getLocale()]) }}"
-                                    class="flex items-center gap-2 text-base text-white font-bold justify-center">
-                                    Read More
-                                    <span
-                                        class="ml-1 bg-white text-blue rounded-full h-5 w-5 flex items-center justify-center"><i
-                                            class="fas fa-arrow-right text-xs"></i></span>
-                                </a>
-                            </div>
-                        </li>
-                    @endif
-                @endforeach
-            </ul>
-        </div>
-    </section>
+                                <div class="flex flex-col items-start text-white">
+                                    <div class="flex items-center gap-4">
+                                        <h2
+                                            class="bg-purple py-1 px-4 inline rounded-full text-white text-sm font-semibold uppercase">
+                                            {{ $item->category->category_name }}
+                                        </h2>
+                                        <span class="text-sm text-white">
+                                            {{ date('M dS Y', strtotime($item->created_at)) }}
+                                        </span>
+                                    </div>
+                                    <h2 class="font-bold text-2xl my-3">
+                                        {{ $item->blog_title }}
+                                    </h2>
+                                    <p class="font-light mb-4">
+                                        {{ Str::limit($item->blog_summary, 100) }}
+                                    </p>
+                                    <a href="{{ route('blog.detail', ['slug' => $item->slug, 'locale' => app()->getLocale()]) }}"
+                                        class="flex items-center gap-2 text-base text-white font-bold justify-center">
+                                        Read More
+                                        <span
+                                            class="ml-1 bg-white text-blue rounded-full h-5 w-5 flex items-center justify-center"><i
+                                                class="fas fa-arrow-right text-xs"></i></span>
+                                    </a>
+                                </div>
+                            </li>
+                        @endif
+                    @endforeach
+                </ul>
+            </div>
+        </section>
+    @endif
 
     {{-- All Blog --}}
     <section class="bg-primaryBg py-24" id="category">
@@ -182,7 +184,7 @@
                     All
                 </a>
                 @foreach ($categories as $item)
-                    <a href="{{ route('blog.category', ['slug' => $item->slug, 'locale' => app()->getLocale()]).'#category' }}"
+                    <a href="{{ route('blog.category', ['slug' => $item->slug, 'locale' => app()->getLocale()]) . '#category' }}"
                         class="py-1 px-4 inline rounded-full  text-sm uppercase {{ Request()->route('slug') == $item->slug ? 'bg-primary text-white' : 'text-dark bg-slate-300' }}">
                         {{ $item->category_name }}
                     </a>
@@ -208,7 +210,7 @@
             @if (count($blogs) > 0)
                 {{ $blogs->links('layout.user.pagination', ['topic' => 'category']) }}
             @else
-            <h5 class="text-xl text-gray">Blog Not Found!</h5>
+                <h5 class="text-xl text-gray">Blog Not Found!</h5>
             @endif
         </div>
     </section>

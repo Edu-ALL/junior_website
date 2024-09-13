@@ -3,16 +3,16 @@
         <img loading="lazy" src="{{ $thumbnail }}" alt="{{ $thumbnail_alt }}" class="w-full">
     </div>
     <div class="flex items-center justify-start gap-4 py-5">
-        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white">
+        <div class="bg-[#F66C6C] font-bold py-1 px-4 inline rounded-full text-white text-sm">
             {{ $tag }}
         </div>
-        <div class="text-gray text-lg">{{ $date }}</div>
+        <div class="text-gray text-base">{{ $date }}</div>
     </div>
     <h3 class="font-bold text-3xl text-dark">
         {{ $title }}
     </h3>
     <p class="font-normal text-base text-dark py-3">
-        {!! $description !!}
+        {!! Str::limit($description,150) !!}
     </p>
 
     <a href="{{ route('blog.detail', ['slug' => $slug, 'locale' => app()->getLocale()]) }}"

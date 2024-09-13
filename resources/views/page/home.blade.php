@@ -88,28 +88,28 @@
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 <div id="accordion-flush" data-accordion="collapse"
-                    data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                    data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
                     data-inactive-classes="text-gray-500 dark:text-gray-400">
                     @foreach (__('home.why_eduall_content') as $item)
-                        <h2 id="accordion-why-heading-{{ $loop->index }}" class="mt-10">
+                        <h2 id="accordion-why-heading-{{ $loop->index }}" class="mt-2">
                             <button type="button"
-                                class="flex flex-nowrap justify-between items-center gap-3 bg-transparent font-bold md:text-2xl text-xl"
+                                class="flex flex-nowrap justify-between items-start gap-3 font-bold md:text-2xl text-xl bg-primary/10 px-5 py-2 rounded-lg"
                                 data-accordion-target="#accordion-why-{{ $loop->index }}" aria-expanded="true"
                                 aria-controls="accordion-why-{{ $loop->index }}">
-                                <div class="text-start">
+                                <div class="text-start text-white">
                                     {!! $item['subtitle'] !!}
                                 </div>
-                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                <svg data-accordion-icon class="w-5 h-5 mt-3 rotate-180 shrink-0 text-white" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M9 5 5 1 1 5" />
                                 </svg>
                             </button>
                         </h2>
-                        <div id="accordion-why-{{ $loop->index }}" class="hidden"
+                        <div id="accordion-why-{{ $loop->index }}" class="hidden px-5"
                             aria-labelledby="accordion-why-heading-{{ $loop->index }}">
-                            <div class="py-5 border-b border-gray-200 dark:border-gray-700ss">
-                                <p class="font-light text-lg mt-3">
+                            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-5">
+                                <p class="font-light text-lg">
                                     {!! $item['content'] !!}
                                 </p>
                             </div>
@@ -362,38 +362,39 @@
             type: 'loop',
             perPage: 1,
             pagination: false,
+            arrows:false,
         });
         banners.mount();
 
-        var events = new Splide('#events', {
-            type: 'loop',
-            perPage: 3,
-            gap: 20,
-            padding: {
-                left: 5,
-                right: 40
-            },
-            breakpoints: {
-                640: {
-                    perPage: 1,
-                    padding: {
-                        left: 5,
-                        right: 20
-                    },
-                    gap: 10,
-                },
-            },
-            pagination: false,
-            arrows: false,
-        });
-        events.mount();
+        // var events = new Splide('#events', {
+        //     type: 'loop',
+        //     perPage: 3,
+        //     gap: 20,
+        //     padding: {
+        //         left: 5,
+        //         right: 40
+        //     },
+        //     breakpoints: {
+        //         640: {
+        //             perPage: 1,
+        //             padding: {
+        //                 left: 5,
+        //                 right: 20
+        //             },
+        //             gap: 10,
+        //         },
+        //     },
+        //     pagination: false,
+        //     arrows: false,
+        // });
+        // events.mount();
 
-        function arrowSplide(type) {
-            if (type == 'prev') {
-                events.go('<')
-            } else {
-                events.go('>')
-            }
-        }
+        // function arrowSplide(type) {
+        //     if (type == 'prev') {
+        //         events.go('<')
+        //     } else {
+        //         events.go('>')
+        //     }
+        // }
     </script>
 @endpush
