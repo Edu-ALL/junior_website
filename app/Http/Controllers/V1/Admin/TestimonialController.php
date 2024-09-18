@@ -4,6 +4,7 @@ namespace App\Http\Controllers\V1\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Testimonial;
+use App\Models\TestimonialCategories;
 use App\Models\WebsiteSetting;
 use Exception;
 use Illuminate\Http\Request;
@@ -100,8 +101,11 @@ class TestimonialController extends Controller
     }
 
     public function create(){
+        $categories = TestimonialCategories::select(['id', 'name'])->get();
+
         return view('admin.testimonial.create', [
             'website_data' => WebsiteSetting::first(),
+            'categories' => $categories
         ]);
     }
 
@@ -111,6 +115,7 @@ class TestimonialController extends Controller
         ];
 
         $rules = [
+            'testi_category' => 'required',
             'testi_name' => 'required',
             'testi_subtitle' => 'nullable',
             'testi_thumbnail' => 'nullable|mimes:jpeg,jpg,png,bmp,webp|max:2048',
@@ -127,6 +132,7 @@ class TestimonialController extends Controller
         DB::beginTransaction();
         try {
             $testi_en = new Testimonial;
+            $testi_en->testi_category = $request->testi_category;
             $testi_en->group = date('YmdHis');
             $testi_en->testi_name = $request->testi_name;
             $testi_en->testi_subtitle = $request->testi_subtitle;
@@ -136,6 +142,7 @@ class TestimonialController extends Controller
             $testi_en->lang = 'en';
 
             $testi_id = new Testimonial;
+            $testi_id->testi_category = $request->testi_category;
             $testi_id->group = $testi_en->group;
             $testi_id->testi_name = $request->testi_name;
             $testi_id->testi_subtitle = $request->testi_subtitle;
@@ -169,10 +176,13 @@ class TestimonialController extends Controller
     }
 
     public function edit($group){
+        
+        $categories = TestimonialCategories::select(['id', 'name'])->get();
         $testimonial = Testimonial::where('group', $group)->get();
         return view('admin.testimonial.update', [
             'testimonial' => $testimonial,
             'website_data' => WebsiteSetting::first(),
+            'categories' => $categories
         ]);
     }
 
@@ -182,6 +192,7 @@ class TestimonialController extends Controller
         ];
 
         $rules = [
+            'testi_category' => 'required',
             'testi_name' => 'required',
             'testi_subtitle' => 'nullable',
             'testi_thumbnail' => 'nullable|mimes:jpeg,jpg,png,bmp,webp|max:2048',
@@ -199,6 +210,7 @@ class TestimonialController extends Controller
         try {
             $testi = Testimonial::where('group', $group)->get();
             $testi_en = $testi[0];
+            $testi_en->testi_category = $request->testi_category;
             $testi_en->testi_name = $request->testi_name;
             $testi_en->testi_subtitle = $request->testi_subtitle;
             $testi_en->testi_alt = $request->testi_alt;
@@ -206,6 +218,7 @@ class TestimonialController extends Controller
             $testi_en->updated_at = date('Y-m-d H:i:s');
 
             $testi_id = $testi[1];
+            $testi_id->testi_category = $request->testi_category;
             $testi_id->testi_name = $request->testi_name;
             $testi_id->testi_subtitle = $request->testi_subtitle;
             $testi_id->testi_alt = $request->testi_alt;

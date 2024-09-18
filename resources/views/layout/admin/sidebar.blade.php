@@ -56,6 +56,12 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link collapsed {{ request()->is('admin/testimonial-category*') ? 'active' : '' }}" href="/admin/testimonial-category">
+                <i class="fa-solid fa-gears"></i>
+                <span>Testi Category</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link collapsed {{ request()->is('admin/testimonial*') ? 'active' : '' }}" href="/admin/testimonial">
                 <i class="fa-regular fa-comments"></i>
                 <span>Testimonial</span>

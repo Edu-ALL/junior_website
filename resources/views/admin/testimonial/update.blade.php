@@ -51,7 +51,19 @@
                                         </div>
                                     @endif
                                     <div class="col d-flex flex-column gap-2">
-                                        <div class="col-md-5">
+                                        <div class="col-12">
+                                            <label for="" class="form-label">
+                                                Category <span style="color: var(--red)">*</span>
+                                            </label>
+                                            <select class="form-select" name="testi_category" id="category">
+                                                @forelse ($categories as $category)
+                                                    <option value="{{ $category->id }}" @selected($testimonial[0]->testi_category == $category->id)>{{ $category->name }}</option>
+                                                @empty
+                                                    <option value=""></option>
+                                                @endforelse
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
                                             <label for="" class="form-label">
                                                 Name <span style="color: var(--red)">*</span>
                                             </label>
