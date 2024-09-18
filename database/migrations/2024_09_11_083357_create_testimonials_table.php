@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('testi_category')->constrained(
+                table: 'testimonial_categories', indexName: 'testimonials_testi_category'
+            )->onUpdate('cascade')->onDelete('cascade');
             $table->bigInteger('group')->length(20)->unsigned();
             $table->string('testi_name');
             $table->text('testi_desc');

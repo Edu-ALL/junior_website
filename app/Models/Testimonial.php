@@ -13,6 +13,7 @@ class Testimonial extends Model
 
     protected $fillable = [
         'group',
+        'testi_category',
         'testi_name',
         'testi_desc',
         'testi_subtitle',
@@ -21,4 +22,9 @@ class Testimonial extends Model
         'testi_status',
         'lang'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(TestimonialCategories::class, 'testi_category', 'id');
+    }
 }
