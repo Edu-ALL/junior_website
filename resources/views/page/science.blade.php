@@ -138,7 +138,7 @@
                     {!! __('science.testimonials_title') !!}
                 </h2>
 
-                <x-testimonial :color="'blue'" />
+                <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
 

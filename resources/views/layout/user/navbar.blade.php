@@ -146,7 +146,7 @@
             var segment3 = '{{ Request()->segment(3) ? Request()->segment(3) . '/' : '' }}'
 
             // If blog category segment 
-            var segment3 = segment3 == 'category/' ? '#category' : '#category'
+            var segment3 = segment3 == 'category/' ? '#category' : ''
             
             var url = '{{ url('') }}/' + locale + '/' + segment2 + segment3;
 

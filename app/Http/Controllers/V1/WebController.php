@@ -6,14 +6,24 @@ use App\Http\Controllers\Controller;
 use App\Models\BlogCategories;
 use App\Models\BlogReads;
 use App\Models\Blogs;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
-use DOMDocument;
 
 class WebController extends Controller
 {
+    public $testimonial;
+
+    function __construct(Request $request)
+    {
+        $this->testimonial = Testimonial::where('lang', $request->segment(1))->where('testi_status', 'active')->limit(3)->get();
+    }
+
     public function home($locale)
     {
-        return view('page.home', ['locale' => $locale]);
+        return view('page.home', [
+            'locale' => $locale,
+            'testimonial' => $this->testimonial,
+        ]);
     }
 
     public function about_us($locale)
@@ -33,27 +43,42 @@ class WebController extends Controller
 
     public function science($locale)
     {
-        return view('page.science', ['locale' => $locale]);
+        return view('page.science', [
+            'locale' => $locale,
+            'testimonial' => $this->testimonial,
+        ]);
     }
 
     public function creative_communication($locale)
     {
-        return view('page.creative-communication', ['locale' => $locale]);
+        return view('page.creative-communication', [
+            'locale' => $locale,
+            'testimonial' => $this->testimonial,
+        ]);
     }
 
     public function entrepreneurship($locale)
     {
-        return view('page.entrepreneurship', ['locale' => $locale]);
+        return view('page.entrepreneurship', [
+            'locale' => $locale,
+            'testimonial' => $this->testimonial,
+        ]);
     }
 
     public function coding_robotics($locale)
     {
-        return view('page.coding-robotics', ['locale' => $locale]);
+        return view('page.coding-robotics', [
+            'locale' => $locale,
+            'testimonial' => $this->testimonial,
+        ]);
     }
 
     public function visual_arts($locale)
     {
-        return view('page.visual-arts', ['locale' => $locale]);
+        return view('page.visual-arts', [
+            'locale' => $locale,
+            'testimonial' => $this->testimonial,
+        ]);
     }
 
     public function blog(Request $request)
@@ -77,7 +102,6 @@ class WebController extends Controller
             $category = BlogCategories::where('slug', $request->route('slug'))->first();
             if ($category) {
                 $blogs = Blogs::where('lang', $locale)->where('cat_id', $category->id)->orderBy('created_at', 'DESC')->paginate(6);
-                
             } else {
                 return redirect()->route('blogs', app()->getLocale());
             }

@@ -5,7 +5,7 @@
                 <div class="bg-red py-1 px-4 inline rounded-full text-white hover:bg-primary">
                     {{ __('contact-component.contact_badge') }}
                 </div>
-                <h2 class="font-bold text-3xl mt-5">
+                <h2 class="font-bold text-3xl mt-5 text-white">
                     {!! __('contact-component.contact_title') !!}
                 </h2>
                 <p class="text-lg font-light mt-5">

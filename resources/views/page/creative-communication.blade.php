@@ -109,7 +109,7 @@
                     {{ __('communication.testimonials_title') }} <span class="text-blue">{{ __('communication.about_us') }}</span>
                 </h2>
 
-                <x-testimonial :color="'blue'" />
+                <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
 

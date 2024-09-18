@@ -1,26 +1,19 @@
 <section class="splide mt-5 relative overflow-hidden" id="testimonial">
     <div class="splide__track">
         <ul class="splide__list">
-            @foreach (__('testimonial.testimonies') as $item)
+            @foreach ($testi as $item)
                 <li class="splide__slide">
-                    {{-- <h5 class="font-bold text-md mb-4">
-                        {{ $item['content'] }}
-                    </h5> --}}
                     <p class="font-light mb-4">
-                        {{ $item['content'] }}
+                        {!! $item->testi_desc !!}
                     </p>
 
                     <div class="flex gap-5 flex-nowrap">
-                        {{-- <div class="w-1/12">
-                            <img loading="lazy" src="{{ asset('img/home/user.png') }}" alt=""
-                                class="rounded-full">
-                        </div> --}}
                         <div class="w-5/12">
-                            <h5 class="font-bold text-md text-{{ $color }} mb-0">
-                                {{ $item['name'] }}
+                            <h5 class="font-bold text-md text-{{ $color }} mb-0 mt-5">
+                                {{ $item->testi_name }}
                             </h5>
                             <p>
-                                {{ $item['mom'] }}
+                                {!! $item->testi_subtitle !!}
                             </p>
                         </div>
                     </div>

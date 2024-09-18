@@ -152,7 +152,7 @@
                 </h2>
 
                 {{-- Testimonial Component  --}}
-                <x-testimonial :color="'blue'" />
+                <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
 

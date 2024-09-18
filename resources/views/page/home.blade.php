@@ -84,7 +84,8 @@
 
         <div class="flex justify-end mt-10 relative">
             <div class="w-full md:w-2/5 absolute left-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior" class="w-full object-cover h-[675px] object-left-top rounded-e-[4rem]">
+                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior"
+                    class="w-full object-cover h-[675px] object-left-top rounded-e-[4rem]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
                 <div id="accordion-flush" data-accordion="collapse"
@@ -99,8 +100,8 @@
                                 <div class="text-start text-white">
                                     {!! $item['subtitle'] !!}
                                 </div>
-                                <svg data-accordion-icon class="w-5 h-5 mt-3 rotate-180 shrink-0 text-white" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <svg data-accordion-icon class="w-5 h-5 mt-3 rotate-180 shrink-0 text-white"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="M9 5 5 1 1 5" />
                                 </svg>
@@ -214,8 +215,8 @@
                 <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}
                 </h2>
-
-                <x-testimonial :color="'blue'" />
+                
+                <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
     </section>
@@ -362,7 +363,7 @@
             type: 'loop',
             perPage: 1,
             pagination: false,
-            arrows:false,
+            arrows: false,
         });
         banners.mount();
 
