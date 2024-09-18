@@ -26,39 +26,9 @@
             </a>
         </li>
         <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/mentor*') ? 'active' : '' }}" href="/admin/mentor">
-                <i class="fa-solid fa-users"></i>
-                <span>Mentor</span>
-            </a>
-        </li>
-        <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/tutor*') ? 'active' : '' }}" href="/admin/tutor">
-                <i class="fa-solid fa-users"></i>
-                <span>Tutors</span>
-            </a>
-        </li>
-        <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/guidebook*') ? 'active' : '' }}" href="/admin/guidebook">
-                <i class="fa-solid fa-book"></i>
-                <span>Guidebook</span>
-            </a>
-        </li>
-        <li class="nav-item d-none">
             <a class="nav-link collapsed {{ request()->is('admin/upcoming-event*') ? 'active' : '' }}" href="/admin/upcoming-event">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span>Upcoming Event</span>
-            </a>
-        </li>
-        <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/success-stories*') ? 'active' : '' }}" href="/admin/success-stories">
-                <i class="fa-solid fa-book-atlas"></i>
-                <span>Success Stories</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link collapsed {{ request()->is('admin/testimonial-category*') ? 'active' : '' }}" href="/admin/testimonial-category">
-                <i class="fa-solid fa-gears"></i>
-                <span>Testi Category</span>
             </a>
         </li>
         <li class="nav-item">
@@ -67,37 +37,7 @@
                 <span>Testimonial</span>
             </a>
         </li>
-        <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/project-showcase*') ? 'active' : '' }}" href="/admin/project-showcase">
-                <i class="fa-regular fa-folder-open"></i>
-                <span>Project Showcase</span>
-            </a>
-        </li>
-        <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/important-date*') ? 'active' : '' }}" href="/admin/important-date">
-                <i class="fa-regular fa-calendar-days"></i>
-                <span>Important Date</span>
-            </a>
-        </li>
-        <li class="nav-item d-none">
-            <a class="nav-link collapsed {{ request()->is('admin/as-seen*') ? 'active' : '' }}" href="/admin/as-seen">
-                <i class="fa-solid fa-newspaper"></i>
-                <span>As Seen</span>
-            </a>
-        </li>
-        {{-- <li class="nav-item">
-            <a class="nav-link collapsed {{ request()->is('admin/regular-talk*') ? 'active' : '' }}" href="/admin/regular-talk">
-                <i class="fa-regular fa-calendar-days"></i>
-                <span>Regular Talk</span>
-            </a>
-        </li> --}}
         <li class="nav-heading">System</li>
-        {{-- <li class="nav-item">
-            <a class="nav-link collapsed" href="">
-                <i class="fa-solid fa-circle-user"></i>
-                <span>Profile</span>
-            </a>
-        </li> --}}
         <li class="nav-item">
             <a class="nav-link collapsed" type="button" data-bs-toggle="modal" data-bs-target="#logout">
                 <i class="fa-solid fa-right-from-bracket"></i>
