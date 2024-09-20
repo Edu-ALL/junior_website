@@ -4,7 +4,7 @@ return [
     'title' => '<span class="text-red">
                             Schedule
                         </span>
-                        your FREE trial now!',
+                        your trial now!',
     'subtitle' => 'Experience our programs in one-week trial where your kid can explore the classes they are interested in. Each kid will be observed by our educators and psychologists, with a personalized assessment at the end of the trial period.',
 
     'parents' => 'Nama Orang Tua',

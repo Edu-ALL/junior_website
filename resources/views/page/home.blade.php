@@ -94,9 +94,9 @@
                     @foreach (__('home.why_eduall_content') as $item)
                         <h2 id="accordion-why-heading-{{ $loop->index }}" class="mt-2">
                             <button type="button"
-                                class="flex flex-nowrap justify-between items-start gap-3 font-bold md:text-2xl text-xl bg-primary/10 px-5 py-2 rounded-lg"
+                                class="flex flex-nowrap justify-between items-start gap-3 font-bold md:text-2xl text-xl bg-primary/10 px-5 py-2 rounded-lg accordion-button"
                                 data-accordion-target="#accordion-why-{{ $loop->index }}" aria-expanded="true"
-                                aria-controls="accordion-why-{{ $loop->index }}">
+                                aria-controls="accordion-why-{{ $loop->index }}" {{ $loop->index == 0 ? 'disabled' : '' }}>
                                 <div class="text-start text-white">
                                     {!! $item['subtitle'] !!}
                                 </div>
@@ -156,10 +156,10 @@
                     <p class="text-lg mb-5">
                         {!! __('home.how_it_work_paragraph3') !!}
                     </p>
-                    <button type="button"
+                    <a href="#programs"
                         class="text-white bg-primary shadow-2xl hover:bg-orange transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/30 font-medium rounded-full text-sm px-5 py-2 text-center me-2 mb-2 dark:bg-primary/60 dark:hover:bg-primary dark:focus:ring-primary">
                         {!! __('home.how_it_work_button') !!}
-                    </button>
+                    </a>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
                     <img loading="lazy" src="{{ asset('img/home/LearningJourney.png') }}" alt="EduALL Junior"
@@ -170,7 +170,7 @@
     </section>
 
     {{-- Programs  --}}
-    <section class="w-100 bg-red text-white relative">
+    <section class="w-100 bg-red text-white relative scroll-mt-10" id="programs">
         <img loading="lazy" src="{{ asset('img/home/element/Programs1.png') }}"
             class="md:w-[150px] w-[80px] absolute top-10 left-0">
         <img loading="lazy" src="{{ asset('img/home/element/Programs2.png') }}"
@@ -215,7 +215,7 @@
                 <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}
                 </h2>
-                
+
                 <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
@@ -359,6 +359,18 @@
 
 @push('script')
     <script>
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Reset Disabled 
+                document.querySelectorAll('.accordion-button').forEach(item => {
+                    item.removeAttribute('disabled')
+                });
+
+                // Add Disabled for Actively button
+                this.setAttribute('disabled', true)
+            });
+        });
+
         var banners = new Splide('#banners', {
             type: 'loop',
             perPage: 1,
