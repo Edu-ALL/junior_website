@@ -7,8 +7,8 @@
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
         <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}"
             class="md:w-[200px] w-[80px] absolute top-20 left-0">
-        <div class="flex flex-nowrap mt-5 gap-5 pt-[25px] pb-[100px] relative overflow-hidden">
-            <div class="w-full md:w-3/5 md:px-32 px-8">
+        <div class="main-container flex flex-nowrap mt-5 gap-5 pt-[25px] pb-[100px]">
+            <div class="w-full md:w-3/5">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     {!! __('about.who_we_are_badge') !!}
                 </div>
@@ -19,28 +19,28 @@
                     {!! __('about.who_we_are_content') !!}
                 </p>
             </div>
-            <div class="w-full md:w-2/5 absolute right-0 bottom-40 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.png') }}" alt="" class="w-full">
+            <div class="w-full md:w-2/5 absolute right-0 bottom-32 md:flex justify-end hidden">
+                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.png') }}" alt="" class="w-[45rem]">
             </div>
         </div>
     </section>
 
     {{-- Our Methodology and Pedagogy  --}}
     <section class="w-100 bg-blue md:py-[80px] py-10 relative z-10">
-        <div class="flex justify-end mt-10">
+        <div class="main-container flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/about/OurMethodology.png') }}" alt="" class="w-[100%]">
+                <img loading="lazy" src="{{ asset('img/about/OurMethodology.png') }}" alt="" class="w-[45rem] h-[35rem] object-cover object-top rounded-e-full">
             </div>
-            <div class="w-full md:w-3/5 text-white md:px-32 px-8">
+            <div class="w-full md:w-3/5 ">
                 <div class="mb-10">
-                    <h3 class="font-bold md:text-4xl text-2xl mb-10">
+                    <h3 class="font-bold md:text-4xl text-2xl mb-10 text-white">
                         {!! __('about.methodology_title') !!}
                     </h3>
-                    <p class="font-light text-lg mt-3">
+                    <p class="font-light text-lg mt-3 text-white">
                         {!! __('about.methodology_description') !!}
                     </p>
 
-                    <ol class="font-light text-lg mt-6">
+                    <ol class="font-light text-lg mt-6 text-white">
                         @foreach (__('about.methodology_content') as $item)
                             <li class="mb-3">
                                 <div class="flex items-start">

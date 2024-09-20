@@ -112,7 +112,7 @@
                         @endif
                     </a>
                 </li>
-                <li class="md:my-0 my-1">
+                <li class="md:my-0 my-1 mb-5">
                     <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12 md:ms-0 ms-3">
                         <input type="checkbox" value="" class="sr-only peer"
                             {{ app()->getLocale() == 'id' ? 'checked' : '' }}

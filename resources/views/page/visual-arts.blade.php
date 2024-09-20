@@ -57,9 +57,9 @@
             </div>
         </div>
 
-        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[50%] top-full md:block hidden z-0">
+        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[25rem] top-full md:block hidden z-0">
             <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.png') }}" alt=""
-                class="w-full object-cover">
+                class="w-[45rem] object-cover">
         </div>
     </section>
 
@@ -132,29 +132,21 @@
     </section>
 
     {{-- Testimonial  --}}
-    <section class="w-100 bg-secondary pb-24 relative">
-        {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.png') }}"
-            class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
-
-        <div class="flex flex-wrap items-center md:py-0 py-[50px]">
-            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt=""
-                    class="w-full object-cover">
-            </div>
-            <div class="w-full md:w-3/5 md:px-32 px-6">
-                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
-                    {{ __('visual.testimonials_badge') }}
+    <section class="w-100 bg-secondary relative">
+        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
+            class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
+        <div class="main-container flex justify-end">
+            <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">
+                <div class="bg-red py-1 px-4 inline rounded-full text-white">
+                    {!! __('home.testimonial_badge') !!}
                 </div>
-                <h2 class="font-bold text-3xl my-5">
-                    {!! __('visual.testimonials_title') !!}
+                <h2 class="font-bold md:text-4xl text-2xl my-5">
+                    {!! __('home.testimonial_title') !!}
                 </h2>
 
                 <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
-
-        {{-- <x-gallery /> --}}
     </section>
 
     {{-- Blog --}}

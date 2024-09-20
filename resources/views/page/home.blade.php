@@ -47,8 +47,8 @@
                 </ul>
             </div>
         </div>
-        <div class="flex flex-wrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
-            <div class="md:w-3/5 w-full md:px-32 px-8">
+        <div class="main-container flex flex-wrap mt-5 md:py-[100px] py-[50px]">
+            <div class="md:w-3/5 w-full">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     {!! __('home.future_badge') !!}
                 </div>
@@ -59,7 +59,7 @@
                     {!! __('home.future_content') !!}
                 </p>
             </div>
-            <div class="md:w-2/5 w-full md:absolute relative right-0 md:bottom-0 -bottom-20 flex justify-end">
+            <div class="md:w-2/5 w-full md:absolute relative md:right-0 -right-[20px] md:bottom-0 -bottom-[3rem] flex justify-end">
                 <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior"
                     class="md:w-[600px] w-[80%]">
             </div>
@@ -82,12 +82,12 @@
             </div>
         </div>
 
-        <div class="flex justify-end mt-10 relative">
-            <div class="w-full md:w-2/5 absolute left-0 top-0 md:block hidden">
+        <div class="main-container flex justify-end mt-10">
+            <div class="w-full md:w-2/5 absolute left-0 -bottom-20 md:block hidden">
                 <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior"
-                    class="w-full object-cover h-[675px] object-left-top rounded-e-[4rem]">
+                    class="w-[100%] h-[40rem] object-cover object-top rounded-e-[5rem]">
             </div>
-            <div class="w-full md:w-3/5 text-white md:px-32 px-8">
+            <div class="w-full md:w-3/5 text-white">
                 <div id="accordion-flush" data-accordion="collapse"
                     data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
                     data-inactive-classes="text-gray-500 dark:text-gray-400">
@@ -202,13 +202,11 @@
     </section>
 
     {{-- Testimonial  --}}
-    <section class="w-100 bg-secondary">
-        <div class="flex flex-wrap items-center md:py-0 py-[50px]">
-            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
-                    class="w-full object-cover">
-            </div>
-            <div class="w-full md:w-3/5 md:px-32 px-6">
+    <section class="w-100 bg-secondary relative">
+        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
+            class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
+        <div class="main-container flex justify-end">
+            <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     {!! __('home.testimonial_badge') !!}
                 </div>
