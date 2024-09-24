@@ -55,7 +55,7 @@
                 <span>Success Stories</span>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item d-none">
             <a class="nav-link collapsed {{ request()->is('admin/testimonial-category*') ? 'active' : '' }}" href="/admin/testimonial-category">
                 <i class="fa-solid fa-gears"></i>
                 <span>Testi Category</span>
