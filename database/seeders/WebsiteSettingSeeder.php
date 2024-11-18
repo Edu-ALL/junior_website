@@ -16,7 +16,7 @@ class WebsiteSettingSeeder extends Seeder
     {
         $seed = [
             'website_name' => 'EduALL Junior',
-            'website_primary_logo' => 'EduALL.png',
+            'website_primary_logo' => 'EduALL.webp',
             'alt_primary_logo' => 'EduALL Junior',
             'phone_number_wa' => '81911645771',
             'phone_number_1' => '81911645771',

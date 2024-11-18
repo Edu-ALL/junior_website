@@ -67,30 +67,30 @@ return [
     'program_title' => '<span class="text-yellowLight">Expert-approved</span> programs for your kids',
     'program_content' => [
         [
-            'image' => 'Programs_Science.png',
+            'image' => 'Programs_Science.webp',
             'title' => 'Science',
             'link' => "programs.science"
         ],
         [
-            'image' => 'Programs_Coding.png',
+            'image' => 'Programs_Coding.webp',
             'title' => 'Creative
                         Coding &
                         Robotics',
             'link' => "programs.coding-robotics"
         ],
         [
-            'image' => 'Programs_Entrepreneurship.png',
+            'image' => 'Programs_Entrepreneurship.webp',
             'title' => 'Entrepreneurship',
             'link' => "programs.entrepreneurship"
         ],
         [
-            'image' => 'Programs_VisualArts.png',
+            'image' => 'Programs_VisualArts.webp',
             'title' => 'Visual
                         Arts',
             'link' => "programs.visual-arts"
         ],
         [
-            'image' => 'Programs_Communications.png',
+            'image' => 'Programs_Communications.webp',
             'title' => 'Creative Communications',
             'link' => "programs.creative-communication"
         ],

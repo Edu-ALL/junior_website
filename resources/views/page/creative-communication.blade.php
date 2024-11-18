@@ -6,9 +6,9 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-purpleBg pt-[100px] relative pb-36">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/creative-communications/accent/Why_1.png') }}"
+        <img loading="lazy" src="{{ asset('img/creative-communications/accent/Why_1.webp') }}"
             class="md:w-[150px] w-[80px] absolute top-60 left-0 z-10">
-        <img loading="lazy" src="{{ asset('img/creative-communications/accent/Why_2.png') }}"
+        <img loading="lazy" src="{{ asset('img/creative-communications/accent/Why_2.webp') }}"
             class="md:w-[200px] w-[70px] absolute top-60 right-0 z-10">
 
         <div class="main-container z-10">
@@ -59,7 +59,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:top-[45%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/creative-communications/image/Communications_Why.png') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/creative-communications/image/Communications_Why.webp') }}" alt=""
                 class="w-full object-cover">
         </div>
     </section>
@@ -67,7 +67,7 @@
     {{-- What your kids will learn --}}
     <section class="w-100 bg-purple pt-20 pb-12 md:pt-48 md:pb-20 relative -z-10">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/creative-communications/accent/WhatYourKidsWillLearn.png') }}"
+        <img loading="lazy" src="{{ asset('img/creative-communications/accent/WhatYourKidsWillLearn.webp') }}"
             class="md:w-[250px] w-[80px] absolute bottom-0 right-0">
 
         <div class="flex flex-col justify-center items-start main-container mb-12 relative">
@@ -94,12 +94,12 @@
     {{-- Testimonial --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.png') }}"
+        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
 
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="" class="w-full object-cover">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="" class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">

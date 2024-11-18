@@ -5,7 +5,7 @@
 @section('content')
     {{-- Banner & Description --}}
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
-        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-20 left-0 element-1">
         <div class="splide" id="banners">
             <div class="splide__track">
@@ -14,7 +14,7 @@
                         <div class="main-container">
                             <div class="max-w-2xl mx-auto text-center">
                                 <div class="flex justify-center">
-                                    <img loading="lazy" src="{{ asset('img/logo/EduALL.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/logo/EduALL.webp') }}" alt="EduALL Junior"
                                         class="md:w-[200px] w-[150px] flex justify-center">
                                 </div>
                                 <h1 class="font-bold md:text-[45px] text-[1.5em] font-primary leading-[1.4]">
@@ -26,19 +26,19 @@
                             </div>
                             <div class="flex flex-nowrap md:gap-7 gap-1 md:mt-0 mt-[40px]">
                                 <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
-                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_1.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_1.webp') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                                 <div class="w-full md:w-1/4 md:px-4 px-1">
-                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_2.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_2.webp') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                                 <div class="w-full md:w-1/4 md:px-4 px-1">
-                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_3.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_3.webp') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                                 <div class="w-full md:w-1/4 md:px-4 px-1 md:-mt-[150px] -mt-[20px]">
-                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_4.png') }}" alt="EduALL Junior"
+                                    <img loading="lazy" src="{{ asset('img/home/Jumbotron_4.webp') }}" alt="EduALL Junior"
                                         class="w-full drop-shadow-md">
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                 </p>
             </div>
             <div class="md:w-2/5 w-full md:absolute relative right-0 md:bottom-0 -bottom-20 flex justify-end">
-                <img loading="lazy" src="{{ asset('img/home/KidsFuture.png') }}" alt="EduALL Junior"
+                <img loading="lazy" src="{{ asset('img/home/KidsFuture.webp') }}" alt="EduALL Junior"
                     class="md:w-[600px] w-[80%]">
             </div>
         </div>
@@ -68,7 +68,7 @@
 
     {{-- Why EduALL Junior  --}}
     <section class="w-100 bg-blue py-[100px] relative z-10">
-        <img loading="lazy" src="{{ asset('img/home/element/Values.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Values.webp') }}"
             class="md:w-[400px] w-[200px] absolute md:-top-20 -top-10 right-0">
         <div class="flex justify-center">
             <div class="text-center">
@@ -84,7 +84,7 @@
 
         <div class="flex justify-end mt-10 relative">
             <div class="w-full md:w-2/5 absolute left-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/home/Values.png') }}" alt="EduALL Junior"
+                <img loading="lazy" src="{{ asset('img/home/Values.webp') }}" alt="EduALL Junior"
                     class="w-full object-cover h-[675px] object-left-top rounded-e-[4rem]">
             </div>
             <div class="w-full md:w-3/5 text-white md:px-32 px-8">
@@ -123,7 +123,7 @@
 
     {{-- How it Works  --}}
     <section class="w-100 bg-yellow/20 relative z-5">
-        <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.webp') }}"
             class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
         <div class="main-container">
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
@@ -162,7 +162,7 @@
                     </button>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
-                    <img loading="lazy" src="{{ asset('img/home/LearningJourney.png') }}" alt="EduALL Junior"
+                    <img loading="lazy" src="{{ asset('img/home/LearningJourney.webp') }}" alt="EduALL Junior"
                         class="w-full object-cover">
                 </div>
             </div>
@@ -171,9 +171,9 @@
 
     {{-- Programs  --}}
     <section class="w-100 bg-red text-white relative">
-        <img loading="lazy" src="{{ asset('img/home/element/Programs1.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Programs1.webp') }}"
             class="md:w-[150px] w-[80px] absolute top-10 left-0">
-        <img loading="lazy" src="{{ asset('img/home/element/Programs2.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Programs2.webp') }}"
             class="md:w-[150px] w-[80px] absolute top-10 right-0">
         <div class="main-container py-[100px]">
             <div class="text-center mb-5">
@@ -205,7 +205,7 @@
     <section class="w-100 bg-secondary">
         <div class="flex flex-wrap items-center md:py-0 py-[50px]">
             <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="EduALL Junior"
                     class="w-full object-cover">
             </div>
             <div class="w-full md:w-3/5 md:px-32 px-6">
@@ -255,7 +255,7 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.png') }}" alt="EduALL Junior"
+                                <img loading="lazy" src="{{ asset('img/home/coding-robotic.webp') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -276,7 +276,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.png') }}" alt="EduALL Junior"
+                                <img loading="lazy" src="{{ asset('img/home/outstanding-skill.webp') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -297,7 +297,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.png') }}" alt="EduALL Junior"
+                                <img loading="lazy" src="{{ asset('img/home/entrepreneur.webp') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">
@@ -318,7 +318,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="relative overflow-hidden rounded-lg shadow-md mb-3">
-                                <img loading="lazy" src="{{ asset('img/home/coding.png') }}" alt="EduALL Junior"
+                                <img loading="lazy" src="{{ asset('img/home/coding.webp') }}" alt="EduALL Junior"
                                     class="w-full">
                                 <div class="font-light mt-2 p-3">
                                     <h6 class="font-bold text-lg">

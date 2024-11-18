@@ -5,9 +5,9 @@
 @section('content')
     {{-- OUR PROGRAM --}}
     <section class="w-100 bg-secondary pt-[120px] pb-[100px] relative z-20">
-        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-20 left-0">
-        <img loading="lazy" src="{{ asset('img/program/element/Programs_2.png') }}"
+        <img loading="lazy" src="{{ asset('img/program/element/Programs_2.webp') }}"
             class="md:w-[200px] w-[80px] absolute bottom-20 right-0">
         <div class="main-container">
             <div class="text-center md:px-[200px] px-6">
@@ -49,7 +49,7 @@
 
     {{-- HOW IT WORKS  --}}
     <section class="w-100 bg-red text-white relative">
-        <img loading="lazy" src="{{ asset('img/program/element/HowItWorks.png') }}"
+        <img loading="lazy" src="{{ asset('img/program/element/HowItWorks.webp') }}"
             class="md:w-[300px] w-[80px] absolute bottom-0 right-0">
         <div class="main-container py-[100px]">
             <div class="text-start mb-5">
@@ -63,10 +63,10 @@
             <div class="grid md:grid-cols-3 grid-cols-1 md:gap-20 gap-10 mt-[70px]">
                 @foreach (__('programs.the_journey_content') as $key => $item)
                     <div class="w-full h-[380px] bg-white rounded-2xl text-dark px-10 relative shadow-lg mb-10">
-                        <img loading="lazy" src="{{ asset('img/program/element/arrow.png') }}"
+                        <img loading="lazy" src="{{ asset('img/program/element/arrow.webp') }}"
                             class="w-20 absolute md:-right-[60px] md:top-40 right-0 -bottom-10 md:rotate-0 rotate-90 {{ $key == 2 ? 'hidden' : '' }}">
                         <div class="flex w-full justify-center">
-                            <img loading="lazy" src="{{ asset('img/program/element/Journey' . ($key + 1) . '.png') }}"
+                            <img loading="lazy" src="{{ asset('img/program/element/Journey' . ($key + 1) . '.webp') }}"
                                 class="w-20 absolute -top-10">
                         </div>
                         <h3 class="text-2xl font-bold text-primary pt-[70px] mb-4">
