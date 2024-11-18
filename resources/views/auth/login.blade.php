@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EduALL</title>
-    <link href="{{ asset('favicon.png') }}" rel="icon">
+    <link href="{{ asset('favicon.webp') }}" rel="icon">
 
     {{-- Google Font --}}
     <link
@@ -36,7 +36,7 @@
                     <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <div class="d-flex justify-content-center py-4">
                             <a href="/" class="logo d-flex align-items-center w-auto">
-                                <img class="img-fluid" src="{{ asset('assets/logo/eduall.png') }}"
+                                <img class="img-fluid" src="{{ asset('assets/logo/eduall.webp') }}"
                                     alt="">
                             </a>
                         </div>

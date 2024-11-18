@@ -35,27 +35,27 @@ return [
     'what_your_kids_learn_description' => "Kurikulum Seni Visual EduALL bertujuan untuk memupuk kreativitas dengan mengembangkan proyek terbuka yang memprioritaskan proses bekerja dengan materi visual. Kurikulum seni rupa terdiri dari kegiatan-kegiatan yang saling berkaitan dalam membuat karya seni dan dalam menanggapi seni.",
     'what_your_kids_learn_content' => [
         [
-            'image' => "Drawing.png",
+            'image' => "Drawing.webp",
             'title' => 'Menggambar',
         ],
         [
-            'image' => "Paint & Color.png",
+            'image' => "Paint & Color.webp",
             'title' => 'Cat & Warna',
         ],
         [
-            'image' => "Print.png",
+            'image' => "Print.webp",
             'title' => 'Mencetak',
         ],
         [
-            'image' => "Clay.png",
+            'image' => "Clay.webp",
             'title' => 'Tanah liat',
         ],
         [
-            'image' => "Construction.png",
+            'image' => "Construction.webp",
             'title' => 'Konstruksi',
         ],
         [
-            'image' => "Fabric.png",
+            'image' => "Fabric.webp",
             'title' => 'Kain & Serat',
         ],
     ],

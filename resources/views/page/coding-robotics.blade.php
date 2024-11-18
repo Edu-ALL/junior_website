@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-secondBlueBg pt-[100px] relative pb-24">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/science/accent/Why.png') }}"
+        <img loading="lazy" src="{{ asset('img/science/accent/Why.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-60 right-0 z-10">
 
         <div class="main-container  z-10">
@@ -59,8 +59,8 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:top-[50%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/coding-robotics/image/Why.png') }}" alt=""
-                class="w-[45rem] object-cover absolute right-0">
+            <img loading="lazy" src="{{ asset('img/coding-robotics/image/Why.webp') }}" alt=""
+                class="w-full object-cover">
         </div>
     </section>
 
@@ -74,7 +74,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/coding-robotics/image/TheImportance_1.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/coding-robotics/image/TheImportance_1.webp') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -89,7 +89,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/coding-robotics/image/TheImportance_2.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/coding-robotics/image/TheImportance_2.webp') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -117,7 +117,7 @@
                             <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl">
                                 <div
                                     class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-secondBlue text-white rounded-full font-bold flex items-center gap-2">
-                                    <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}"
+                                    <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.webp') }}"
                                         class="w-4 h-4">
                                     {{ $item['title'] }}
                                 </div>
@@ -134,12 +134,18 @@
 
     {{-- Testimonial  --}}
     <section class="w-100 bg-secondary pb-24 relative">
-        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
-            class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
-        <div class="main-container flex justify-end">
-            <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">
-                <div class="bg-secondBlue py-1 px-4 inline rounded-full text-white">
-                    {!! __('home.testimonial_badge') !!}
+        {{-- Accent --}}
+        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.webp') }}"
+            class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
+
+        <div class="flex flex-wrap items-center md:py-0 py-[50px]">
+            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
+                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt=""
+                    class="w-full object-cover">
+            </div>
+            <div class="w-full md:w-3/5 md:px-32 px-6">
+                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
+                    {{ __('coding.testimonials_badge') }}
                 </div>
                 <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}

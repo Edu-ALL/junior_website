@@ -66,7 +66,7 @@
                                                 @endif
                                             </td>
                                             <td class="text-center">
-                                                <img data-original="{{ asset('assets/img/flag/flag-'.$testimonial->lang.'.png') }}" alt="" width="30">
+                                                <img data-original="{{ asset('assets/img/flag/flag-'.$testimonial->lang.'.webp') }}" alt="" width="30">
                                                 <p class="pt-1" style="font-size: 13px !important">
                                                     {{ $testimonial->languages->language }}
                                                 </p>

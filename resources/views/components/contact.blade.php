@@ -17,6 +17,6 @@
             </div>
         </div>
     </div>
-    <img loading="lazy" src="{{ asset('img/home/ContactUs.png') }}" alt=""
-        class="md:w-[45rem] w-[20rem] absolute left-0 md:-bottom-[15%] -bottom-[8%]">
+    <img loading="lazy" src="{{ asset('img/home/ContactUs.webp') }}" alt=""
+        class="md:w-[50%] w-[80%] absolute left-0 md:-bottom-[15%] -bottom-[8%]">
 </section>
