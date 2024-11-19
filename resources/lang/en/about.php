@@ -37,7 +37,7 @@ return [
     'our_people_title' => 'Program <span class="text-yellowLight">Co-developers</span>',
     'our_people_content' => [
         [
-            'content_image' => 'Francisco.png',
+            'content_image' => 'Francisco.webp',
             'content_name' => 'Francisco Castro, PhD',
             'content_desc' => [
                 'AI & Computing Research Fellow, New York University',
@@ -45,7 +45,7 @@ return [
             ]
         ],
         [
-            'content_image' => 'Noora.png',
+            'content_image' => 'Noora.webp',
             'content_name' => 'Noora Noushad, PhD',
             'content_desc' => [
                 'PhD in Learning Science & Technology, University of Pennsylvania',

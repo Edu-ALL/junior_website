@@ -40,27 +40,27 @@ return [
     'program_title' => 'Program <span class="text-yellowLight">pilihan para ahli</span> untuk anak-anak Anda',
     'program_content' => [
         [
-            'image' => 'Programs_Science.png',
+            'image' => 'Programs_Science.webp',
             'title' => 'Sains',
             'link' => "programs.science"
         ],
         [
-            'image' => 'Programs_Coding.png',
+            'image' => 'Programs_Coding.webp',
             'title' => 'Koding & Robotika',
             'link' => "programs.coding-robotics"
         ],
         [
-            'image' => 'Programs_Entrepreneurship.png',
+            'image' => 'Programs_Entrepreneurship.webp',
             'title' => 'Kewirausahaan',
             'link' => "programs.entrepreneurship"
         ],
         [
-            'image' => 'Programs_VisualArts.png',
+            'image' => 'Programs_VisualArts.webp',
             'title' => 'Seni Visual',
             'link' => "programs.visual-arts"
         ],
         [
-            'image' => 'Programs_Communications.png',
+            'image' => 'Programs_Communications.webp',
             'title' => 'Komunikasi Kreatif',
             'link' => "programs.creative-communication"
         ],

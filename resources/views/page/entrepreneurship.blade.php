@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-greenBg pt-[100px] relative pb-24">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/science/accent/Why.png') }}"
+        <img loading="lazy" src="{{ asset('img/science/accent/Why.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-60 right-0 z-0">
 
         <div class="main-container z-10">
@@ -54,7 +54,7 @@
                 <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-10">
                     <div
                         class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-green text-white rounded-full font-bold flex items-center gap-2">
-                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.webp') }}" class="w-4 h-4">
                         {{ __('entrepreneurship.why_entrepreneurship_content.0.title') }}
                     </div>
                     <p class="font-light md:text-lg text-sm text-dark mt-7 py-4 px-8">
@@ -64,7 +64,7 @@
                 <div class="relative bg-white shadow-lg rounded-b-3xl rounded-tr-3xl mt-10">
                     <div
                         class="absolute -translate-y-1/2 px-4 py-1 md:text-base text-sm bg-green text-white rounded-full font-bold flex items-center gap-2">
-                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.webp') }}" class="w-4 h-4">
                         {{ __('entrepreneurship.why_entrepreneurship_content.1.title') }}
                     </div>
                     <p class="font-light md:text-lg text-sm text-dark mt-14 md:mt-7 py-4 px-8">
@@ -75,11 +75,11 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[42%] top-full md:block hidden">
-            <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why.png') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why.webp') }}" alt=""
                 class="w-[40rem] object-cover">
         </div>
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/EarlyEducation.png') }}"
+        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/EarlyEducation.webp') }}"
             class="md:w-[200px] w-[80px] absolute -bottom-52 right-0 z-20">
     </section>
 
@@ -94,7 +94,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_2.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_2.webp') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -116,7 +116,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_3.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_3.webp') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -150,7 +150,7 @@
                     <div class="w-full md:w-1/2 relative">
                         <div
                             class="absolute px-4 py-1 text-base bg-green text-white rounded-full font-bold flex items-center gap-2">
-                            <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                            <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.webp') }}" class="w-4 h-4">
                             {{ __('entrepreneurship.what_your_kids_entrepreneurial_mindset_title') }}
                         </div>
                         <ul class="font-light text-base text-dark mt-8 py-6 gap-4 flex flex-col">
@@ -233,7 +233,7 @@
                         </ul>
                     </div>
                     <div class="w-full md:w-1/2 mt-6 md:mt-0">
-                        <img loading="lazy" src="{{ asset('img/enterpreneruship/image/WhatYourKidsWillLearn.png') }}"
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/image/WhatYourKidsWillLearn.webp') }}"
                             alt="" class="w-full object-contain">
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                 <div class="w-full md:w-1/2 relative">
                     <div
                         class="absolute px-4 py-1 text-base bg-green text-white rounded-full font-bold flex items-center gap-2">
-                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.png') }}" class="w-4 h-4">
+                        <img loading="lazy" src="{{ asset('img/enterpreneruship/accent/Why.webp') }}" class="w-4 h-4">
                         {{ __('entrepreneurship.what_your_kids_entrepreneurial_skills_title') }}
                     </div>
                     <ul class="font-light text-base text-dark mt-8 py-6 gap-4 flex flex-col">
@@ -311,7 +311,7 @@
     {{-- Testimonial  --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
+        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="EduALL Junior"
             class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
         <div class="main-container flex justify-end">
             <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">

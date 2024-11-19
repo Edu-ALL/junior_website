@@ -9,31 +9,31 @@ return [
         'our_programs_content' => [
             [
                 'content_link' => 'programs.science',
-                'content_image' => 'Science.png',
+                'content_image' => 'Science.webp',
                 'content_title' => 'Science',
                 'content_description' => 'A thrilling, hands-on exploration through the wonders of the natural world, sparking curiosity and critical thinking in young minds with exciting experiments and discoveries, empowering them to become inventors and innovators.',
             ],
             [
                 'content_link' => 'programs.coding-robotics',
-                'content_image' => 'Coding.png',
+                'content_image' => 'Coding.webp',
                 'content_title' => 'Creative Coding & Robotics',
                 'content_description' => 'Embark on an interactive journey into the world of technology, where young technologists unleash their creativity and develop problem-solving skills through engaging, hands-on coding and robotics projects, ultimately enhancing their system thinking abilities.',
             ],
             [
                 'content_link' => 'programs.entrepreneurship',
-                'content_image' => 'Enterpreneurship.png',
+                'content_image' => 'Enterpreneurship.webp',
                 'content_title' => 'Enterpreneurship',
                 'content_description' => 'Empowering young minds to be agile and thrive in the fast-paced and ever-changing world through hands-on projects and real-world problem solving',
             ],
             [
                 'content_link' => 'programs.visual-arts',
-                'content_image' => 'VisualArts.png',
+                'content_image' => 'VisualArts.webp',
                 'content_title' => 'Visual Arts',
                 'content_description' => 'Think like an artist, create like a designer, act like a human',
             ],
             [
                 'content_link' => 'programs.creative-communication',
-                'content_image' => 'CreativeCommunications.png',
+                'content_image' => 'CreativeCommunications.webp',
                 'content_title' => 'Creative Communications',
                 'content_description' => 'Equip young learners with essential skills for effective expression, active listening, and constructive interaction in various contexts, building their confidence to socialize and express ideas.',
                 ]

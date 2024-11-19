@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-redBg pt-[100px] relative pb-24">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/visual-arts/accent/Why.png') }}"
+        <img loading="lazy" src="{{ asset('img/visual-arts/accent/Why.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-60 right-0 z-10">
 
         <div class="main-container  z-10">
@@ -58,7 +58,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[25rem] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.png') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.webp') }}" alt=""
                 class="w-[45rem] object-cover">
         </div>
     </section>
@@ -67,7 +67,7 @@
     <section class="w-100 bg-red pt-20 pb-12 md:pt-16 md:pb-20 relative -z-10">
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.png') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.webp') }}" alt=""
                     class="w-full h-full object-contain">
             </div>
 
@@ -133,7 +133,7 @@
 
     {{-- Testimonial  --}}
     <section class="w-100 bg-secondary relative">
-        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.png') }}" alt="EduALL Junior"
+        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="EduALL Junior"
             class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
         <div class="main-container flex justify-end">
             <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">

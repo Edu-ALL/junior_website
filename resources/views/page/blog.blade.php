@@ -6,7 +6,7 @@
     {{-- Banner & Description --}}
     <section class="w-100 bg-primaryBg pt-[100px] relative pb-24 z-10">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/blog/accent/Whatson.png') }}"
+        <img loading="lazy" src="{{ asset('img/blog/accent/Whatson.webp') }}"
             class="md:w-[180px] w-[80px] absolute top-36 left-0 z-10">
 
         <div class="main-container relative z-20">

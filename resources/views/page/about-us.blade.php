@@ -5,7 +5,7 @@
 @section('content')
     {{-- WHO WE ARE --}}
     <section class="w-100 bg-secondary pt-[100px] relative z-20">
-        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/Jumbotron.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-20 left-0">
         <div class="main-container flex flex-nowrap mt-5 gap-5 pt-[25px] pb-[100px]">
             <div class="w-full md:w-3/5">
@@ -20,7 +20,7 @@
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-32 md:flex justify-end hidden">
-                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.png') }}" alt="" class="w-[45rem]">
+                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.webp') }}" alt="" class="w-[45rem]">
             </div>
         </div>
     </section>
@@ -29,7 +29,7 @@
     <section class="w-100 bg-blue md:py-[80px] py-10 relative z-10">
         <div class="main-container flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/about/OurMethodology.png') }}" alt="" class="w-[45rem] h-[35rem] object-cover object-top rounded-e-full">
+                <img loading="lazy" src="{{ asset('img/about/OurMethodology.webp') }}" alt="" class="w-[45rem] h-[35rem] object-cover object-top rounded-e-full">
             </div>
             <div class="w-full md:w-3/5 ">
                 <div class="mb-10">
@@ -44,7 +44,7 @@
                         @foreach (__('about.methodology_content') as $item)
                             <li class="mb-3">
                                 <div class="flex items-start">
-                                    <img loading="lazy" src="{{ asset('img/about/element/Point.png') }}" alt=""
+                                    <img loading="lazy" src="{{ asset('img/about/element/Point.webp') }}" alt=""
                                         class="w-4 h-4 me-3 mt-2">
                                     <div class="w-full ps-3">
                                         {!! $item['content'] !!}
@@ -60,9 +60,9 @@
 
     {{-- CREST Award Certifications  --}}
     <section class="w-100 bg-yellow/20 relative z-5">
-        <img loading="lazy" src="{{ asset('img/about/element/CrestAward_1.png') }}"
+        <img loading="lazy" src="{{ asset('img/about/element/CrestAward_1.webp') }}"
             class="md:w-[150px] w-[80px] absolute md:bottom-10 bottom-0 left-0">
-        <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.png') }}"
+        <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.webp') }}"
             class="md:w-[150px] w-[80px] absolute md:top-10 top-0 right-0">
         <div class="main-container">
             <div class="flex flex-wrap items-center md:pt-[200px] md:pb-[100px] py-[50px]">
@@ -72,7 +72,7 @@
                     </h2>
 
                     <div class="flex justify-center my-10">
-                        <img loading="lazy" src="{{ asset('img/logo/CrestAward.png') }}" alt=""
+                        <img loading="lazy" src="{{ asset('img/logo/CrestAward.webp') }}" alt=""
                             class="w-[300px] object-cover">
                     </div>
 
@@ -90,7 +90,7 @@
 
     {{-- Programs Co-Developers  --}}
     <section class="w-100 bg-red text-white relative">
-        <img loading="lazy" src="{{ asset('img/about/element/OurPeople.png') }}"
+        <img loading="lazy" src="{{ asset('img/about/element/OurPeople.webp') }}"
             class="md:w-[300px] w-[80px] absolute top-0 right-0">
         <div class="main-container md:py-[100px] py-[50px]">
             <div class="text-start mb-5">
@@ -148,7 +148,7 @@
 
     {{-- Facilities  --}}
     <section class="w-100 bg-secondary relative">
-        <img loading="lazy" src="{{ asset('img/about/element/Facilities.png') }}"
+        <img loading="lazy" src="{{ asset('img/about/element/Facilities.webp') }}"
             class="md:w-[200px] w-[80px] absolute top-0 right-0">
 
         <div class="main-container md:py-[100px] py-[50px]">
@@ -202,7 +202,7 @@
                     <ol class="text-lg">
                         @foreach (__('about.facilities_list') as $item)
                             <li class="my-3 flex items-center">
-                                <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.png') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.webp') }}" alt=""
                                     class="w-4 h-4 me-3">
                                 {{ $item['content'] }}
                             </li>
