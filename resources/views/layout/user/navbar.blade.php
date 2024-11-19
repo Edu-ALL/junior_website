@@ -112,7 +112,7 @@
                         @endif
                     </a>
                 </li>
-                <li class="md:my-0 my-1">
+                <li class="md:my-0 my-1 mb-5">
                     <label class="inline-flex items-center cursor-pointer md:ps-8 md:pe-2 ps-12 md:ms-0 ms-3">
                         <input type="checkbox" value="" class="sr-only peer"
                             {{ app()->getLocale() == 'id' ? 'checked' : '' }}
@@ -127,10 +127,10 @@
                     </label>
                 </li>
                 <li>
-                    <button type="button"
+                    <a href="{{ route('home', ['locale' => app()->getLocale()]) }}#contact" type="button"
                         class="text-white bg-[#0004f6] hover:bg-blue focus:outline-none focus:ring-4 focus:ring-blue rounded-full text-sm px-5 md:pt-1 pt-2 md:pb-1.5 pb-2 text-center me-2 mb-2 dark:bg-[#0004f6] dark:hover:bg-blue dark:focus:ring-blue md:ms-0 md:mt-0 ms-3 mt-3 w-full font-bold">
                         {{ __('navbar.schedule') }}
-                    </button>
+                    </a>
                 </li>
             </ul>
         </div>

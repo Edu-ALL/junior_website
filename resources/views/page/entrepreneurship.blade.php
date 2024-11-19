@@ -323,8 +323,8 @@
                 <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
                     {{ __('entrepreneurship.testimonials_badge') }}
                 </div>
-                <h2 class="font-bold text-3xl my-5">
-                    {!! __('entrepreneurship.testimonials_title') !!}
+                <h2 class="font-bold md:text-4xl text-2xl my-5">
+                    {!! __('home.testimonial_title') !!}
                 </h2>
 
                 <x-testimonial :color="'blue'" :testi="$testimonial" />

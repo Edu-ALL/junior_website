@@ -1,4 +1,4 @@
-<section class="bg-{{ $color }} text-white py-[100px] relative">
+<section class="bg-{{ $color }} text-white py-[100px] relative scroll-mt-10" id="contact">
     <div class="main-container">
         <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-start">
             <div class="w-full">

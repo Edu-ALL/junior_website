@@ -47,8 +47,8 @@
                 </ul>
             </div>
         </div>
-        <div class="flex flex-wrap mt-5 gap-5 md:py-[100px] py-[50px] relative overflow-hidden">
-            <div class="md:w-3/5 w-full md:px-32 px-8">
+        <div class="main-container flex flex-wrap mt-5 md:py-[100px] py-[50px]">
+            <div class="md:w-3/5 w-full">
                 <div class="bg-red py-1 px-4 inline rounded-full text-white">
                     {!! __('home.future_badge') !!}
                 </div>
@@ -87,16 +87,16 @@
                 <img loading="lazy" src="{{ asset('img/home/Values.webp') }}" alt="EduALL Junior"
                     class="w-full object-cover h-[675px] object-left-top rounded-e-[4rem]">
             </div>
-            <div class="w-full md:w-3/5 text-white md:px-32 px-8">
+            <div class="w-full md:w-3/5 text-white">
                 <div id="accordion-flush" data-accordion="collapse"
                     data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
                     data-inactive-classes="text-gray-500 dark:text-gray-400">
                     @foreach (__('home.why_eduall_content') as $item)
                         <h2 id="accordion-why-heading-{{ $loop->index }}" class="mt-2">
                             <button type="button"
-                                class="flex flex-nowrap justify-between items-start gap-3 font-bold md:text-2xl text-xl bg-primary/10 px-5 py-2 rounded-lg"
+                                class="flex flex-nowrap justify-between items-start gap-3 font-bold md:text-2xl text-xl bg-primary/10 px-5 py-2 rounded-lg accordion-button"
                                 data-accordion-target="#accordion-why-{{ $loop->index }}" aria-expanded="true"
-                                aria-controls="accordion-why-{{ $loop->index }}">
+                                aria-controls="accordion-why-{{ $loop->index }}" {{ $loop->index == 0 ? 'disabled' : '' }}>
                                 <div class="text-start text-white">
                                     {!! $item['subtitle'] !!}
                                 </div>
@@ -156,10 +156,10 @@
                     <p class="text-lg mb-5">
                         {!! __('home.how_it_work_paragraph3') !!}
                     </p>
-                    <button type="button"
+                    <a href="#programs"
                         class="text-white bg-primary shadow-2xl hover:bg-orange transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/30 font-medium rounded-full text-sm px-5 py-2 text-center me-2 mb-2 dark:bg-primary/60 dark:hover:bg-primary dark:focus:ring-primary">
                         {!! __('home.how_it_work_button') !!}
-                    </button>
+                    </a>
                 </div>
                 <div class="w-full md:w-2/4 md:ps-10">
                     <img loading="lazy" src="{{ asset('img/home/LearningJourney.webp') }}" alt="EduALL Junior"
@@ -215,7 +215,7 @@
                 <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}
                 </h2>
-                
+
                 <x-testimonial :color="'blue'" :testi="$testimonial" />
             </div>
         </div>
@@ -359,6 +359,18 @@
 
 @push('script')
     <script>
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Reset Disabled 
+                document.querySelectorAll('.accordion-button').forEach(item => {
+                    item.removeAttribute('disabled')
+                });
+
+                // Add Disabled for Actively button
+                this.setAttribute('disabled', true)
+            });
+        });
+
         var banners = new Splide('#banners', {
             type: 'loop',
             perPage: 1,

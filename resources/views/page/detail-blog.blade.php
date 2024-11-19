@@ -1,6 +1,12 @@
 @extends('layout.user.main')
 
-@section('title', 'Detail Blog | EduALL Junior')
+@section('title', 'EduALL Junior | ' . $blog->blog_title)
+
+@section('meta_seo')
+    <meta name="title" content="{{ $blog->seo_title }}">
+    <meta name="keyword" content="{{ $blog->seo_keyword }}">
+    <meta name="description" content="{{ $blog->seo_desc }}">
+@endsection
 
 @section('content')
     {{-- Banner & Description --}}

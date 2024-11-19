@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => '<span class="text-red">Jadwalkan</span> uji coba GRATIS Anda sekarang!',
+    'title' => '<span class="text-red">Jadwalkan</span> uji coba Anda sekarang!',
     'subtitle' => 'Rasakan program kami dalam uji coba satu minggu di mana anak Anda dapat mencoba kelas yang mereka minati. Setiap anak akan diobservasi oleh tim mentor dan psikolog kami, dengan penilaian personal di akhir masa uji coba.',
 
     'parents' => 'Nama Orang Tua',
