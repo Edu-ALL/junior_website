@@ -79,7 +79,7 @@
                         @foreach ($latest as $item)
                             <li class="splide__slide">
                                 <img loading="lazy"
-                                    src="{{ asset('uploaded_files/blogs/' . $item->created_at->format('Y') . '/' . $item->created_at->format('m') . '/' . $item->blog_thumbnail) }}"
+                                    src="{{ Storage::url('blogs/' . $item->created_at->format('Y') . '/' . $item->created_at->format('m') . '/' . $item->blog_thumbnail) }}"
                                     alt="{{ $item->blog_thumbnail_alt }}" title="{{ $item->blog_title }}"
                                     class="w-full object-cover h-[650px] rounded-s-full">
                             </li>
@@ -103,7 +103,7 @@
                 <div class="flex flex-col items-start text-white md:w-2/5">
                     <div class="rounded-3xl overflow-hidden mb-8 w-full aspect-square">
                         <img loading="lazy"
-                            src="{{ asset('uploaded_files/blogs/' . $highlight[0]->created_at->format('Y') . '/' . $highlight[0]->created_at->format('m') . '/' . $highlight[0]->blog_thumbnail) }}"
+                            src="{{ Storage::url('blogs/' . $highlight[0]->created_at->format('Y') . '/' . $highlight[0]->created_at->format('m') . '/' . $highlight[0]->blog_thumbnail) }}"
                             alt="{{ $highlight[0]->blog_thumbnail_alt }}" title="{{ $highlight[0]->blog_title }}"
                             class="w-full object-cover h-full rounded-3xl">
                     </div>
@@ -134,7 +134,7 @@
                             <li class="grid md:grid-cols-2 grid-cols-1 items-stre gap-4 mb-3">
                                 <div class="rounded-3xl overflow-hidden w-full aspect-square md:h-[200px]">
                                     <img loading="lazy"
-                                        src="{{ asset('uploaded_files/blogs/' . $item->created_at->format('Y') . '/' . $item->created_at->format('m') . '/' . $item->blog_thumbnail) }}"
+                                        src="{{ Storage::url('blogs/' . $item->created_at->format('Y') . '/' . $item->created_at->format('m') . '/' . $item->blog_thumbnail) }}"
                                         alt="{{ $item->blog_thumbnail_alt }}" title="{{ $item->blog_title }}"
                                         class="w-full object-cover h-full rounded-2xl">
                                 </div>
