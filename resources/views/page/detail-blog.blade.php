@@ -77,7 +77,7 @@
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[35%] top-full md:block hidden z-0">
             <img loading="lazy"
                 src="{{ Storage::url('blogs/' . $blog->created_at->format('Y') . '/' . $blog->created_at->format('m') . '/' . $blog->blog_thumbnail) }}"
-                alt="" class="w-full object-cover md:h-[450px] rounded-e-full">
+                alt="EduALL Junior" class="w-full object-cover md:h-[450px] rounded-e-full">
         </div>
 
     </section>

@@ -328,7 +328,7 @@ class BlogController extends Controller
                 }
                 $file = $request->file('blog_thumbnail');
                 $file_format = $request->file('blog_thumbnail')->getClientOriginalExtension();
-                $destinationPath = public_path() . '/uploaded_files/' . 'blogs/' . $blog->created_at->format('Y') . '/' . $blog->created_at->format('m') . '/';
+                $destinationPath = 'project/junior-website/blogs/' . $blog->created_at->format('Y') . '/' . $blog->created_at->format('m') . '/';
                 $time = date('YmdHis');
                 $fileName = 'Blogs-thumbnail-' . $time . '.' . $file_format;
                 Storage::disk('s3')->put($destinationPath . $fileName, file_get_contents($file));

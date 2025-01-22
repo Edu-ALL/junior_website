@@ -9,7 +9,7 @@
                 @for ($i = 0; $i < 6; $i++)
                     <li class="splide__slide">
                         <div class="rounded-2xl overflow-hidden">
-                            <img loading="lazy" src="https://placehold.co/400x300" alt="">
+                            <img loading="lazy" src="https://placehold.co/400x300" alt="EduALL Junior">
                         </div>
                     </li>
                 @endfor

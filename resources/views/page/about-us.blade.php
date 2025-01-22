@@ -20,7 +20,7 @@
                 </p>
             </div>
             <div class="w-full md:w-2/5 absolute right-0 bottom-32 md:flex justify-end hidden">
-                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.webp') }}" alt="" class="w-[45rem]">
+                <img loading="lazy" src="{{ asset('img/about/WhoWeAre.webp') }}" alt="EduALL Junior" class="w-[45rem]">
             </div>
         </div>
     </section>
@@ -29,7 +29,7 @@
     <section class="w-100 bg-blue md:py-[80px] py-10 relative z-10">
         <div class="main-container flex justify-end mt-10">
             <div class="w-full md:w-2/5 absolute left-0 mt-[3%] md:block hidden">
-                <img loading="lazy" src="{{ asset('img/about/OurMethodology.webp') }}" alt="" class="w-[45rem] h-[35rem] object-cover object-top rounded-e-full">
+                <img loading="lazy" src="{{ asset('img/about/OurMethodology.webp') }}" alt="EduALL Junior" class="w-[45rem] h-[35rem] object-cover object-top rounded-e-full">
             </div>
             <div class="w-full md:w-3/5 ">
                 <div class="mb-10">
@@ -44,7 +44,7 @@
                         @foreach (__('about.methodology_content') as $item)
                             <li class="mb-3">
                                 <div class="flex items-start">
-                                    <img loading="lazy" src="{{ asset('img/about/element/Point.webp') }}" alt=""
+                                    <img loading="lazy" src="{{ asset('img/about/element/Point.webp') }}" alt="EduALL Junior"
                                         class="w-4 h-4 me-3 mt-2">
                                     <div class="w-full ps-3">
                                         {!! $item['content'] !!}
@@ -72,7 +72,7 @@
                     </h2>
 
                     <div class="flex justify-center my-10">
-                        <img loading="lazy" src="{{ asset('img/logo/CrestAward.webp') }}" alt=""
+                        <img loading="lazy" src="{{ asset('img/logo/CrestAward.webp') }}" alt="EduALL Junior"
                             class="w-[300px] object-cover">
                     </div>
 
@@ -105,7 +105,7 @@
                 @foreach (__('about.our_people_content') as $item)
                     <div class="relative">
                         <div class="relative overflow-hidden rounded-2xl group">
-                            <img loading="lazy" src="{{ asset('img/about/' . $item['content_image']) }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/about/' . $item['content_image']) }}" alt="EduALL Junior"
                                 class="relative z-[0] w-full rounded-xl">
 
                             <div
@@ -165,13 +165,13 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x300" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x300" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x400" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x400" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x500" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x500" alt="EduALL Junior">
                                 </li>
                             </ul>
                         </div>
@@ -182,13 +182,13 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x300" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x300" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x400" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x400" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x500" alt="">
+                                    <img loading="lazy" src="https://placehold.co/500x500" alt="EduALL Junior">
                                 </li>
                             </ul>
                         </div>
@@ -202,7 +202,7 @@
                     <ol class="text-lg">
                         @foreach (__('about.facilities_list') as $item)
                             <li class="my-3 flex items-center">
-                                <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.webp') }}" alt=""
+                                <img loading="lazy" src="{{ asset('img/about/element/Point_Blue.webp') }}" alt="EduALL Junior"
                                     class="w-4 h-4 me-3">
                                 {{ $item['content'] }}
                             </li>

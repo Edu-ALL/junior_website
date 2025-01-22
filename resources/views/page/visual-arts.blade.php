@@ -58,7 +58,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[25rem] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.webp') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.webp') }}" alt="EduALL Junior"
                 class="w-[45rem] object-cover">
         </div>
     </section>
@@ -67,7 +67,7 @@
     <section class="w-100 bg-red pt-20 pb-12 md:pt-16 md:pb-20 relative -z-10">
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.webp') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.webp') }}" alt="EduALL Junior"
                     class="w-full h-full object-contain">
             </div>
 
@@ -121,7 +121,7 @@
                 <div class="flex md:flex-row flex-col justify-between items-center flex-wrap gap-6 mt-12">
                     @foreach(__('visual.what_your_kids_learn_content') as $content)
                         <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
-                            <img src="{{ asset("img/visual-arts/image/will-learn/".$content['image']) }}" alt=""
+                            <img src="{{ asset("img/visual-arts/image/will-learn/".$content['image']) }}" alt="EduALL Junior"
                                 class="aspect-square object-cover w-[110px] h-[110px]">
                             <span class="text-lg px-4 font-bold text-red text-center w-full">{{ $content['title'] }}</span>
                         </div>

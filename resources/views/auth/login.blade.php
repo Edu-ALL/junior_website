@@ -37,7 +37,7 @@
                         <div class="d-flex justify-content-center py-4">
                             <a href="/" class="logo d-flex align-items-center w-auto">
                                 <img class="img-fluid" src="{{ asset('assets/logo/eduall.webp') }}"
-                                    alt="">
+                                    alt="EduALL Junior">
                             </a>
                         </div>
                         <div class="card mb-3">

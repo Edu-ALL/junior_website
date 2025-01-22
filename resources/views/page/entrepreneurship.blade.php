@@ -75,7 +75,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[42%] top-full md:block hidden">
-            <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why.webp') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why.webp') }}" alt="EduALL Junior"
                 class="w-[40rem] object-cover">
         </div>
         {{-- Accent --}}
@@ -94,7 +94,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_2.webp') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_2.webp') }}" alt="EduALL Junior"
                     class="w-full h-full object-contain">
             </div>
 
@@ -116,7 +116,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_3.webp') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/enterpreneruship/image/Why_3.webp') }}" alt="EduALL Junior"
                     class="w-full h-full object-contain">
             </div>
 
@@ -234,7 +234,7 @@
                     </div>
                     <div class="w-full md:w-1/2 mt-6 md:mt-0">
                         <img loading="lazy" src="{{ asset('img/enterpreneruship/image/WhatYourKidsWillLearn.webp') }}"
-                            alt="" class="w-full object-contain">
+                            alt="EduALL Junior" class="w-full object-contain">
                     </div>
                 </div>
             </div>

@@ -59,7 +59,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:top-[45%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/creative-communications/image/Communications_Why.webp') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/creative-communications/image/Communications_Why.webp') }}" alt="EduALL Junior"
                 class="w-[45rem] object-cover absolute right-0">
         </div>
     </section>

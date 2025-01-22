@@ -57,7 +57,7 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[55%] top-full md:block hidden">
-            <img loading="lazy" src="{{ asset('img/science/image/Why.webp') }}" alt=""
+            <img loading="lazy" src="{{ asset('img/science/image/Why.webp') }}" alt="EduALL Junior"
                 class="w-[45rem] object-cover">
         </div>
     </section>
@@ -80,7 +80,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/science/image/WhatYourKidsWillLearn_2.webp') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/science/image/WhatYourKidsWillLearn_2.webp') }}" alt="EduALL Junior"
                     class="w-full h-full object-contain">
             </div>
 
@@ -102,7 +102,7 @@
 
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute left-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/science/image/WhatYourKidsWillLearn_1.webp') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/science/image/WhatYourKidsWillLearn_1.webp') }}" alt="EduALL Junior"
                     class="w-full h-full object-contain">
             </div>
 
