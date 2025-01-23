@@ -36,7 +36,8 @@
                     <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <div class="d-flex justify-content-center py-4">
                             <a href="/" class="logo d-flex align-items-center w-auto">
-                                <img class="img-fluid" src="{{ asset('assets/logo/eduall.webp') }}"
+                                <img class="img-fluid"
+                                    src="{{ Storage::url('website-settings/' . $website_data->website_primary_logo) }}"
                                     alt="EduALL Junior">
                             </a>
                         </div>
