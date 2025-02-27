@@ -160,18 +160,37 @@
             </h2>
             <div class="grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
                 <div class="relative">
+                    {{-- sini --}}
                     <section id="main-slider" class="splide"
                         aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x300" alt="EduALL Junior">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/Makerspace.webp') }}" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x400" alt="EduALL Junior">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/MiniLibrary.webp') }}" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x500" alt="EduALL Junior">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/RoboticsLab1.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/CreativeCommunication1.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/Multipurpose1.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/RoboticsLab2.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/CreativeCommunication2.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/Multipurpose2.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/RoboticsLab3.webp') }}" alt="EduALL Junior">
                                 </li>
                             </ul>
                         </div>
@@ -182,13 +201,31 @@
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x300" alt="EduALL Junior">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/Makerspace.webp') }}" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x400" alt="EduALL Junior">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/MiniLibrary.webp') }}" alt="EduALL Junior">
                                 </li>
                                 <li class="splide__slide rounded-lg">
-                                    <img loading="lazy" src="https://placehold.co/500x500" alt="EduALL Junior">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/RoboticsLab1.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/CreativeCommunication1.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/Multipurpose1.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/RoboticsLab2.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/CreativeCommunication2.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/Multipurpose2.webp') }}" alt="EduALL Junior">
+                                </li>
+                                <li class="splide__slide rounded-lg">
+                                    <img loading="lazy" src="{{ asset('img/about/facilities/RoboticsLab3.webp') }}" alt="EduALL Junior">
                                 </li>
                             </ul>
                         </div>
