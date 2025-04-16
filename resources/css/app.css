@@ -134,3 +134,346 @@ h3 {
 .blog_title_header_active h1 {
     @apply font-primary font-extrabold text-xl text-blue md:text-2xl  lg:text-left text-center transition-all duration-500;
 }
+
+/* Style for Home Page */
+.curriculum-animation-container {
+    min-height: 300px;
+    position: relative;
+}
+
+#image-left, #image-right {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+#image-combined {
+    transition: opacity 1s ease;
+}
+
+@media (max-width: 767px) {
+    .curriculum-animation-container {
+        min-height: 450px; /* Tinggi lebih untuk mobile */
+    }
+
+    /* Container gambar pada mobile masih ditampilkan */
+    #image-left, #image-right {
+        margin-bottom: 1rem;
+    }
+
+    /* Posisi gambar gabungan di tengah pada mobile */
+    #image-combined {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.animated-word-container {
+    height: 1.4em;
+    line-height: 1.4em;
+    overflow: hidden;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.animated-word-list {
+    animation: scrollWords 16s infinite;
+    animation-timing-function: ease-in-out;
+    will-change: transform;
+}
+
+.animated-word {
+    height: 1.4em;
+    line-height: 1.4em;
+}
+
+@keyframes scrollWords {
+    /* Tahan kata pertama */
+    0% {
+        transform: translateY(0%);
+        width: 380px;
+    }
+
+    9% {
+        transform: translateY(0%);
+        width: 380px;
+    }
+
+    /* Pindah ke kata ke-2 */
+    12.5% {
+        transform: translateY(-11.11%);
+        width: 180px;
+    }
+
+    /* 100 / 9 steps */
+    21.5% {
+        transform: translateY(-11.11%);
+        width: 180px;
+    }
+
+    /* Pindah ke kata ke-3 */
+    25% {
+        width: 260px;
+        transform: translateY(-22.22%);
+    }
+
+    34% {
+        width: 260px;
+        transform: translateY(-22.22%);
+    }
+
+    /* Pindah ke kata ke-4 */
+    37.5% {
+        width: 236px;
+        transform: translateY(-33.33%);
+    }
+
+    46.5% {
+        width: 236px;
+        transform: translateY(-33.33%);
+    }
+
+    /* Pindah ke kata ke-5 */
+    50% {
+        width: 230px;
+        transform: translateY(-44.44%);
+    }
+
+    59% {
+        width: 230px;
+        transform: translateY(-44.44%);
+    }
+
+    /* Pindah ke kata ke-6 */
+    62.5% {
+        width: 240px;
+        transform: translateY(-55.55%);
+    }
+
+    71.5% {
+        width: 240px;
+        transform: translateY(-55.55%);
+    }
+
+    /* Pindah ke kata ke-7 */
+    75% {
+        width: 230px;
+        transform: translateY(-66.66%);
+    }
+
+    84% {
+        width: 230px;
+        transform: translateY(-66.66%);
+    }
+
+    /* Pindah ke kata ke-8 */
+    87.5% {
+        width: 220px;
+        transform: translateY(-77.77%);
+    }
+
+    96.5% {
+        width: 220px;
+        transform: translateY(-77.77%);
+    }
+
+    100% {
+        width: 380px;
+        transform: translateY(-88.88%);
+    }
+}
+
+/* Media query untuk mobile */
+@media (max-width: 768px) {
+    @keyframes scrollWords {
+        /* Tahan kata pertama */
+        0% {
+            transform: translateY(0%);
+            width: 198px; /* 180px + 10% */
+        }
+
+        9% {
+            transform: translateY(0%);
+            width: 198px;
+        }
+
+        /* Pindah ke kata ke-2 */
+        12.5% {
+            transform: translateY(-11.11%);
+            width: 99px; /* 90px + 10% */
+        }
+
+        21.5% {
+            transform: translateY(-11.11%);
+            width: 99px;
+        }
+
+        /* Pindah ke kata ke-3 */
+        25% {
+            width: 132px; /* 120px + 10% */
+            transform: translateY(-22.22%);
+        }
+
+        34% {
+            width: 132px;
+            transform: translateY(-22.22%);
+        }
+
+        /* Pindah ke kata ke-4 */
+        37.5% {
+            width: 121px; /* 110px + 10% */
+            transform: translateY(-33.33%);
+        }
+
+        46.5% {
+            width: 121px;
+            transform: translateY(-33.33%);
+        }
+
+        /* Pindah ke kata ke-5 */
+        50% {
+            width: 121px; /* 110px + 10% */
+            transform: translateY(-44.44%);
+        }
+
+        59% {
+            width: 121px;
+            transform: translateY(-44.44%);
+        }
+
+        /* Pindah ke kata ke-6 */
+        62.5% {
+            width: 127px; /* 115px + 10% */
+            transform: translateY(-55.55%);
+        }
+
+        71.5% {
+            width: 127px;
+            transform: translateY(-55.55%);
+        }
+
+        /* Pindah ke kata ke-7 */
+        75% {
+            width: 121px; /* 110px + 10% */
+            transform: translateY(-66.66%);
+        }
+
+        84% {
+            width: 121px;
+            transform: translateY(-66.66%);
+        }
+
+        /* Pindah ke kata ke-8 */
+        87.5% {
+            width: 116px; /* 105px + 10% */
+            transform: translateY(-77.77%);
+        }
+
+        96.5% {
+            width: 116px;
+            transform: translateY(-77.77%);
+        }
+
+        100% {
+            width: 198px; /* 180px + 10% */
+            transform: translateY(-88.88%);
+        }
+    }
+}
+
+/* Media query untuk perangkat sangat kecil */
+@media (max-width: 480px) {
+    @keyframes scrollWords {
+        /* Tahan kata pertama */
+        0% {
+            transform: translateY(0%);
+            width: 194.65px; /* 181.5px + 7% */
+        }
+
+        9% {
+            transform: translateY(0%);
+            width: 194.65px;
+        }
+
+        /* Pindah ke kata ke-2 */
+        12.5% {
+            transform: translateY(-11.11%);
+            width: 90.839px; /* 84.7px + 7% */
+        }
+
+        21.5% {
+            transform: translateY(-11.11%);
+            width: 90.839px;
+        }
+
+        /* Pindah ke kata ke-3 */
+        25% {
+            width: 129.47px; /* 121px + 7% */
+            transform: translateY(-22.22%);
+        }
+
+        34% {
+            width: 129.47px;
+            transform: translateY(-22.22%);
+        }
+
+        /* Pindah ke kata ke-4 */
+        37.5% {
+            width: 116.793px; /* 108.9px + 7% */
+            transform: translateY(-33.33%);
+        }
+
+        46.5% {
+            width: 116.793px;
+            transform: translateY(-33.33%);
+        }
+
+        /* Pindah ke kata ke-5 */
+        50% {
+            width: 116.793px; /* 108.9px + 7% */
+            transform: translateY(-44.44%);
+        }
+
+        59% {
+            width: 116.793px;
+            transform: translateY(-44.44%);
+        }
+
+        /* Pindah ke kata ke-6 */
+          62.5% {
+            width: 123.885px; /* 115.5px + 7% */
+            transform: translateY(-55.55%);
+        }
+
+        71.5% {
+            width: 123.885px;
+            transform: translateY(-55.55%);
+        }
+
+        /* Pindah ke kata ke-7 */
+        75% {
+            width: 116.793px; /* 108.9px + 7% */
+            transform: translateY(-66.66%);
+        }
+
+        84% {
+            width: 116.793px;
+            transform: translateY(-66.66%);
+        }
+
+        /* Pindah ke kata ke-8 */
+        87.5% {
+            width: 110.458px; /* 103.4px + 7% */
+            transform: translateY(-77.77%);
+        }
+
+        96.5% {
+            width: 110.458px;
+            transform: translateY(-77.77%);
+        }
+
+        100% {
+            width: 194.65px; /* 181.5px + 7% */
+            transform: translateY(-88.88%);
+        }
+    }
+}
