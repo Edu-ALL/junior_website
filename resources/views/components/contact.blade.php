@@ -13,7 +13,8 @@
                 </p> --}}
             </div>
             <div class="w-full md:shadow-none shadow-2xl rounded-lg">
-                <x-mailerlite-form />
+                <x-form-mailerlite />
+                {{-- <x-mailerlite-form /> --}}
             </div>
         </div>
     </div>
