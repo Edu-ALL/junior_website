@@ -106,7 +106,7 @@
                 </h2>
             </div>
             <div class="flex flex-col md:flex-row w-full">
-                <div class="flex flex-col items-center justify-center md:w-5/12">
+                <div class="flex flex-col items-center justify-center mt-12 md:mt-0 md:w-5/12 order-2 md:order-1">
                     <h2 class="font-bold md:text-2xl text-xl my-5 mb-4 md:mb-8 text-white">
                         {!! __('home.program_academic_title') !!}
                     </h2>
@@ -125,7 +125,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="flex flex-col items-center justify-center mt-12 md:mt-0 md:w-6/12">
+                <div class="flex flex-col items-center justify-center md:w-6/12 order-1 md:order-2">
                     <h2 class="font-bold md:text-2xl text-xl my-5 mb-4 md:mb-8 text-white">
                         {!! __('home.program_content_title') !!}
                     </h2>

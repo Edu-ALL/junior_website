@@ -6,5 +6,5 @@ return [
 'program' => 'Programs',
 'blog' => 'Blogs',
 'contact' => 'Contact Us',
-'schedule' => 'Schedule Your Trial',
+'schedule' => 'Consult with Us',
 ];
