@@ -1,13 +1,29 @@
 <?php
 
 return [
-    'banner_title' => 'One-stop solution to unlock <br> your <span class="text-blue/60">kid’s potential</span>',
-    'banner_content' => 'Playful Learning Center for Kid’s Interests & Skills Exploration',
+    'banner_title' => 'Prepare Your Child Inside-Out to be {word} child',
+    'banner_animated_words' => [
+        'a well-developed',
+        'an agile',
+        'a confident',
+        'a thriving',
+        'a winning',
+        'a sociable',
+        'a resilient',
+        'a creative',
+    ],
+    'banner_content' => 'A place for primary school students to be confident in academics and discovering their talents',
     'future_badge' => 'KID’S FUTURE',
     'future_title' => 'We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset',
     'future_content' => 'At EduALL Junior, we focus on empowering kids aged 5-12 through courses that are designed to ignite
-    curiosity, nurture creativity, and cultivate essential skills - all while ensuring a fun learning experience.',
+                        curiosity, nurture creativity, and cultivate essential skills - all while ensuring a fun learning experience.',
 
+    // Our Mission Section
+    'mission_title' => 'Our Mission',
+    'mission_did_you_know_title' => 'Did You Know?',
+    'mission_did_you_know_content' => 'In today\'s ever-changing world, children need to strengthen both <span class="font-bold">academic and real-life skills</span>. They need <span class="font-bold">focus, communication, and confidence</span> to adapt, express themselves, and succeed.',
+    'mission_well_prepared_title' => 'How does a well-prepared inside-out child look like?',
+    'mission_well_prepared_content' => 'A well-prepared inside-out child is emotionally, intellectually, and socially balanced, thriving in school, daily activities and goals, and also social life. With the right support, they grow into individuals, ready to take on the future.',
 
     'why_eduall_badge' => 'Our Values',
     'why_eduall_title' => 'Why <span class="text-yellowLight">EduALL Junior</span>?',
@@ -63,8 +79,24 @@ return [
     'how_it_work_button' => 'See Our Programs',
 
 
-    'program_badge' => 'PROGRAMS',
-    'program_title' => '<span class="text-yellowLight">Expert-approved</span> programs for your kids',
+    'program_badge' => 'PROGRAMS OVERVIEW',
+    'program_title' => 'How do we <span class="text-yellowLight">support</span> your child?',
+    'program_academic_title' => "Academic Enrichment",
+    'program_academic' => [
+        [
+            'image' => 'math.webp',
+            'title' => 'Math',
+        ],
+        [
+            'image' => 'english.webp',
+            'title' => 'English',
+        ],
+        [
+            'image' => 'olympiad.webp',
+            'title' => 'Olympiad & Competition Guidance',
+        ],
+    ],
+    'program_content_title' => "Exploration Program",
     'program_content' => [
         [
             'image' => 'Programs_Science.webp',
@@ -96,6 +128,7 @@ return [
         ],
     ],
 
+    'curriculum_overview'=> "Curriculum Overview",
 
     'testimonial_badge' => 'TESTIMONIALS',
     'testimonial_title' => 'What parents say <span class="text-blue">about us</span>',

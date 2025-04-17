@@ -8,9 +8,9 @@
                 <h2 class="font-bold text-3xl mt-5 text-white">
                     {!! __('contact-component.contact_title') !!}
                 </h2>
-                <p class="text-lg font-light mt-5">
+                {{-- <p class="text-lg font-light mt-5">
                     {!! __('contact-component.contact_content') !!}
-                </p>
+                </p> --}}
             </div>
             <div class="w-full md:shadow-none shadow-2xl rounded-lg">
                 <x-mailerlite-form />
