@@ -1,11 +1,28 @@
 <?php
 
 return [
-    'banner_title' => 'Solusi optimal untuk mengembangkan <span class="text-blue/60">potensi anak</span> Anda',
-    'banner_content' => 'Playful Learning Center untuk Eksplorasi Minat & Keterampilan Anak',
+    'banner_title' => 'Siapkan Anak Anda Luar-Dalam untuk menjadi anak {word}',
+    'banner_animated_words' => [
+        'well-developed',
+        'agile',
+        'confident',
+        'thriving',
+        'winning',
+        'sociable',
+        'resilient',
+        'creative',
+    ],
+    'banner_content' => 'Tempat bagi siswa sekolah dasar untuk percaya diri dalam akademis dan menemukan bakat mereka',
     'future_badge' => 'MASA DEPAN ANAK',
     'future_title' => 'Kami memberdayakan anak-anak untuk menjadi pembawa perubahan dan pemimpin masa depan dengan mengembangkan pola pikir kewirausahaan.',
     'future_content' => 'Program EduALL Junior, memfokuskan diri untuk memupuk minat dan kemampuan anak-anak usia 5-12 tahun melalui program yang berfokus pada pengembangan pola pikir kewirausahaan. Program kami dirancang untuk membangkitkan rasa ingin tahu, memupuk kreativitas, dan mengembangkan keterampilan penting - semua dengan harapan memastikan pengalaman belajar yang menyenangkan.',
+
+    // Our Mission Section
+    'mission_title' => 'Misi Kami',
+    'mission_did_you_know_title' => 'Tahukah Anda?',
+    'mission_did_you_know_content' => 'Di dunia yang terus berubah ini, anak-anak perlu memperkuat <span class="font-bold">keterampilan akademik dan kehidupan nyata</span>. Mereka membutuhkan <span class="font-bold">fokus, komunikasi, dan kepercayaan diri</span> untuk beradaptasi, mengekspresikan diri, dan berhasil.',
+    'mission_well_prepared_title' => 'Bagaimana ciri anak yang dipersiapkan dengan baik dari dalam-luar?',
+    'mission_well_prepared_content' => 'Anak yang dipersiapkan dengan baik dari dalam-luar secara emosional, intelektual, dan sosial seimbang, berkembang di sekolah, kegiatan sehari-hari dan tujuan, serta kehidupan sosial. Dengan dukungan yang tepat, mereka tumbuh menjadi individu yang siap menghadapi masa depan.',
 
     'why_eduall_badge' => 'Visi Kami',
     'why_eduall_title' => 'Mengapa memilih <span class="text-yellowLight">EduALL Junior</span>?',
@@ -38,6 +55,22 @@ return [
 
     'program_badge' => 'PROGRAM',
     'program_title' => 'Program <span class="text-yellowLight">pilihan para ahli</span> untuk anak-anak Anda',
+    'program_academic_title' => "Academic Enrichment",
+    'program_academic' => [
+        [
+            'image' => 'math.webp',
+            'title' => 'Math',
+        ],
+        [
+            'image' => 'english.webp',
+            'title' => 'English',
+        ],
+        [
+            'image' => 'olympiad.webp',
+            'title' => 'Olympiad & Competition Guidance',
+        ],
+    ],
+    'program_content_title' => "Exploration Program",
     'program_content' => [
         [
             'image' => 'Programs_Science.webp',
@@ -66,6 +99,7 @@ return [
         ],
     ],
 
+    'curriculum_overview'=> "Curriculum Overview",
 
     'testimonial_badge' => 'TESTIMONI',
     'testimonial_title' => 'Apa kata orangtua <span class="text-blue">tentang kami</span>',
