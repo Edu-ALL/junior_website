@@ -338,9 +338,82 @@
 
     {{-- Schedule Form  --}}
     <x-contact :color="'blue'" />
-@endsection
 
+@endsection
 @push('script')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elements untuk animasi
+            const container = document.querySelector('.curriculum-animation-container');
+            const imageLeft = document.getElementById('image-left');
+            const imageRight = document.getElementById('image-right');
+            const imageCombined = document.getElementById('image-combined');
+
+            let isAnimated = false;
+            const isMobile = window.innerWidth < 768;
+
+            // Buat Intersection Observer untuk mendeteksi kapan elemen terlihat
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Jika scrolling ke bawah dan elemen terlihat setidaknya 60%
+                    if (entry.isIntersecting && entry.intersectionRatio > 0.6 && !isAnimated) {
+                        // Animasi bergabung
+                        combineImages();
+                        isAnimated = true;
+                    }
+                    // Jika scrolling ke atas dan elemen tidak lagi terlihat
+                    else if (!entry.isIntersecting && isAnimated) {
+                        // Animasi memisah
+                        separateImages();
+                        isAnimated = false;
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '-210px',
+                threshold: [0.1, 0.3, 0.6, 0.9]
+            });
+
+            // Fungsi untuk menggabungkan gambar
+            function combineImages() {
+                setTimeout(() => {
+                    if (isMobile) {
+                        imageLeft.style.transform = 'translateY(50%) scale(1.1)';
+                        imageLeft.style.opacity = '0';
+
+                        imageRight.style.transform = 'translateY(-50%) scale(1.1)';
+                        imageRight.style.opacity = '0';
+                    } else {
+                        imageLeft.style.transform = 'translateX(50%) scale(1.1)';
+                        imageLeft.style.opacity = '0';
+
+                        imageRight.style.transform = 'translateX(-50%) scale(1.1)';
+                        imageRight.style.opacity = '0';
+                    }
+
+                    // Tampilkan gambar gabungan
+                    setTimeout(() => {
+                        imageCombined.style.opacity = '1';
+                    }, 500);
+                }, 300);
+            }
+
+            // Fungsi untuk memisahkan gambar
+            function separateImages() {
+                imageCombined.style.opacity = '0';
+
+                setTimeout(() => {
+                    imageLeft.style.transform = 'translateX(0) translateY(0) scale(1)';
+                    imageLeft.style.opacity = '1';
+
+                    imageRight.style.transform = 'translateX(0) translateY(0) scale(1)';
+                    imageRight.style.opacity = '1';
+                }, 300);
+            }
+
+            observer.observe(container);
+        });
+    </script>
     <script>
         document.querySelectorAll('.accordion-button').forEach(button => {
             button.addEventListener('click', function() {
@@ -392,77 +465,5 @@
         //         events.go('>')
         //     }
         // }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            // Elements untuk animasi
-            const container = document.querySelector('.curriculum-animation-container');
-            const imageLeft = document.getElementById('image-left');
-            const imageRight = document.getElementById('image-right');
-            const imageCombined = document.getElementById('image-combined');
-
-            let isAnimated = false;
-            const isMobile = window.innerWidth < 768;
-
-            // Buat Intersection Observer untuk mendeteksi kapan elemen terlihat
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    // Jika scrolling ke bawah dan elemen terlihat setidaknya 60%
-                    if (entry.isIntersecting && entry.intersectionRatio > 0.6 && !isAnimated) {
-                        // Animasi bergabung
-                        combineImages();
-                        isAnimated = true;
-                    }
-                    // Jika scrolling ke atas dan elemen tidak lagi terlihat
-                    else if (!entry.isIntersecting && isAnimated) {
-                        // Animasi memisah
-                        separateImages();
-                        isAnimated = false;
-                    }
-                });
-            }, {
-                root: null,
-                rootMargin: '0px',
-                threshold: [0.1, 0.3, 0.6, 0.9]
-            });
-
-            // Fungsi untuk menggabungkan gambar
-            function combineImages() {
-                setTimeout(() => {
-                    if (isMobile) {
-                        imageLeft.style.transform = 'translateY(50%) scale(1.1)';
-                        imageLeft.style.opacity = '0';
-
-                        imageRight.style.transform = 'translateY(-50%) scale(1.1)';
-                        imageRight.style.opacity = '0';
-                    } else {
-                        imageLeft.style.transform = 'translateX(50%) scale(1.1)';
-                        imageLeft.style.opacity = '0';
-
-                        imageRight.style.transform = 'translateX(-50%) scale(1.1)';
-                        imageRight.style.opacity = '0';
-                    }
-
-                    // Tampilkan gambar gabungan
-                    setTimeout(() => {
-                        imageCombined.style.opacity = '1';
-                    }, 500);
-                }, 300);
-            }
-
-            // Fungsi untuk memisahkan gambar
-            function separateImages() {
-                imageCombined.style.opacity = '0';
-
-                setTimeout(() => {
-                    imageLeft.style.transform = 'translateX(0) translateY(0) scale(1)';
-                    imageLeft.style.opacity = '1';
-
-                    imageRight.style.transform = 'translateX(0) translateY(0) scale(1)';
-                    imageRight.style.opacity = '1';
-                }, 300);
-            }
-
-            observer.observe(container);
-        });
     </script>
 @endpush
