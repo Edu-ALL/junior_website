@@ -51,7 +51,7 @@
             class="md:w-[150px] w-[80px] absolute top-10 right-0"> --}}
         <div class="pt-16 md:py-16">
             <div class="text-center mb-12 md:mb-20">
-                <h2 class="font-bold md:text-4xl text-2xl my-5 mb-10 text-yellow">
+                <h2 class="font-bold md:text-4xl text-2xl my-5 mb-10 text-[#F9DF6E] underline">
                     {!! __('home.mission_title') !!}
                 </h2>
             </div>
@@ -63,7 +63,7 @@
                         <img loading="lazy" src="{{ asset('img/home/our_mission_web.webp') }}" alt="EduALL Junior"
                             class="w-full object-center object-contain md:block hidden">
                         <img loading="lazy" src="{{ asset('img/home/our_mission_mobile.webp') }}" alt="EduALL Junior"
-                            class="w-full object-center object-contain md:hidden ml-8">
+                            class="w-full object-center object-contain md:hidden pl-8">
                     </div>
                 </div>
 
@@ -105,42 +105,44 @@
                     {!! __('home.program_title') !!}
                 </h2>
             </div>
-            <div class="flex flex-col items-center justify-center">
-                <h2 class="font-bold md:text-2xl text-xl my-5 mb-4 md:mb-8 text-white">
-                    {!! __('home.program_academic_title') !!}
-                </h2>
-                <div class="flex flex-wrap md:gap-4 gap-2 items-center justify-center">
-                    @foreach (__('home.program_academic') as $item)
-                        <div class="w-40 md:w-72">
-                            <div class="relative pb-[20px] overflow-hidden rounded-[30px]">
-                                <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt="EduALL Junior"
-                                    class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500 w-full">
-                                <div
-                                    class="btn-primary hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 h-10 flex items-center justify-center px-2 md:px-6 absolute left-[5%] bottom-0 z-[1] w-[90%] text-sm shadow-lg leading-3">
-                                    {{ $item['title'] }}
+            <div class="flex flex-col md:flex-row w-full">
+                <div class="flex flex-col items-center justify-center md:w-5/12">
+                    <h2 class="font-bold md:text-2xl text-xl my-5 mb-4 md:mb-8 text-white">
+                        {!! __('home.program_academic_title') !!}
+                    </h2>
+                    <div class="flex flex-wrap md:gap-4 gap-2 items-center justify-center">
+                        @foreach (__('home.program_academic') as $item)
+                            <div class="w-40">
+                                <div class="relative pb-[20px] overflow-hidden rounded-[30px]">
+                                    <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt="EduALL Junior"
+                                        class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500 w-full">
+                                    <div
+                                        class="btn-primary hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 h-10 md:h-9 flex items-center justify-center px-1.5 absolute left-[5%] bottom-0 z-[1] w-[90%] text-xs shadow-lg leading-3">
+                                        {{ $item['title'] }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
                 </div>
-            </div>
-            <div class="flex flex-col items-center justify-center mt-12">
-                <h2 class="font-bold md:text-2xl text-xl my-5 mb-4 md:mb-8 text-white">
-                    {!! __('home.program_content_title') !!}
-                </h2>
-                <div class="flex flex-wrap md:gap-4 gap-2 items-center justify-center">
-                    @foreach (__('home.program_content') as $item)
-                        <a href="{{ route($item['link'], ['locale' => app()->getLocale()]) }}" class="w-40 md:w-72">
-                            <div class="relative pb-[20px] overflow-hidden rounded-[30px]">
-                                <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt="EduALL Junior"
-                                    class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500 w-full">
-                                <div
-                                    class="btn-primary hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 h-10 flex items-center justify-center px-2 md:px-6 absolute left-[5%] bottom-0 z-[1] w-[90%] text-sm shadow-lg leading-3">
-                                    {{ $item['title'] }} →
+                <div class="flex flex-col items-center justify-center mt-12 md:mt-0 md:w-6/12">
+                    <h2 class="font-bold md:text-2xl text-xl my-5 mb-4 md:mb-8 text-white">
+                        {!! __('home.program_content_title') !!}
+                    </h2>
+                    <div class="flex flex-wrap md:gap-4 gap-2 items-center justify-center">
+                        @foreach (__('home.program_content') as $item)
+                            <a href="{{ route($item['link'], ['locale' => app()->getLocale()]) }}" class="w-40">
+                                <div class="relative pb-[20px] overflow-hidden rounded-[30px]">
+                                    <img loading="lazy" src="{{ asset('img/home/' . $item['image']) }}" alt="EduALL Junior"
+                                        class="relative rounded-xl mt-4 z-[0] shadow-lg hover:scale-105 transition-all duration-500 w-full">
+                                    <div
+                                        class="btn-primary hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 h-10 md:h-9 flex items-center justify-center px-1.5 absolute left-[5%] bottom-0 z-[1] w-[90%] text-xs shadow-lg leading-3">
+                                        {{ $item['title'] }} →
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    @endforeach
+                            </a>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
