@@ -59,8 +59,8 @@
         </div>
 
         <div class="w-full md:w-2/5 absolute right-0 bottom-0 md:top-[45%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/creative-communications/image/Communications_Why.webp') }}" alt=""
-                class="w-full object-cover">
+            <img loading="lazy" src="{{ asset('img/creative-communications/image/Communications_Why.webp') }}" alt="EduALL Junior"
+                class="w-[45rem] object-cover absolute right-0">
         </div>
     </section>
 
@@ -94,16 +94,12 @@
     {{-- Testimonial --}}
     <section class="w-100 bg-secondary pb-24 relative">
         {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.webp') }}"
-            class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
-
-        <div class="flex flex-wrap items-center md:py-0 py-[50px]">
-            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="" class="w-full object-cover">
-            </div>
-            <div class="w-full md:w-3/5 md:px-32 px-6">
-                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
-                    {{ __('communication.testimonials_badge') }}
+        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="EduALL Junior"
+            class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
+        <div class="main-container flex justify-end">
+            <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">
+                <div class="bg-purple py-1 px-4 inline rounded-full text-white">
+                    {!! __('home.testimonial_badge') !!}
                 </div>
                 <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}

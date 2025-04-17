@@ -28,7 +28,7 @@
                 @foreach (__('programs.our_programs_content') as $item)
                     <a class="w-full group" href="{{ route($item['content_link'], ['locale' => app()->getLocale()]) }}">
                         <div class="relative">
-                            <img loading="lazy" src="{{ asset('img/program/' . $item['content_image']) }}" alt=""
+                            <img loading="lazy" src="{{ asset('img/program/' . $item['content_image']) }}" alt="EduALL Junior"
                                 class="w-100">
 
                             <div class="text-white absolute bottom-5 left-0 p-10">

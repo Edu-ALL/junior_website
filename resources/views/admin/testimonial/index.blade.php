@@ -60,13 +60,13 @@
                                             <td>{{ $testimonial->testi_subcategory != null ? $testimonial->testi_subcategory : '-' }}</td>
                                             <td>
                                                 @if ($testimonial->testi_thumbnail)
-                                                    <img data-original="{{ asset('uploaded_files/'.'testimonial/'.$testimonial->created_at->format('Y').'/'.$testimonial->created_at->format('m').'/'.$testimonial->testi_thumbnail) }}" alt="" width="80">
+                                                    <img data-original="{{ Storage::url('testimonial/'.$testimonial->created_at->format('Y').'/'.$testimonial->created_at->format('m').'/'.$testimonial->testi_thumbnail) }}" alt="EduALL Junior" width="80">
                                                 @else
                                                     -
                                                 @endif
                                             </td>
                                             <td class="text-center">
-                                                <img data-original="{{ asset('assets/img/flag/flag-'.$testimonial->lang.'.webp') }}" alt="" width="30">
+                                                <img data-original="{{ asset('assets/img/flag/flag-'.$testimonial->lang.'.webp') }}" alt="EduALL Junior" width="30">
                                                 <p class="pt-1" style="font-size: 13px !important">
                                                     {{ $testimonial->languages->language }}
                                                 </p>

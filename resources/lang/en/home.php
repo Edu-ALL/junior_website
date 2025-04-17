@@ -80,7 +80,7 @@ return [
 
 
     'program_badge' => 'PROGRAMS OVERVIEW',
-    'program_title' => 'How do we <span class="text-yellowLight">support</span> your child?',
+    'program_title' => 'How do we <span class="text-[#F9DF6E] underline">support</span> your child?',
     'program_academic_title' => "Academic Enrichment",
     'program_academic' => [
         [
@@ -105,9 +105,7 @@ return [
         ],
         [
             'image' => 'Programs_Coding.webp',
-            'title' => 'Creative
-                        Coding &
-                        Robotics',
+            'title' => 'Creative Robotics & Coding',
             'link' => "programs.coding-robotics"
         ],
         [
@@ -123,7 +121,7 @@ return [
         ],
         [
             'image' => 'Programs_Communications.webp',
-            'title' => 'Creative Communications',
+            'title' => 'Creative Communication',
             'link' => "programs.creative-communication"
         ],
     ],

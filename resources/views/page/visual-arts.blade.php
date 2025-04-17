@@ -57,9 +57,9 @@
             </div>
         </div>
 
-        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[50%] top-full md:block hidden z-0">
-            <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.webp') }}" alt=""
-                class="w-full object-cover">
+        <div class="w-full md:w-2/5 absolute left-0 bottom-0 md:top-[25rem] top-full md:block hidden z-0">
+            <img loading="lazy" src="{{ asset('img/visual-arts/image/Why.webp') }}" alt="EduALL Junior"
+                class="w-[45rem] object-cover">
         </div>
     </section>
 
@@ -67,7 +67,7 @@
     <section class="w-100 bg-red pt-20 pb-12 md:pt-16 md:pb-20 relative -z-10">
         <div class="relative py-8 md:py-20">
             <div class="w-full md:w-2/5 absolute right-0 bottom-0 top-0 md:block hidden">
-                <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.webp') }}" alt=""
+                <img loading="lazy" src="{{ asset('img/visual-arts/image/Curriculum.webp') }}" alt="EduALL Junior"
                     class="w-full h-full object-contain">
             </div>
 
@@ -121,7 +121,7 @@
                 <div class="flex md:flex-row flex-col justify-between items-center flex-wrap gap-6 mt-12">
                     @foreach(__('visual.what_your_kids_learn_content') as $content)
                         <div class="flex items-center justify-between w-full md:w-[30%] bg-white rounded-2xl overflow-hidden">
-                            <img src="{{ asset("img/visual-arts/image/will-learn/".$content['image']) }}" alt=""
+                            <img src="{{ asset("img/visual-arts/image/will-learn/".$content['image']) }}" alt="EduALL Junior"
                                 class="aspect-square object-cover w-[110px] h-[110px]">
                             <span class="text-lg px-4 font-bold text-red text-center w-full">{{ $content['title'] }}</span>
                         </div>
@@ -132,19 +132,13 @@
     </section>
 
     {{-- Testimonial  --}}
-    <section class="w-100 bg-secondary pb-24 relative">
-        {{-- Accent --}}
-        <img loading="lazy" src="{{ asset('img/science/accent/Testimonials.webp') }}"
-            class="md:w-[200px] w-[80px] absolute top-[45%] right-0">
-
-        <div class="flex flex-wrap items-center md:py-0 py-[50px]">
-            <div class="w-full md:w-2/5 md:px-0 px-6 mb-4">
-                <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt=""
-                    class="w-full object-cover">
-            </div>
-            <div class="w-full md:w-3/5 md:px-32 px-6">
-                <div class="bg-yellow py-1 px-4 inline rounded-full text-white">
-                    {{ __('visual.testimonials_badge') }}
+    <section class="w-100 bg-secondary relative">
+        <img loading="lazy" src="{{ asset('img/home/Testimonials_Dummy.webp') }}" alt="EduALL Junior"
+            class="md:w-[35rem] w-[80%] md:absolute top-0 left-0 relative">
+        <div class="main-container flex justify-end">
+            <div class="w-full md:w-3/5 md:py-[8rem] py-[2rem]">
+                <div class="bg-red py-1 px-4 inline rounded-full text-white">
+                    {!! __('home.testimonial_badge') !!}
                 </div>
                 <h2 class="font-bold md:text-4xl text-2xl my-5">
                     {!! __('home.testimonial_title') !!}

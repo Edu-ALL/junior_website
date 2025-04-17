@@ -54,7 +54,7 @@ return [
 
 
     'program_badge' => 'PROGRAM',
-    'program_title' => 'Program <span class="text-yellowLight">pilihan para ahli</span> untuk anak-anak Anda',
+    'program_title' => 'Bagaimana kita <span class="text-[#F9DF6E] underline">mendukung</span> anak Anda?',
     'program_academic_title' => "Academic Enrichment",
     'program_academic' => [
         [
