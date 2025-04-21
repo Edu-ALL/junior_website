@@ -12,7 +12,7 @@ return [
         'a resilient',
         'a creative',
     ],
-    'banner_content' => 'A place for primary school students to be confident in academics and discovering their talents',
+    'banner_content' => 'Your child is one-of-a-kind,let’s discover their talents and academic potential!',
     'future_badge' => 'KID’S FUTURE',
     'future_title' => 'We empower kids to become future change-makers and leaders by developing an entrepreneurial mindset',
     'future_content' => 'At EduALL Junior, we focus on empowering kids aged 5-12 through courses that are designed to ignite
