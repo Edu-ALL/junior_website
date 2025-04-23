@@ -127,6 +127,8 @@ return [
     ],
 
     'curriculum_overview'=> "Curriculum Overview",
+    'curriculum_text_top' => "Our curriculum integrates",
+    'curriculum_text_bottom' => "With this combination, students will develop social skills, resilience and resourcefulness",
 
     'testimonial_badge' => 'TESTIMONIALS',
     'testimonial_title' => 'What parents say <span class="text-blue">about us</span>',

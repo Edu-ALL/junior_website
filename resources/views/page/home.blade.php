@@ -161,24 +161,24 @@
                 </div>
             </div>
             <p class="text-dark text-center text-xl mt-12 mb-20">
-                Our curriculum integrates
+                {{ __('home.curriculum_text_top') }}
             </p>
             <div class="relative w-full flex flex-col md:flex-row justify-center items-center my-8 space-y-8 md:space-x-24 max-w-4xl mx-auto">
                 <div id="image-left" class="hover-container transition-all duration-1000 transform">
                     <img loading="lazy" src="{{ asset('img/home/curriculum_1.webp') }}"
-                        alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
+                    alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
                 </div>
                 <div id="image-left" class="hover-container transition-all duration-1000 transform">
                     <img loading="lazy" src="{{ asset('img/home/curriculum_2.webp') }}"
-                        alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
+                    alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
                 </div>
                 <div id="image-left" class="hover-container transition-all duration-1000 transform group">
                     <img loading="lazy" src="{{ asset('img/home/curriculum_3.webp') }}"
-                        alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
+                    alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
                 </div>
             </div>
             <p class="text-dark text-center text-xl mt-24 mb-12">
-                With this combination, students will develop social skills, resilience and resourcefulness
+                {{ __('home.curriculum_text_bottom') }}
             </p>
         </div>
     </section>
