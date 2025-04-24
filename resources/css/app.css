@@ -477,3 +477,18 @@ h3 {
         }
     }
 }
+
+@keyframes custom-bounce {
+  50% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.25, 0.25);
+  }
+    0%, 100%  {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.075, 0.075, 0.15, 0.50);
+  }
+}
+
+.hover-container:hover img {
+   animation: custom-bounce 1.5s infinite;
+}

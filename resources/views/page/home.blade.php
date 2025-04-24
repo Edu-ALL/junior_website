@@ -155,34 +155,31 @@
         <img loading="lazy" src="{{ asset('img/home/element/LearningJourney.webp') }}"
             class="md:w-[150px] w-[80px] absolute top-10 left-0 rotate-180">
         <div class="main-container py-[100px]">
-            <div class="text-center mb-24">
-                <div class="bg-blue py-1 px-4 mb-8 inline rounded-full text-white uppercase">
+            <div class="text-center">
+                <div class="bg-blue py-1 px-4 inline rounded-full  mb-8 text-white uppercase">
                     {{ __('home.curriculum_overview') }}
                 </div>
             </div>
-            <div class="curriculum-animation-container relative w-full flex justify-center items-center my-8">
-                <!-- Container untuk kedua gambar yang akan digabungkan -->
-                <div class="flex flex-col md:flex-row w-full gap-8 justify-center items-center">
-                    <!-- Gambar pertama -->
-                    <div id="image-left" class="image-container transition-all duration-1000 transform">
-                        <img loading="lazy" src="{{ asset('img/home/curriculum_overview_inside.webp') }}"
-                            alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
-                    </div>
-
-                    <!-- Gambar kedua -->
-                    <div id="image-right" class="image-container transition-all duration-1000 transform">
-                        <img loading="lazy" src="{{ asset('img/home/curriculum_overview_outside.webp') }}"
-                            alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
-                    </div>
+            <p class="text-dark text-center text-xl mt-12 mb-20">
+                {{ __('home.curriculum_text_top') }}
+            </p>
+            <div class="relative w-full flex flex-col md:flex-row justify-center items-center my-8 space-y-8 md:space-x-24 max-w-4xl mx-auto">
+                <div id="image-left" class="hover-container transition-all duration-1000 transform">
+                    <img loading="lazy" src="{{ asset('img/home/curriculum_1.webp') }}"
+                    alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
                 </div>
-
-                <!-- Gambar gabungan - awalnya tersembunyi -->
-                <div id="image-combined"
-                    class="absolute inset-0 flex justify-center items-center opacity-0 transition-opacity duration-1000">
-                    <img loading="lazy" src="{{ asset('img/home/curriculum_overview.webp') }}" alt="EduALL Junior"
-                        class="max-w-96 md:max-w-[480px] w-full object-center object-contain">
+                <div id="image-left" class="hover-container transition-all duration-1000 transform">
+                    <img loading="lazy" src="{{ asset('img/home/curriculum_2.webp') }}"
+                    alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
+                </div>
+                <div id="image-left" class="hover-container transition-all duration-1000 transform group">
+                    <img loading="lazy" src="{{ asset('img/home/curriculum_3.webp') }}"
+                    alt="EduALL Junior" class="max-w-72 md:max-w-96 w-full object-center object-contain">
                 </div>
             </div>
+            <p class="text-dark text-center text-xl mt-24 mb-12">
+                {{ __('home.curriculum_text_bottom') }}
+            </p>
         </div>
     </section>
 
@@ -343,7 +340,7 @@
 
 @endsection
 @push('script')
-    <script>
+    {{-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Elements untuk animasi
             const container = document.querySelector('.curriculum-animation-container');
@@ -415,7 +412,7 @@
 
             observer.observe(container);
         });
-    </script>
+    </script> --}}
     <script>
         document.querySelectorAll('.accordion-button').forEach(button => {
             button.addEventListener('click', function() {
