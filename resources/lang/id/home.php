@@ -100,6 +100,8 @@ return [
     ],
 
     'curriculum_overview'=> "Curriculum Overview",
+    'curriculum_text_top' => "Kurikulum kami mengintegrasikan",
+    'curriculum_text_bottom' => "Dengan kombinasi ini, siswa akan mengembangkan keterampilan sosial, ketahanan, dan keterampilan",
 
     'testimonial_badge' => 'TESTIMONI',
     'testimonial_title' => 'Apa kata orangtua <span class="text-blue">tentang kami</span>',
