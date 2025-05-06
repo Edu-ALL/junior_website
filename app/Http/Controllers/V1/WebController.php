@@ -15,7 +15,7 @@ class WebController extends Controller
 
     function __construct(Request $request)
     {
-        $this->testimonial = Testimonial::where('lang', $request->segment(1))->where('testi_status', 'active')->limit(3)->get();
+        $this->testimonial = Testimonial::where('lang', $request->segment(1))->where('testi_status', 'active')->limit(5)->get();
     }
 
     public function home($locale)

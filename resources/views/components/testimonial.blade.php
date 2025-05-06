@@ -42,6 +42,7 @@
             perPage: 1,
             pagination: false,
             arrows: false,
+            autoplay: true,
         });
         testimonial.mount();
 
