@@ -846,7 +846,7 @@
     </div>
     <div class="ml-form-successBody row-success" style="display: none">
 
-        <div class="ml-form-successContent">
+        <div class="ml-form-successContent text-center py-5 bg-secondary rounded text-dark">
 
             <h4>Thank you!</h4>
             <p style="text-align: center;">Our team will get in touch with you shortly via WhatsApp.<br><br>If you'd
